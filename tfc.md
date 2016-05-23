@@ -4,6 +4,10 @@ title: TerraFirmaCraft
 permalink: /tfc/
 ---
 
+Home:
+
+* (531, -13932)
+
 The following ore spawn locations have been determined:
 
 Galena:

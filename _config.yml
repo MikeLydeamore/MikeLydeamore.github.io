@@ -9,9 +9,8 @@
 title: Michael Lydeamore
 email: michael.lydeamore@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Applied mathematics, token computer scientist. Dabbles in most coding languages known to man.
+  Knows little about a lot.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mikelydeamore.github.io" # the base hostname & protocol for your site
 twitter_username: MikeLydeamore

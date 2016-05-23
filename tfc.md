@@ -13,6 +13,7 @@ The following ore spawn locations have been determined:
 Galena:
 
 * (594, -13803)
+* (684, -13871)
 
 Gold:
 
@@ -21,3 +22,4 @@ Gold:
 Bismuthinite:
 
 * (687, -13961)
+* (796, -13939)

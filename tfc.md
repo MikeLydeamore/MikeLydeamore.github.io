@@ -17,3 +17,7 @@ Galena:
 Gold:
 
 * (745, -13910)
+
+Bismuthinite:
+
+* (687, -13961)

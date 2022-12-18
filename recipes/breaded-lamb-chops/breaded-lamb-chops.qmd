@@ -1,0 +1,31 @@
+---
+title: "Breaded Lamb Chops"
+
+date: 2022-12-18
+categories: [dinner, lamb]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Breaded Lamb Chops
+
+A simple extension for an Aussie favourite
+
+## Ingredients
+
+* 2 tsp Dijon mustard
+* 2 tsp honey
+* 2 cloves garlic, crushed
+* 1 tbsp rosemary
+* 3 tbsp olive oil
+* 8 lamb loin chops
+* 100g breadcrumbs
+
+## Method
+
+Mix together mustard, honey, garlic, rosemary and 2tbsp of oil. Brush mixture over chops, then coat in breadcrumbs. 
+
+Grill or fry chops until tender.

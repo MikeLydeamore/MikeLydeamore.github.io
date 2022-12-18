@@ -1,0 +1,37 @@
+---
+title: "Keto Broccoli Salad"
+
+date: 2022-12-18
+categories: [salad, lunch, vegetarian]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Keto Broccoli Salad
+
+Bacony, and mayonaissey. If you're crazy enough to be on Keto this might take your mind off of it.
+
+## Ingredients
+
+* 2 heads broccoli
+* 1/2 cup cheese
+* 1/4 red onion
+* 3 slices bacon
+* 2 tbsp chives
+* 1/4 cup toasted sliced almonds
+
+### Dressing
+
+* 2/3 cup mayonaisse
+* 3 tbsp apple cider vinegar
+* 1 tbsp Dijon mustard
+
+
+## Method
+
+Boil broccoli florets in salt water for 1-2 minutes. Combine dressing ingredients and season.
+
+Grill or fry bacon until crispy and crumble/chop. Mix everyhing in a bowl and toss to combine.

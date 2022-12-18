@@ -1,0 +1,36 @@
+---
+title: "Spinach puff pastry with Fetta and Ricotta"
+
+date: 2022-12-18
+categories: [vegetarian, lunch]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Spinach puff pastry with Fetta and Ricotta
+
+Good to burn up some extra pastry.
+
+## Ingredients
+
+* 4 sheets puff pastry
+* 2 1/2 cups frozen spinach
+* 1/2 onion
+* 2 cloves garlic
+* 1 tbsp olive oil
+* 1 cup ricotta
+* 1 cup fetta (crumbled)
+* sesame seeds (undisclosed amount)
+* 1 egg
+
+
+## Method
+
+Fry chopped onion and garlic until soft and translucent. Add frozen spinach and cook until no liquid remains. Leave to cool. 
+
+Combine with feta and ricotta. Cut each sheet of pastry intro 3 strips. Spread mixture between strips and fold over to make a roll. Brush with egg wash. Cut holes to vent steam. Add sesame seeds to top.
+
+Bake at 180C for 18-22 minutes.

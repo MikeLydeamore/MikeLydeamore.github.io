@@ -1,0 +1,35 @@
+---
+title: "Vinaigrette"
+
+date: 2022-12-18
+categories: [lunch, russian]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Vinaigrette
+
+A beetroot salad.
+
+## Ingredients
+
+* 1 beetroot, large
+* 2 potatoes
+* 1 carrot
+* 1 onion
+* Pickles
+* Pickled cabbage
+* Peas
+* Olive oil
+* Mustard
+* Vinegar
+
+
+## Method
+
+Mix oil, mustard and vinegar in a small jug. Combine everything else in a bowl and pour over the dressing.
+
+Use however much cabbage/pickles/peas/oil/mustard/vinegar you feel like.

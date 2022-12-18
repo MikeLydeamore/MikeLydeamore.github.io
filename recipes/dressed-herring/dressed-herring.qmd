@@ -1,0 +1,32 @@
+---
+title: "Dressed Herring"
+
+date: 2022-12-18
+categories: [fish, salad]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Dressed Herring
+
+A Russian favourite.
+
+## Ingredients
+
+* 1 packet Herring
+* 2 potatoes
+* 1 beetroot
+* 1 carrot
+* 1 onion
+* 4 eggs
+* Vinegar
+* Mayonnaise
+
+
+
+## Method
+
+Unknown.

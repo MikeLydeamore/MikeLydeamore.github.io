@@ -1,0 +1,36 @@
+---
+title: "Chickpea Salad"
+
+date: 2022-12-18
+categories: [salad, lunch, vegetarian]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Chickpea Salad
+
+A tasty summer salad with chickpeas.
+
+## Ingredients
+
+* 1 can chickpeas
+* 1/2 red onion, thinly sliced
+* 1/2 cucumber, chopped
+* 1 red capsicum, roasted
+* 3 tomatoes, chopped
+* 2 tbsp parlsey
+* 2 cloves garlic
+* 3 tbsp lemon juice
+* 2 tsp oil
+* 1/4 tsp salt
+
+## Method
+
+Combine: chickpeas, red onion, cucumber, red capsicum, tomatoes, parsley and crushed garlic in a bowl.
+
+Dressing: Combine lemon juice, oil and salt. Whip until emulsified.
+
+Pour dressing over salad ingredients.

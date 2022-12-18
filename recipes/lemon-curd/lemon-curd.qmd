@@ -1,0 +1,31 @@
+---
+title: "Lemon Curd"
+
+date: 2022-12-18
+categories: [sweet]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Lemon Curd
+
+A good way to use up excess egg yolks. And butter.
+
+## Ingredients
+
+* 3 lemons
+* 3/4 cup sugar
+* 110g butter
+* 5 egg yolks
+* 1/4 tsp salt
+
+## Method
+
+Zest 3 lemons and gather 1/2 cup lemon juice. Combine sugar, lemon zest, egg yolks, lemon juice and salt.
+
+heat over very low heat, whisking constantly. At approximately 150F, add butter. Heat to 170F and the curd has thickened.
+
+Strain and store.

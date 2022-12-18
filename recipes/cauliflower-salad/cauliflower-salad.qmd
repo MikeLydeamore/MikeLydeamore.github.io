@@ -1,0 +1,48 @@
+---
+title: "Cauliflower Salad"
+
+date: 2022-12-18
+categories: [salad, vegetarian, lunch]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Cauliflower Salad
+
+Pomegrante and Cauliflower make a surprisingly tasty combination.
+
+## Ingredients
+
+* 1 tsp cumin seeds
+* 1 tsp coriander seeds
+* 1 cauliflower
+* 2 tsp chopped garlic
+* 1 tsp salt
+* Pepper
+* 3 tbsp olive oil
+* 3 spring onions
+* 1 handful coriander leaves
+* 1 handful mint leaves
+* 1 pomegranate
+* 1 tbsp sunflower seeds
+* 1 tbsp pumpkin seeds
+* 1 tbsp toasted seasame seeds
+
+### Dressing
+
+* 3 tbsp lemon juice
+* 3 tbsp tahini
+* 1 clove garlic
+* 1 tsp honey
+* 130g Greek yoghurt
+
+## Method
+
+Finely slice spring onion. 
+
+Toast cumin and coriander seeds for 1-2 minutes. Cut up cauliflower into small florets. Toss florets in a bowl with garlic, cumin and coriander seeds, salt, pepper and olive oil. Roast cauliflower on a baking tray for 20 minutes at 180C until lightly golden but still crunchy.
+
+Whisk all dressing ingredients together and season. Toss the cauliflower and spring onions in the dressing. Add sunflower seeds, pumpkin seeds, sesame seeds, and pomegranate.

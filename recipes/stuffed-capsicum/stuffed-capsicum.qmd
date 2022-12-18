@@ -1,0 +1,38 @@
+---
+title: "Stuffed Capsicum"
+
+date: 2022-12-18
+categories: [dinner, beef]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Stuffed Capsicum
+
+Another good one. Don't take the capcisums out of the pan when they've finished cooking, let them cool down.
+
+## Ingredients
+
+* 8 capsicums (less if they won't fit in your pot)
+* 500g beef mince
+* 200g rice
+* 150g tomato paste
+* 200g carrots
+* 200g onions
+* salt
+* pepper
+* vegetable oil
+* sour cream
+
+
+
+## Method
+
+Grate carrots and finely chop onion. Fry in pan in oil. Mix mince and boiled rice in a bowl. Add half of the carrot and onion mix, season with salt and pepper. Cool, and stuff inside hollowed capsicums. 
+
+Put other half of carrot and onion mix into a pot. Add tomato paste, add capsicums. Add water to 2/3 of capsicum height. Cover and boil for 45 minutes. 
+
+Serve with sour cream.

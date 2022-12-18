@@ -1,0 +1,44 @@
+---
+title: "Mushroom Meatballs"
+
+date: 2022-12-18
+categories: [vegetarian, dinner, pasta]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Mushroom Meatballs
+
+One of my favourites.
+
+## Ingredients
+
+* 1 tbsp oil
+* 500g white mushrooms
+* Pinch salt
+* 1 tbsp butter
+* 1/2 cup onion
+* 4 garlic cloves
+* 1/2 cup oats
+* 30g parmesan
+* 1/2 cup breadcrumbs
+* 1/4 cup flat-leaf parsley
+* 2 eggs
+* 1 tsp salt
+* 1 pinch cayenne pepper
+* 1 pinch dried oregano
+
+
+## Method
+
+Chop mushrooms and finely chop onion. Heat oil over
+medium-high heat. Add mushrooms and salt, and cook until liquid evaporated. Stir in butter. Reduce heat to mdium and cook until golden brown (5 minutes).
+
+Stir in onion and cook until translucent (5 minutes). Remove from heat and stir in garlic. Transfer to bowl. 
+
+Mix in oats and parmesan. Add breadcrumbs, parsley and 1 egg, salt, pepper, cayenne and oregano. Mix with fork until crumbly. Add another egg. Refrigerate overnight. 
+
+Form meatballs on a tray. Bake for 12-15 minutes at 230C.

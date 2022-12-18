@@ -1,0 +1,34 @@
+---
+title: "Skewer Marinade"
+
+date: 2022-12-18
+categories: [beef, bbq, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Skewer Marinade
+
+Good for the BBQ, although they do shrink a bit.
+
+## Ingredients
+
+* 1 cup vegetable oil
+* 1/4 cup dijon mustard
+* 3/4 cup soy sauce
+* 1 1/2 tsp pepper
+* 1/2 cup lemon juice
+* 2 cloves garlic
+* 500g diced beef
+* 2 onions
+* 2 capcisums
+* 1/4 cup Worcestershire sauce
+
+## Method
+
+Mix all ingredients except beef, onion and capsicum in bowl and mix. Add meat, cover and marinate for 4 to 24 hours.
+
+Add alternating pieces of onion, capsicum and meat on a pre-soaked skewer. Pan fry or BBQ.

@@ -1,0 +1,36 @@
+---
+title: "French Onion Soup"
+
+date: 2022-12-18
+categories: [vegetarian, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# French Onion Soup
+
+Very tasty, but you do have to find the right cheese.
+
+## Ingredients
+
+* 3 tbsp olive oil
+* 2 tbsp plain flour
+* 1 cup white whine
+* 1L beef stock
+* Bread
+* 80g butter
+* 1 tbsp Dijon mustard
+* 90g gruyere cheese
+* 1kg onions
+* 1 tbsp brown sugar
+
+
+## Method
+
+Halve and slice onions. Heat butter and olive oil in a large saucepan over medium heat. Cover and cook, stirring occasionally for 10 minutes or until onion is beginning to soften. Reduce heat to medium low. Cook, uncovered, for 20 minutes or until onion is very soft. Add sugar. Cook while stirring for 5 minutes until sugar
+dissolves and coats onion. Add flour and cook or 1 minute. Gradually stir in wine. Simmer for 3 to 4 minutes or until wine reduces by half and mixture is thick. Add stock. Cover, bring to simmer and cook on medium heat for 5 minutes or until soup has thickened slightly.
+
+Toast one side of bread. Butter th e reverse side and add a small amount of mustard and grated cheese. Grill for 1 to 2 minutes or until cheese is melted.

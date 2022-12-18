@@ -1,0 +1,36 @@
+---
+title: "Red lentil and Chorizo Soup"
+
+date: 2022-12-18
+categories: [soup, chorizo, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Red lentil and Chorizo Soup
+
+One of my favourites.
+
+## Ingredients
+
+* 1 tbsp oil
+* 1 large onion
+* 200g cooking chorizo
+* 2 carrots
+* Pinch cumin seeds
+* 3 cloves garlic
+* 1 tsp paprika
+* Pinch caster sugar
+* Splash red wine vinegar
+* 250g red lentils
+* 2x400g tin tomatoes
+* 850ml chicken stock
+* Plain Yoghurt
+
+
+## Method
+
+Peel and dice chorizo, Chop carrots. Heat oil in pan. Add chorizo and cook until crisp. Remove with slotted spoon. Add onion, carrot and cumin, and cook for 10 minutes. Add garlic and cook for 1 minute. Add paprika and sugar, cook for 1 minute. Add vinegar . Stir in lentils, add tomatoes and stock. Simmer for 30 minutes. Add back in chorizo and stir in yoghurt to taste.

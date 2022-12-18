@@ -1,0 +1,37 @@
+---
+title: "Pumpkin and Pancetta Macaroni Cheese"
+
+date: 2022-12-18
+categories: [dinner, pasta]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Pumpkin and Pancetta Macaroni Cheese
+
+I don't even remember making this if I'm honest.
+
+## Ingredients
+
+* 300g dried macaroni
+* 50g butter
+* 6 slices pancetta
+* 1/4 tsp ground nutmeg
+* 1/4 cup plain flour
+* 2 cups milk
+* 1/12 cups grated tasty cheese
+* 600g butternut
+
+## Method
+
+Cook macaroni in a large saucepan for 12 mins. Drain. 
+
+Peel and grate pumpkin. Melt 10g butter in a pan and add pancetta and nutmeg. Cook for 2-3 mins or until crisp. Remove for pan and put on a paper towel. Melt remaining butter in pan. Ad flour and cook stirringfor
+1min. gradually add milk, stirring until smooth. Cook stirring until mixture boils and thickens. Stir in cheese and pumpkin. 
+
+Chop pancetta into small pieces and add to pumpkin mixture. Add macaroni and season with salt and pepper. Pour into a greased casserole dish. Bake at 200C for 20-25 mins.
+
+Stand for 5 mins before serving.

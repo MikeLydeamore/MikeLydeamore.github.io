@@ -1,0 +1,33 @@
+---
+title: "Zoodle Alfredo with Bacon"
+
+date: 2022-12-18
+categories: [pasta, chicken, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Zoodle Alfredo with Bacon
+
+Can also be done with normal pasta, but is Keto friendly with the zoodles.
+
+## Ingredients
+
+* 250g bacon
+* 1 1/2 cup heavy cream
+* 1 shallot
+* 1/2 cup parmesan
+* 1/4 cup white wine
+* Zucchini, spiralised
+* 2 cloves garlic
+* Chicken breast (optional)
+
+
+## Method
+
+Finely chop shallot. Cut chicken into pieces and fry in oil. Remove. 
+
+Cook bacon for 8 minutes, or until crispy. Drain on paper towel. Keep 2 tbsp of bacon fat. Fry shallots for 2 minutes, and add garlic for 1 minute. Add wine, cook until reduced by half. Add cream and bring to boil. Reduce heat to low and add parmesan. Cook for 2 minutes or until thickened. Add chicken and noodles and toss.

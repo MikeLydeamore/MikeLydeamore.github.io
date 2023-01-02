@@ -1,0 +1,30 @@
+---
+title: "Pea and Ham Soup"
+
+date: 2022-12-18
+categories: [soup, pork, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Pea and Ham Soup
+
+Easy to make and pretty good for winter.
+
+## Ingredients
+
+* 1 cup dried split peas
+* 4 cups water
+* 1/2 onion
+* 1 celery stalk
+* Pepper
+* 1 ham hock
+* 1 carrot
+
+
+## Method
+
+Cook peas, onion, celery, pepper and ham for 1.5 hours in pot of water. Take out ham bone and cut off the ham. Add carrot and cook for another 30 minutes.

@@ -1,0 +1,30 @@
+---
+title: "Bircher Oats"
+
+date: 2022-12-18
+categories: [keto, breakfast]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Bircher Oats
+
+Very nice to eat but also a pain to make.
+
+## Ingredients
+
+* 25g oats
+* 1 tbsp dried fruit
+* 6 tbsp apple juice
+* Berries
+* Splash of milk
+* Handful of almonds
+* Spoon of yoghurt
+
+
+## Method
+
+Soak oats and dried fruit in apple juice overnight. Add the rest of the ingredients in the morning and hope your coffee has kicked in.

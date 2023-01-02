@@ -1,0 +1,31 @@
+---
+title: "Pickle Soup"
+
+date: 2022-12-18
+categories: [dinner, soup]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Pickle Soup
+
+Sounds weird but is strangely tasty
+
+## Ingredients
+
+* 1 osso bucco
+* 2 potatoes
+* 1 cup pearl barley
+* 6 pickles + some juice
+* 2 tbsp tomato paste
+* 1 carrot
+* 1 onion
+* 1 clove garlic
+
+
+## Method
+
+Boil osso bucco in water to make meat broth. Add 1 cup of pre-soaked pearl barley. Add chopped potatoes, pickles and juice, and 2 tbsp of tomato paste. Chop carrot, onion and garlic and fry until lightly browned, then add to the soup. Boil until it's ready.

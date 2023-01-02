@@ -1,0 +1,34 @@
+---
+title: "Spring Goddess Sandwich"
+
+date: 2022-12-18
+categories: [lunch, keto]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Spring Goddess Sandwich
+
+It's a sandwich with greens and a lot of egg based condiments.
+
+## Ingredients
+
+* 1 can chickpeas
+* 1/4 cup parsley
+* 1/4 cup dill
+* 2 tbsp wholegrain mustard
+* 2 tbsp mayonaisse
+* Lettuce leaves
+* Cucumber
+* Thinly sliced carrot
+* Thinly sliced raddish
+* Thinly sliced avocado
+* Alfafa sprouts
+
+
+## Method
+
+Mix together chickepas, parsley, dill, mustard and mayonaisse. Put everything on a sandwich.

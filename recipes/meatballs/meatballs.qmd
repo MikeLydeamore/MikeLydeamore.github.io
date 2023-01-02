@@ -1,0 +1,29 @@
+---
+title: "Meatballs"
+
+date: 2022-12-18
+categories: [lunch, beef, pasta]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Meatballs
+
+Don't remember making these.
+
+## Ingredients
+
+* 500g beef mince
+* 1 cup breadcrumbs
+* 1 tbsp dried parsley
+* 1 tbsp parmesan
+* 1/4 tsp pepper
+* pinch garlic powder
+* 1 egg
+
+## Method
+
+Combine all ingredients and refrigerate for 30 minutes. Bake for 20 minutes at 180C.

@@ -2,7 +2,7 @@
 title: "Pumpkin and Pancetta Macaroni Cheese"
 
 date: 2022-12-18
-categories: [dinner, pasta]
+categories: [dinner, pasta, pumpkin]
 format:
     html:
         highlight: default

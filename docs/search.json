@@ -1,17 +1,87 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "About this site"
+    "text": "michael.lydeamore@monash.edu"
+  },
+  {
+    "objectID": "cv.html#appointments-held",
+    "href": "cv.html#appointments-held",
+    "title": "Curriculum Vitae",
+    "section": " Appointments Held",
+    "text": "Appointments Held\nLecturer – Econometrics and Business Statistics  Monash University 2021 —\nCOVID-19 Modelling & Forecasting Lead Manager, Analytics Department of Health and Human Services, Victoria 2020\nPostdoctoral Research Fellow Monash University 2019 — 2021\nHonorary Team Member SaferCare Victoria 2019 —\nHonorary Research Fellow The Alfred Hospital 2019 —\nResearch Fellow The Kirby Institute 2018 — 2019"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": " Education",
+    "text": "Education\nDoctor of Philosophy – Applied Mathematics  The University of Melbourne 2015 — 2019\nThesis title: Mechanistic and statistical models of skin disease transmission\nMasters of Philosophy – Applied Mathematics  The University of Adelaide 2013 — 2014\nThesis title: Approximations of stochastic household models for comparing antiviral allocation schemes.\nAwarded the Applied Probability Trust prize for the highest mark with a project in Applied Mathematics and Statistics\nBachelor of Mathematical Sciences  The University of Adelaide 2010 — 2012\nGraduated with a double major in applied and pure mathematics"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Curriculum Vitae",
+    "section": " Publications",
+    "text": "Publications\n\n2023\nThe incidence of nosocmial bloodstream infection and urinary tract infection in Australian hospitals before and during the COVID-19 pandemic: an interrupted time series study  Antimicrobial Resistance and Infection Control  Mitchell, B.G., Stewardson, A.J., Kerr, L, Ferguson, J.K., Curtis, S., Busija, Ljoudmila, Lydeamore, M.J., Graham, K., Russo, P.L.  DOI: 10.1101/2021.10.05.21264587\n\n\n2022\nBurden of five healthcare associated infections in Australia  Antimicrobial Resistance and Infection Control  Lydeamore, M. J., Mitchell, B. G., Bucknall, T., Cheng, A.C., Russo, P. L., Stewardson, A. J.  DOI: 10.1101/2021.10.05.21264587\nCOVID-19 in low-tolerance border quarantine systems: impact of the Delta variant of SARS-CoV-2  Science Advances  Zachreson, C., Sharer, F. M., Price, D. J., Lydeamore, M. J., McVernon, J., McCaw, J., Geard, N. G.  DOI: 10.1126/sciadv.abm3624\n\n\n2021\nPopulation-based analysis of the epidemiological features of COVID-19 epidemics in Victoria, Australia, January 2020-March 2021, and their suppression through comprehensive control strategies  Lancet Regional Health — Western Pacific  Sullivan, S. G., Brotherton, M. L., Lynch, B. M., Cheung, A. Lydeamore, M.J., Stevenson, M., Firestone, S., Canevari, J., Nguyen, H.N.J., Carville, S., Clothier, H.J., , Sutton, B., Rowe, S. L.  DOI: 10.1016/j.lanwpc.2021.100297\nMathematical models to support Victoria’s COVID-19 response: a blunt instrument to a complex problem  AustMS Journal  Lydeamore, M.J.\nUnderstanding how Victoria, Australia gained control of its second COVID-19 wave  Nature Communications  Trauer, J.M., Lydeamore, M. J., Dalton, G. W., Meehan, M.T., McBryde, E. S., Cheng, A. C., Sutton, B., Ragonnet, R.  DOI: 10.1038/s41467-021-26558-4\nRisk mapping for COVID-19 outbreaks in Australia using mobility data  Royal Society: Interface  Zachreson, C., Mitchell, L., Lydeamore, M. J., Rebuli, N., Tomko, M., Geard, N.  DOI: 10.1098/rsif.2020.0657\n\n\n2020\nEstimation of the force of infection and infectious period of skin sores in remote Australian communities using interval-censored data  PLoS Computational Biology  Lydeamore, M. J., Campbell, P.T., Price, D.J., Wu,Y., Marcato, A.J., Cuningham, W., Carapetis, J.R., Andrews, R.M., McDonald, M.I., McVernon, J., Tong, S.Y.C., McCaw, J.M.  DOI: 10.1371/journal.pcbi.1007838\n\n\n2019\nA biological model of scabies infection dynamics and treatment informs mass drug administration strategies to increase the likelihood of elimination  Mathematical Biosciences  Lydeamore, M. J., Campbell, P. T., Regan, D.G., Tong, S., Andrews, R., Steer, A.C., Romani, L., Kaldor, J., McVernon, J., McCaw, J.M.  DOI: 10.1016/j.mbs.2018.08.007\nHigh Burden if Infectious Disease and Antibiotic Use in Early Life in Aboriginal Communities  Australia and New Zealand Journal of Public Health  Cuningham, W., McVernon, J., Lydeamore, M. J., Andrews, R. M., Carapetis, J., Kearns, T., Clucas, D., Gundjirryirr Dhurrkay, R., Tong, S. Y. C., Campbell, P. T.  DOI: 10.1111/1753-6405.12876\n\n\n2018\nCalculation of the age of first infection for skins sores and scabies in five remote communities in northern Australia  Epidemiology & Infection Lydeamore, M. J., Campbell, P. T., Cuningham, W., Andrews, R., Kearns, T., Clucas, D., Gundjirryirr Dhurrkay, R., Carapetis, J., Tong, S. Y. C., McCaw, J. M., McVernon, J.  DOI: 10.1017/S0950268818001061\n\n\n2017\nIndigenous Australia household structure — implications for close contact transmission of communicable diseases  PeerJ Vino, T., Davison, B., Campbell, P. T., Lydeamore, M. J., McVernon, J., Singh, G., Tong, S. Y. C., Robinson, A., Geard, N.  DOI: 10.7717/peerj.3958\n\n\n2016\nChoice of antiviral allocation scheme for pandemic influenza depends on strain transmissibility, delivery delay and stockpile size  Bulletin of Mathematical Biology Lydeamore, M., Bean, N., Black, A. J., Ross, J. V.  DOI: 10.1007/s11538-016-0144-6"
+  },
+  {
+    "objectID": "cv.html#funding",
+    "href": "cv.html#funding",
+    "title": "Curriculum Vitae",
+    "section": " Funding",
+    "text": "Funding\nAlmost all of this funding was obtained in partnership with large, collaborative teams.\nContractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals  World Health Organisation Phillippines 2023 Awarded value: $72,078\nCentre of Western Public Health Unit  Contract Research 2023 Awarded value: $25,000\nExtending and comparing methods for projecting social contact matrices  SPECTRUM/SPARK Seed Funding 2022 Awarded value: $19,438\nQuantifying longitudinal relationships between community mobility and COVID-19 case incidence in west metropolitan Melbourne  SPECTRUM/SPARK Seed Funding 2022 Awarded value: $19,896\nModelling to support Australia’s national plan for COVID-19  Commonwealth Government of Australia 2021 Awarded value: $147,536\nModelling to support Australia’s transition to ‘COVID-normal’ Australian Office of Health Protection 2021 Awarded value: $25,620"
+  },
+  {
+    "objectID": "cv.html#conference-presentations-and-contributed-talks",
+    "href": "cv.html#conference-presentations-and-contributed-talks",
+    "title": "Curriculum Vitae",
+    "section": " Conference presentations and contributed talks",
+    "text": "Conference presentations and contributed talks\nData-Driven Insights into Healthcare Challenges: Two Case Studies UNSW Australia Statistics & Data Science Seminar 2023\nBurden of healthcare associated infections in Australia Australia and New Zealand Industrial Applied Mathematics Conference 2022\nExponential Random Graph Models and CPE transmission Melbourne Mathematical Biology Seminar Series — Invited Speaker 2021\nMathematical modelling for COVID-19 in Victoria, Australia Math for Industry Forum, Vietnam — Invited Speaker 2021\nThe associations between transmission of CPE and ward connectivity: a network analysis Australasian Society for Infectious Diseases Annual Scientific Meeting 2021\nThe burden of healthcare acquired infections in Australian public hospitals Australasian Society for Infectious Diseases Annual Scientific Meeting 2021\nDecision Making and Mathematical Biology - Victoria’s usage of COVID-19 modelling Mathematical Biology Special Interest Group Workshop - Invited Speaker 2021\nModelling between-household effective contact and the elimination of COVID-19 in Melbourne, Australia Australia and New Zealand Industrial Applied Mathematics Conference 2021\nMathematical modelling and Victoria’s response to COVID-19 Victorian ANZIAM Branch Meeting — Invited Speaker 2020\nAustralia’s experience and the role of modelling in its responses to COVID-19 Usher Institute COVID-19 Webinar — Invited Speaker 2020\nEstimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data Australia and New Zealand Industrial Applied Mathematics Conference 2019\nEstimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data NSW–ACT ANZIAM Branch Meeting 2018\nCoupled models of Group A Streptococcus and Scabies: How likely is eradication? PRISM International Conference 2018\nInvestigating the dynamics of coupled epidemiological transmission models with application to Group A Streptococcus and Scabies Society for Mathematical Biology Annual Meeting 2018\nInvestigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies Australia and New Zealand Industrial Applied Mathematics Conference 2018\nQuantifying the age of first infection with skin sores in five remote Australian Aboriginal communities Lancefield International Symposium on Streptococci and Streptococcal Diseases 2017\nInvestigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies PRISM Annual Knowledge Transfer and Training Conference 2017\nConstructing mathematical models of Group A Streptococcus and Scabies in remote Australian Indigenous communities Zeeman Institute Seminar Series — Invited Speaker 2017\nDeveloping a model for the transmission and treatment dynamics of scabies infections a high prevalence setting Melbourne-Manchester Joint Workshop 2017\nDeveloping a model for the transmission of Group A Streptococcus Australia and New Zealand Industrial Applied Mathematics Conference 2017\nDetermining the age of first infection from incomplete data Modelling Emerging Infections and Neglected Tropical Diseases Workhop 2016\nInvestigating Intervention Intervals for Scabies Infections Australia and New Zealand Industrial Applied Mathematics Conference 2016"
+  },
+  {
+    "objectID": "cv.html#teaching",
+    "href": "cv.html#teaching",
+    "title": "Curriculum Vitae",
+    "section": " Teaching",
+    "text": "Teaching\n\nLecturer\n[ETC5523] Communicating With Data (Chief Examiner) 2023\n[ETC5512] Wild-Caught Data 2022, 2023\n[ETC5521] Exploratory Data Analysis 2022\n\n\nTutor\n[MAST10016] Mathematics for BioMedicine 2016–2019\n[MAST30001] Stochastic Modelling 2018"
+  },
+  {
+    "objectID": "cv.html#awards",
+    "href": "cv.html#awards",
+    "title": "Curriculum Vitae",
+    "section": " Awards",
+    "text": "Awards\nUniversity of Melbourne Faculty of Engineering and Information Technology Excellence Award in Interdisciplinary Research 2021\nIPAA Spirit of Service Awards – Finalist 2021\nEngagement Australia Excellence Awards — Outstanding Engagement for Research Impact — Finalist 2021\nTop Poster Award — European Congress of Clinical Microbiology & Infectious Diseases 2021\nIPAA Victoria Leadership in the Public Sector Awards — Finalist 2021\nBest PhD Student Presentation – PRISM\\(^2\\) Annual Conference 2017\nApplied Probability Trust Prize for best Applied Mathematics Postgraduate Thesis 2016\nAustralian Postgraduate Award 2015\nDean’s Commendation for Thesis Excellence 2015"
+  },
+  {
+    "objectID": "cv.html#academic-service-community-engagment",
+    "href": "cv.html#academic-service-community-engagment",
+    "title": "Curriculum Vitae",
+    "section": " Academic Service & Community Engagment",
+    "text": "Academic Service & Community Engagment\nSPARK Short Course in Mathematical Diseases Modelling — OUCRU Facilitator 2023\nMaths in Industry Study Group — NSW Health Moderator 2023\nCommunicating with Data Workshop Organising Committee 2023\nAustralian & New Zealand Industrial Applied Mathematics Executive Committee Treasurer 2022 – Early Career Representative 2021–2022\nSPECTRUM-SPARK Early Career Researcher Committee Chair 2022 –\nSPARK Short Course in Mathematical Diseases Modelling - Mahidol University Facilitator 2022\nResearch Tools Workshop in R Facilitator 2022\nMathematical Biology Special Interest Group Treasurer 2019–2022\nANZIAM 2021 Conference Organising committee — Treasurer 2020–2021\nComputational Biology Research Initiative – The University of Melbourne Postgraduate Representative 2017\nComputational Biology Postgraduate Sports Group – The University of Melbourne Secretary 2017–2018\nMathematics in Industry Study Group Participant 2017, 2018, 2019\nThe ConocoPhilips Science Experience – The University of Melbourne Activity Organiser 2016–2018\nMathematicians in Schools Project Supervisor/Mentor 2016–2018\nReviewer PLoS Comptuational Biology; Scientific Reports; Journal of Applied Mathematics; Journal of Statistical Software; Epidemiology & Infection; Mathematics; Medial Journal of Australia; International Tropical Health; Journal of Antimicrobial Resistance; The R Journal"
+  },
+  {
+    "objectID": "cv.html#professional-memberships",
+    "href": "cv.html#professional-memberships",
+    "title": "Curriculum Vitae",
+    "section": " Professional Memberships",
+    "text": "Professional Memberships\nAustralia and New Zealand Industrial and Applied Mathematics 2015– Including the Mathematical Biology Special Interest Group\nAustralian Mathematics Society 2015–"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "mikelydeamore.github.io",
+    "title": "Dr Michael Lydeamore",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Twitter\n  \n  \n    \n     LinkedIn\n  \n  \n    \n     GitHub\n  \n  \n    \n     Scholar\n  \n  \n    \n     Monash\n  \n\n  \n  \nI am a lecturer in Business Analytics and Data Science in the Department of Econometrics and Business Statistics at Monash University. I also hold honorary appointments with Alfred Health and SaferCare Victoria.\nI love working on translational and high-impact projects across any industry. If you have a question or a project that you think needs a data-driven approach, please get in touch with the details below.\nMy research interests are:\n\nHealth analytics,\nHealthcare acquired infections,\nUnderstanding data collection methods in the healthcare setting,\nInfectious diseases control,\nStatistical software development and workflow.\nI am an advocate of re-use of historical datasets, and performing analysis in as open of a way as possible while preserving privacy of those whom data has been collected. I have an active GitHub profile which contains most of my research code that can be made publicly available.\nI thoroughly enjoy engagement with societies and research centres. I am currently the Treasurer of the Australia and New Zealand Industrial and Applied Mathematics (ANZIAM) society, ECA Chair for the NHRMC Centre of Research Excellence SPECTRUM, and in a non-academic context, treasurer of the North Park Tennis Club."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Dr Michael Lydeamore",
+    "section": "Contact",
+    "text": "Contact\n\n\n\n\n\n\n\n@MikeLydeamore\n\n\n\n\n\n\n\nMikeLydeamore\n\n\n\n\n\n\n\nmichael.lydeamore@monash.edu\n\n\n\n\n\n\n\nMonash University29 Ancora Imparo WayBuilding 6, Room 354Clayton, VIC 3800Australia"
   },
   {
     "objectID": "recipes/bacon-wrapped-cauliflower/bacon-wrapped-cauliflower.html",
@@ -208,5 +278,26 @@
     "title": "Zoodle Alfredo with Bacon",
     "section": "",
     "text": "Can also be done with normal pasta, but is Keto friendly with the zoodles.\n\n\n\n250g bacon\n1 1/2 cup heavy cream\n1 shallot\n1/2 cup parmesan\n1/4 cup white wine\nZucchini, spiralised\n2 cloves garlic\nChicken breast (optional)\n\n\n\n\nFinely chop shallot. Cut chicken into pieces and fry in oil. Remove.\nCook bacon for 8 minutes, or until crispy. Drain on paper towel. Keep 2 tbsp of bacon fat. Fry shallots for 2 minutes, and add garlic for 1 minute. Add wine, cook until reduced by half. Add cream and bring to boil. Reduce heat to low and add parmesan. Cook for 2 minutes or until thickened. Add chicken and noodles and toss."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "A functional approach to building hospital networks from data on hospitalised patients who are transferred through and between hospitals.\nAims to provide a common framework to build and analyse these (static) networks.\nCoauthors: Pascal Crepey, Tjibbe Donker.\nAvailable on CRAN and GitHub"
+  },
+  {
+    "objectID": "software.html#condensr",
+    "href": "software.html#condensr",
+    "title": "Software",
+    "section": "condensr",
+    "text": "condensr\nAn easy-to-use, fast framework for generating academic “group” websites. Fundamentally, it is a bunch of Quarto templates with some convenient wrappers.\nAvailable on GitHub.\nUsed for:\n\nSPECTRUM CRE\nSPARK Capacity Building Center"
+  },
+  {
+    "objectID": "software.html#conmat",
+    "href": "software.html#conmat",
+    "title": "Software",
+    "section": "conmat",
+    "text": "conmat\nSynthetic contact matrix generation based on contact diary surveys, and models of population-specific factors.\nCoauthors: Nick Tierney, Nick Golding.\nAvailable on GitHub."
   }
 ]

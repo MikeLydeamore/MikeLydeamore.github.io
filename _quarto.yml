@@ -4,16 +4,42 @@ project:
 
 website:
   title: "Michael Lydeamore"
+  favicon: images/favicon.jpg
   navbar:
+    background: primary
+    foreground: secondary
+    logo: images/favicon.jpg
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - href: recipes/index.qmd
-        text: Recipes
+      - href: cv.qmd
+        text: CV
+      - href: software.qmd
+        text: Software
+    right:
+      - icon: twitter
+        href: https://www.twitter.com/MikeLydeamore
+      - icon: github
+        href: https://github.com/MikeLydeamore
+
+  page-footer:
+    left: |
+      <b>Dr. Michael Lydeamore</b><br>
+      Lecturer in Business Analytics<br>
+      Monash University<br>
+      © Copyright 2023 Michael Lydeamore
+
+    right: |
+      <i class="bi bi-twitter"></i> <a href="https://www.twitter.com/MikeLydeamore">@MikeLydeamore</a><br>
+      <i class="bi bi-github"></i> <a href="https://github.com/MikeLydeamore">MikeLydeamore</a><br>
+      <i class="bi bi-envelope"></i> <a href="mailto:michael.lydeamore@monash.edu">michael.lydeamore@monash.edu</a><br>
+      <i class="bi bi-geo-alt-fill"> </i>Clayton, VIC, Australia
+    border: true
+    background: primary
 
 format:
   html:
-    theme: cosmo
+    theme: custom.scss
     css: styles.css
     toc: true
+    page-layout: full

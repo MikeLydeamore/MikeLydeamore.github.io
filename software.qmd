@@ -1,0 +1,32 @@
+---
+title: Software
+---
+
+## HospitalNetwork
+
+A functional approach to building hospital networks from data on hospitalised patients who are transferred through and between hospitals.
+
+Aims to provide a common framework to build and analyse these (static) networks.
+
+Coauthors: Pascal Crepey, Tjibbe Donker.
+
+Available on [CRAN](https://cran.r-project.org/package=HospitalNetwork) and [GitHub](https://github.com/PascalCrepey/HospitalNetwork)
+
+## condensr
+
+An easy-to-use, fast framework for generating academic "group" websites. Fundamentally, it is a bunch of Quarto templates with some convenient wrappers.
+
+Available on [GitHub](https://github.com/MikeLydeamore/condensr).
+
+Used for:
+
+* [SPECTRUM CRE](https://www.spectrum.edu.au/)
+* [SPARK Capacity Building Center](https://www.spark.edu.au)
+
+## conmat
+
+Synthetic contact matrix generation based on contact diary surveys, and models of population-specific factors.
+
+Coauthors: Nick Tierney, Nick Golding.
+
+Available on [GitHub](https://github.com/MikeLydeamore/conmat).

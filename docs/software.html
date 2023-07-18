@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Michael Lydeamore - About</title>
+<title>Michael Lydeamore - Software</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/favicon.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,6 +71,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/favicon.jpg" alt="" class="navbar-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Michael Lydeamore</span>
     </a>
@@ -84,12 +88,24 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./cv.html">
+ <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./recipes/index.html">
- <span class="menu-text">Recipes</span></a>
+    <a class="nav-link active" href="./software.html" aria-current="page">
+ <span class="menu-text">Software</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.twitter.com/MikeLydeamore"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/MikeLydeamore"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
@@ -98,18 +114,26 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hospitalnetwork" id="toc-hospitalnetwork" class="nav-link active" data-scroll-target="#hospitalnetwork">HospitalNetwork</a></li>
+  <li><a href="#condensr" id="toc-condensr" class="nav-link" data-scroll-target="#condensr">condensr</a></li>
+  <li><a href="#conmat" id="toc-conmat" class="nav-link" data-scroll-target="#conmat">conmat</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Software</h1>
 </div>
 
 
@@ -124,9 +148,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>About this site</p>
+<section id="hospitalnetwork" class="level2">
+<h2 class="anchored" data-anchor-id="hospitalnetwork">HospitalNetwork</h2>
+<p>A functional approach to building hospital networks from data on hospitalised patients who are transferred through and between hospitals.</p>
+<p>Aims to provide a common framework to build and analyse these (static) networks.</p>
+<p>Coauthors: Pascal Crepey, Tjibbe Donker.</p>
+<p>Available on <a href="https://cran.r-project.org/package=HospitalNetwork">CRAN</a> and <a href="https://github.com/PascalCrepey/HospitalNetwork">GitHub</a></p>
+</section>
+<section id="condensr" class="level2">
+<h2 class="anchored" data-anchor-id="condensr">condensr</h2>
+<p>An easy-to-use, fast framework for generating academic “group” websites. Fundamentally, it is a bunch of Quarto templates with some convenient wrappers.</p>
+<p>Available on <a href="https://github.com/MikeLydeamore/condensr">GitHub</a>.</p>
+<p>Used for:</p>
+<ul>
+<li><a href="https://www.spectrum.edu.au/">SPECTRUM CRE</a></li>
+<li><a href="https://www.spark.edu.au">SPARK Capacity Building Center</a></li>
+</ul>
+</section>
+<section id="conmat" class="level2">
+<h2 class="anchored" data-anchor-id="conmat">conmat</h2>
+<p>Synthetic contact matrix generation based on contact diary surveys, and models of population-specific factors.</p>
+<p>Coauthors: Nick Tierney, Nick Golding.</p>
+<p>Available on <a href="https://github.com/MikeLydeamore/conmat">GitHub</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -263,6 +309,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><b>Dr.&nbsp;Michael Lydeamore</b><br> Lecturer in Business Analytics<br> Monash University<br> © Copyright 2023 Michael Lydeamore</div>   
+    <div class="nav-footer-right"><i class="bi bi-twitter"></i> <a href="https://www.twitter.com/MikeLydeamore"><span class="citation" data-cites="MikeLydeamore">@MikeLydeamore</span></a><br> <i class="bi bi-github"></i> <a href="https://github.com/MikeLydeamore">MikeLydeamore</a><br> <i class="bi bi-envelope"></i> <a href="mailto:michael.lydeamore@monash.edu">michael.lydeamore@monash.edu</a><br> <i class="bi bi-geo-alt-fill"> </i>Clayton, VIC, Australia</div>
+  </div>
+</footer>
 
 
 

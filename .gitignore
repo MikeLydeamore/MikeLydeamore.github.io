@@ -3,3 +3,4 @@ _site
 .jekyll-metadata
 
 /.quarto/
+.DS_Store

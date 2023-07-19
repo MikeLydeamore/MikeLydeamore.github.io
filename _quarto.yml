@@ -18,6 +18,8 @@ website:
         text: CV
       - href: software.qmd
         text: Software
+      - href: blog/index.qmd
+        text: Blog
     right:
       - icon: twitter
         href: https://www.twitter.com/MikeLydeamore

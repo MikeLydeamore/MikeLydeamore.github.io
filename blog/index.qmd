@@ -1,0 +1,16 @@
+---
+title: "Blog"
+description: Thoughts on research, teaching, and musings
+listing:
+    contents: .
+    sort: "date desc"
+    feed:
+        title: "Blog"
+        description: "Blog posts by Dr Michael Lydeamore"
+    type: default
+    categories: unnumbered
+    sort-ui: [date,title]
+    filter-ui: [date,title,categories]
+page-layout: full
+comments: false
+---

@@ -33,5 +33,11 @@
       "/recipes/vinaigrette/vinaigrette.html",
       "/recipes/zoodle-alfredo-with-bacon/zoodle-alfredo-with-bacon.html"
     ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/reducing-teaching-duplication-with-unilur/index.html"
+    ]
   }
 ]

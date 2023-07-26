@@ -1,22 +1,49 @@
 ---
-title: "Recipes"
-listing:
-  contents: .
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  feed: true
-page-layout: full
-title-block-banner: true
-engine: knitr
+title: "One-pot Pumpkin Curry"
+
+date: 2023-05-19
+categories: [curry, pumpkin]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
 ---
 
+# One-pot Pumpkin Curry
+
+Might be good might be bad
+
+## Ingredients
+
+* 1 1&frasl;2 tbsp coconut oil
+* 1 medium shallot
+* 2 tbsp crushed ginger
+* 2 tbsp minced garlic
+* 1 small red chilli
+* 1 red capsicum, thinly sliced
+* 3 tbsp Thai curry paste
+* 3 1&frasl;2 cups peeled, cubed pumpkin
+* 400mL light coconut milk
+* 2 tbsp maple syrup
+* 1 tsp ground tumeric
+* 1 pinch sea salt
+* 1 tbsp soy sauce
+* 1 cup broccoli
+* 2 tbsp lemon juice
+* 2&frasl;3 cup roasted cashews
 
 
-```{css, echo = FALSE}
-.quarto-title-meta {
-  display: none!important;
-}
-```
+## Method
+
+Heat a large pot overm edium heat. Once hot, add coconut oil, shallot, ginger, garlic, and pepper. Saute for 2-3 minutes stirring frequently.
+
+Add capsicum and curry paste. Cook for 2 minutes. Add pumpkin and cook for 2 minutes.
+
+Add coconut milk, maple syrup, tumeric, sea salt, and soy sauce. Bring to a simmer.
+
+Once simmering, slightly reduce heat to low and cover. Cook for 10-15 minutes, stirring occasionally.
+
+Add broccoli, lemon juice and cashes, and cover. Simmer for 3-4 minuets over low heat.
+
+_Optional_: Scoop half the broth out and beldn until smooth.

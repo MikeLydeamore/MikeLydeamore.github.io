@@ -14,9 +14,9 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: cv.qmd
+      - href: cv/index.qmd
         text: CV
-      - href: software.qmd
+      - href: software/index.qmd
         text: Software
       - href: blog/index.qmd
         text: Blog

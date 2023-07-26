@@ -5,3 +5,4 @@ _site
 /.quarto/
 .DS_Store
 ./_site/
+rename_en_masse.sh

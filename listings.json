@@ -4,5 +4,38 @@
     "items": [
       "/blog/reducing-teaching-duplication-with-unilur/index.html"
     ]
+  },
+  {
+    "listing": "/recipes/index.html",
+    "items": [
+      "/recipes/pumpkin-macaroni-cheese/index.html",
+      "/recipes/bircher-oats/index.html",
+      "/recipes/spinach-puff-pastry-with-fetta-and-ricotta/index.html",
+      "/recipes/red-lentil-and-chorizo-soup/index.html",
+      "/recipes/keto-broccoli-salad/index.html",
+      "/recipes/fish-soup/index.html",
+      "/recipes/spring-goddess-sandwich/index.html",
+      "/recipes/chickpea-salad/index.html",
+      "/recipes/stuffed-capsicum/index.html",
+      "/recipes/macaroons/index.html",
+      "/recipes/dressed-herring/index.html",
+      "/recipes/bacon-wrapped-cauliflower/index.html",
+      "/recipes/breaded-lamb-chops/index.html",
+      "/recipes/cauliflower-salad/index.html",
+      "/recipes/baked-cod-with-herb-crust/index.html",
+      "/recipes/skewer-marinade/index.html",
+      "/recipes/pumpkin-and-pancetta-macaroni-cheese/index.html",
+      "/recipes/pea-and-ham-soup/index.html",
+      "/recipes/french-onion-soup/index.html",
+      "/recipes/zoodle-alfredo-with-bacon/index.html",
+      "/recipes/lemon-curd/index.html",
+      "/recipes/mushroom-meatballs/index.html",
+      "/recipes/pickle-soup/index.html",
+      "/recipes/vinaigrette/index.html",
+      "/recipes/lemongrass-and-ginger-fish-parcels/index.html",
+      "/recipes/mushroom-buckwheat-risotto/index.html",
+      "/recipes/moroccan-beef/index.html",
+      "/recipes/meatballs/index.html"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 ---
 title: "Dr Michael Lydeamore"
-image: images/michael-lydeamore.png
+image: images/michael-lydeamore.jpg
 about:
     id: hero-heading
     template: trestles

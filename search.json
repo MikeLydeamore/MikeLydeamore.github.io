@@ -46,7 +46,42 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nReducing duplication in teaching materials\n\n\n\n\n\n\n\nquarto\n\n\nteaching\n\n\n\n\n\n\n\n\n\n\n\nJul 19, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\ncondensr: The academic website generator\n\n\n\n\n\n\n\nquarto\n\n\nsoftware\n\n\n\n\n\n\n\n\n\n\n\nJul 19, 2023\n\n\n\n\n\n\n  \n\n\n\n\nReducing duplication in teaching materials\n\n\n\n\n\n\n\nquarto\n\n\nteaching\n\n\n\n\n\n\n\n\n\n\n\nJul 19, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/condensr-academic-website-generator/index.html",
+    "href": "blog/condensr-academic-website-generator/index.html",
+    "title": "condensr: The academic website generator",
+    "section": "",
+    "text": "Everything needs a website. Products, startups, papers… as we all spend more and more of our lives online, the requirement to have a website only grows. I mean, this must be why Squarespace seems to sponsor every second YouTube and podcast creator!\nBut, building a website is a pain. Despite the myriad of tools available to try and make it easier. The internet is littered with no longer maintained websites, started by people with the best of intentions. Perhaps this is because it turns out to be far more work than expected, perhaps it’s because the money has run out to pay someone to maintain it."
+  },
+  {
+    "objectID": "blog/condensr-academic-website-generator/index.html#quarto-our-saviour.",
+    "href": "blog/condensr-academic-website-generator/index.html#quarto-our-saviour.",
+    "title": "condensr: The academic website generator",
+    "section": "Quarto, our saviour.",
+    "text": "Quarto, our saviour.\nEnter Quarto. On it’s very front page, it promises to “publish reprocucible, production quality websites”. Sounds like the dream! And to an extent, it is. With three small commands (or one button push in RStudio), anyone can have a nice looking website ready to go.\nThe challenge, then, is taking the ‘reprocubility’ and ‘automation’ aims of Quarto to the next level for producing websites. Traditional content management systems (CMSs) have a powerful database architechture, that when paired with a nice front-end, let people upload and cross-link content across the website quickly and easily.\nNo such system exists for a Quarto website. This is perhaps fine for a small blog or a website with only a handful of interconnected components, but rapidly gets out of hand for even small scale linking."
+  },
+  {
+    "objectID": "blog/condensr-academic-website-generator/index.html#where-this-is-no-solution-a-solution-is-needed",
+    "href": "blog/condensr-academic-website-generator/index.html#where-this-is-no-solution-a-solution-is-needed",
+    "title": "condensr: The academic website generator",
+    "section": "Where this is no solution, a solution is needed",
+    "text": "Where this is no solution, a solution is needed\nThis was the motivation behind creating condensr, a package that comes close to an in-memory database and will automagically cross-link people with their projects and publications, with some nice in-built styling.\nUsers can specify staff members, their projects and their publications, and all is output in a nice, consistent and cross-linked format.\nFor example, here is a screenshot of the SPECTRUM website, which is using a condensr system to generate it’s pages:\n\nPublications automatically appear below staff pages, as do projects, and a short description of the staff member."
+  },
+  {
+    "objectID": "blog/condensr-academic-website-generator/index.html#the-condensr-data-structure",
+    "href": "blog/condensr-academic-website-generator/index.html#the-condensr-data-structure",
+    "title": "condensr: The academic website generator",
+    "section": "The condensr data structure",
+    "text": "The condensr data structure\nThe package let’s users sort out their own data storage system. For very small projects, you can even code these directly in R, since all the package wants is objects of class staff_member, project and publication respectively, each of which has their own constructors.\nAs an example, below is the code that is produced by condensr::create_website:\n\n\nThis code chunk is long, so click here to see it\nlibrary(condensr)\n\nstaff_list &lt;- list(\n    \"joe-bloggs\" = staff_member(\n        id = \"joe-bloggs\",\n        name = \"Joe Bloggs\",\n        description = \"Joe is a Dr of Blogging.\",\n        external_link = \"https://www.example.com/\"\n    )\n)\n\npublication_list &lt;- list(\n    publication(\n        title = \"Joe's Blogging Paper\",\n        related_staff = c(\"joe-bloggs\"),\n        link = NA,\n        citation = \"Bloggs, J., Bloggy, Y. (2019), The power of blogging, Australian Journal of Bloggs, 43: 149-155.\",\n        date = as.Date(\"2019-01-01\")\n    )\n)\n\n# Sort the publications by their date\npublication_list &lt;- sort_list_by_date(publication_list)\n\nproject_list &lt;- list(\n    project(\n        id = \"joes-model\",\n        name = \"Joe's Blogging Model\",\n        related_staff = \"joe-bloggs\"\n    )\n)\n\n\nYou could expand this list to be as long as you like.\nFor medium sized pursuits, I think this would get out of hand pretty quickly. For the two websites I’ve built during this package development, all the data is contained in two Google sheets, and a shared drive for the photos. You can see the source code for those on GitHub."
+  },
+  {
+    "objectID": "blog/condensr-academic-website-generator/index.html#the-web-is-not-one-size-fits-all",
+    "href": "blog/condensr-academic-website-generator/index.html#the-web-is-not-one-size-fits-all",
+    "title": "condensr: The academic website generator",
+    "section": "The web is not one-size-fits-all",
+    "text": "The web is not one-size-fits-all\nThis package will be useful for a bunch of small groups to build websites quickly. But, it isn’t a fully featured CMS, and doesn’t pretend to be. If you have a big group, a lot of content, or will be around for a long time, then I would say look elsewhere.\nBut, if you want to knock up a website that looks pretty good, pretty quickly, and will allow you to keep your presence up to date with news, publications and new staff, then check out condensr, it might just serve your needs."
   },
   {
     "objectID": "blog/reducing-teaching-duplication-with-unilur/index.html",

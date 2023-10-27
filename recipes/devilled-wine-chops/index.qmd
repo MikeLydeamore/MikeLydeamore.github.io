@@ -1,0 +1,36 @@
+---
+title: "Devilled Wine Chops"
+
+date: 2023-10-28
+categories: [chicken, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Devilled Wine Chops
+
+Mum used to make this for me. It's very easy to do, just need a big oven dish really.
+
+## Ingredients
+
+* 6 lamb chops
+* 1 clove garlic
+* 1 tbsp Worcestershire sauce
+* 1 tbsp lemon juice
+* 3 tbsp red wine
+* 1 tsp celery salt
+* 1 onion
+* 2 tsp mustard powder
+* 1 tin tomato soup
+
+
+## Method
+
+Place chops into a greased casserole dish. Sprinkle with salt and pepper. Bake at 180&deg;C for 45 minutes.
+
+Remove from oven and pour off fat.
+
+Chop onion and crush garlic. Combine with remaining ingredients in a saucepan. Bring to the boil. Pour over chops and bake for a further 45 minutes at 180&deg;C.

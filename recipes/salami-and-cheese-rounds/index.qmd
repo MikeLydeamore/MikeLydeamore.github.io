@@ -1,0 +1,31 @@
+---
+title: "Salami and Cheese Rounds"
+
+date: 2023-10-28
+categories: [lunch]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Salami and Cheese Rounds
+
+Standard burger patties. Everything you can think of to try and stop them falling apart.
+
+## Ingredients
+
+* 1 bread stick
+* 125g cream cheese
+* 1 cup grated cheese
+* &frac12; cup salami
+* 2 tbsp chives
+* 2 tbsp sun dried tomatoes
+
+
+## Method
+
+Chop slami, sun dried tomatoes and chives. Mix together with cheese in a bowl.
+
+Slice bread stick into discs. Spread topping on top of discs and grill until golden.recipes/burgers

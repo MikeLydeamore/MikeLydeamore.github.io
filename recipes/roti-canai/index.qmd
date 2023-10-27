@@ -1,0 +1,34 @@
+---
+title: "Roti Canai"
+
+date: 2023-10-28
+categories: [dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Roti Canai
+
+Careful not to overwork the dough. But it's actually pretty quick and easy to make.
+
+## Ingredients
+
+* 300g (2 cups) plain bread flour
+* &frac12; tsp salt
+* 125ml (&frac12; cup) chilled water
+* 30g butter, melted
+* 60ml (&frac14; cup) vegetable oil
+
+
+
+
+## Method
+
+Combine the flour and salt in a large bowl. Make a well in the centre. Add the water and stir to combine. Use your hands to bring the dough together in the bowl. Turn onto a lightly floured surface and knead for 5 minutes or until smooth. Flatten the dough into a disc and cut into 8 equal portions.
+
+Shape each dough portion into a ball. Use a lightly floured rolling pin to roll out 1 portion of dough to a 20cm-diameter disc. Cover the remaining dough portions with plastic wrap. Brush the disc with a little melted butter. Roll into a log to enclose the butter. Coil the dough into a scroll shape. Flatten the scroll into a disc. Use a lightly floured rolling pin to roll out the disc until 15-20cm in diameter. Repeat with the remaining dough portions.
+
+Place a deep, heavy-based frying pan over medium-high heat and brush with a little oil. Cook 1 roti for 2 minutes each side or until puffed and golden. Transfer to a serving platter and cover with a clean tea towel to keep warm. Repeat with the remaining roti.

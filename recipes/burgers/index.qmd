@@ -1,0 +1,30 @@
+---
+title: "Burgers"
+
+date: 2023-10-28
+categories: [beef, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Burgers
+
+Standard burger patties. Everything you can think of to try and stop them falling apart.
+
+## Ingredients
+
+* 500g beef mine
+* 1 carrot
+* 1 onion
+* 1 tbsp tomato sauce
+* 1 tbsp Worcertershire sauce
+* 2 tsp soy sauce
+* &frac12; cup breadcrumbs
+
+
+## Method
+
+Finely chop carrot and onion. Mix together all ingredients. Refrigerate if possible (not required). Shape into 6-8 patties, and pan fry for approximately 5 minutes per side or until cooked through.

@@ -1,5 +1,5 @@
 {
-  "hash": "02379ba5770af2ffd1313c4a99184a42",
+  "hash": "b87f2cdca37ccf738c4737a0143a6426",
   "result": {
     "markdown": "---\ntitle: \"Recipes\"\ndescription: It's some recipes\nlisting:\n  contents: .\n  sort: \"date desc\"\n  type: default\n  categories: true\n  sort-ui: false\n  filter-ui: false\npage-layout: full\ntitle-block-banner: true\ncomments: false\nengine: knitr\n---\n\n::: {.cell}\n<style type=\"text/css\">\n.quarto-title-meta {\n  display: none!important;\n}\n</style>\n:::",
     "supporting": [],

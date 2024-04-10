@@ -1,0 +1,44 @@
+---
+title: "Lamb Noodles"
+
+date: 2023-10-28
+categories: [lamb, dinner, noodles]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Lamb Noodles
+
+Lemony, easy to overcook the lamb. It is kind-of a stirfry so be ready fora lot of chopping.
+
+## Ingredients
+
+* 250g egg noodles
+* 2 tbsp vegetable oil
+* 500g diced lamb
+* 2 carrots
+* 1 red capsicum
+* 1 yellow capsicum
+* 200g pak choi
+* 200g bean sprouts
+* 4 spring onions
+* 4 tbsp oyster sauce
+* 1 tbsp soy sauce
+* 2 tbsp honey
+* Zest and juice of &frac12; lemon
+
+
+## Method
+
+Cut carrots and capsicums into matchsticks. Cut spring onions into thin strips.
+
+Prepare noodles according to packet directions, drain well.
+
+Heat oil in a large pan until hot. Add the lamb, stir-fry for 5 minutes or until seared on all sides.
+
+Add carrots and capsicums, and stir-fry for 4 minutes or until softened. Add the pak choi, bean sprouts and spring onions, cook for a further minute.
+
+Reduce the heat, add drained noodles, oyster sauce, soy sauce, honey, lemon zest, juice and seasoning. Combine well and fry for 2 minutes or until everything is hot and cooked through.

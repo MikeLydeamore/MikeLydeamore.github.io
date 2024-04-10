@@ -1,0 +1,41 @@
+---
+title: "Chicken with Lemon and Cilantro Couscous"
+
+date: 2023-10-28
+categories: [chicken, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Chicken with Lemon and Cilantro Couscous
+
+Very tasty. Doesn't look like much marinade but it will be enough for 2 large chicken breasts. I recommend grilling on a BBQ.
+
+## Ingredients
+
+* 2 large chicken breasts
+* 1 tbsp olive oil
+* 1 clove garlic, crushed
+* 1 tsp ground coriander
+* 1 tsp ground ginger
+* 1 tsp ground cinnamon
+* Pinch of cayenne pepper
+* 1 tsp salt
+* 1 lemon, juiced
+* 250g couscous
+* 30g butter
+* &frac14; cup fresh coriander, chopped
+* 100g pitted black olives, chopped
+* Pepper
+
+
+## Method
+
+Combine chicken with oil, garlic, ground spices, cayenne pepper, salt and 1 tbsp of lemon juice. Cut chicken into cubes, and toss in marinade. Leave to marinade for as long as possible.
+
+Soak wooden skewers in water for 10 minutes. Thread chicken onto the skewers, and grill for 8-10 minutes, turning occasionally until cooked through.
+
+Prepare couscous according to packet instructions. Fluff with a fork. Stir in butter, remaining lemon juice, coriander and olives, and season.

@@ -1,0 +1,39 @@
+---
+title: "Florentine Pork with Chickpeas"
+
+date: 2023-10-28
+categories: [pork, dinner, chickpeas]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Florentine Pork with Chickpeas
+
+Fennel-y, porky, smooth. Doesn't take long to cook either.
+
+## Ingredients
+
+* 2 tbsp olive oil
+* 1 onion
+* 1 clove garlic, crushed
+* 1 small red chilli
+* 500g pork loin, cut into strips
+* 4 tbsp white wine
+* 1 tsp fennel seeds
+* 1 tin chickpeas
+* 250g baby spinach
+* 3 tbsp mascarpone
+
+
+## Method
+
+Finely chop onion and red chilli. Heat oil in a large frying pan. Fry onion for 4 minutes until softened. Add garlic and chilli, cook for a further minute.
+
+Stir in the strips of pork and cook, stirring, over a medium-high heat for 5 minutes or until golden and cooked through. Stir in the wine and fennel seeds, simmer for 3 minutes.
+
+Add the chickpeas, then the spinach and stir over a high heat for4 minutes, or until spinach has wilted and liquid has evaporated.
+
+Stir in the mascarpone and season. Serve with steamed rice.

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -55,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -64,6 +71,33 @@ ul.task-list li input[type="checkbox"] {
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="assets/cv.css">
 </head>
@@ -72,9 +106,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../images/favicon.jpg" alt="" class="navbar-logo">
     </a>
@@ -89,37 +123,37 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../cv/index.html" rel="" target="" aria-current="page">
- <span class="menu-text">CV</span></a>
+    <a class="nav-link active" href="../cv/index.html" aria-current="page"> 
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../software/index.html" rel="" target="">
- <span class="menu-text">Software</span></a>
+    <a class="nav-link" href="../software/index.html"> 
+<span class="menu-text">Software</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
+    <a class="nav-link" href="../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.twitter.com/MikeLydeamore" rel="" target=""><i class="bi bi-twitter" role="img">
+    <a class="nav-link" href="https://www.twitter.com/MikeLydeamore"> <i class="bi bi-twitter" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/MikeLydeamore" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/MikeLydeamore"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -136,14 +170,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education"><i class="bi bi-mortarboard-fill"></i> Education</a></li>
   <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications"><i class="bi bi-journals"></i> Publications</a>
   <ul class="collapse">
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2023</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2022</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2021</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2020</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2019</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2018</a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2017</a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2016</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2024</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2022</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2021</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2020</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2019</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2018</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2017</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2016</a></li>
   </ul></li>
   <li><a href="#funding" id="toc-funding" class="nav-link" data-scroll-target="#funding"><i class="bi bi-cash-stack"></i> Funding</a></li>
   <li><a href="#conference-presentations-and-contributed-talks" id="toc-conference-presentations-and-contributed-talks" class="nav-link" data-scroll-target="#conference-presentations-and-contributed-talks"><i class="bi bi-chat-quote"></i> Conference presentations and contributed talks</a></li>
@@ -168,7 +203,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -176,14 +211,16 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <div class="print-only contact-block">
 <p>michael.lydeamore@monash.edu</p>
 </div>
 <section id="appointments-held" class="level2 aos-init aos-animate">
 <h2 class="anchored" data-anchor-id="appointments-held"><i class="bi bi-briefcase-fill"></i> Appointments Held</h2>
-<p><strong>Lecturer – Econometrics and Business Statistics</strong> <br> <em>Monash University</em> <span class="cvdate"><em>2021 —</em></span></p>
+<p><strong>Senior Lecturer – Econometrics and Business Statistics</strong> <br> <em>Monash University</em> <span class="cvdate"><em>2021 —</em></span></p>
 <p><strong>COVID-19 Modelling &amp; Forecasting Lead <br>Manager, Analytics</strong><br> <em>Department of Health and Human Services, Victoria</em> <span class="cvdate"><em>2020</em></span></p>
 <p><strong>Postdoctoral Research Fellow</strong><br> <em>Monash University</em> <span class="cvdate"><em>2019 — 2021</em></span></p>
 <p><strong>Honorary Team Member</strong><br> <em>SaferCare Victoria</em> <span class="cvdate"><em>2019 —</em></span></p>
@@ -203,40 +240,45 @@ ul.task-list li input[type="checkbox"] {
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications"><i class="bi bi-journals"></i> Publications</h2>
 <section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">2023</h3>
-<p><strong>The incidence of nosocmial bloodstream infection and urinary tract infection in Australian hospitals before and during the COVID-19 pandemic: an interrupted time series study</strong> <br> <em>Antimicrobial Resistance and Infection Control</em> <br> <span class="smaller">Mitchell, B.G., Stewardson, A.J., Kerr, L, Ferguson, J.K., Curtis, S., Busija, Ljoudmila, <strong>Lydeamore, M.J.</strong>, Graham, K., Russo, P.L. <br> DOI: <a href="https://doi.org/10.1186/s13756-023-01268-2">10.1101/2021.10.05.21264587</a></span></p>
+<h3 class="anchored" data-anchor-id="section">2024</h3>
+<p><strong>Estimating the impact of test-trace-isolate-quarantine systems on SARS-CoV-2 transmission in Australia</strong> <br> <em>Epidemics</em> <br> <span class="smaller">Shearer, F.M., McCaw, J.M., Ryan, G.E., Hao, T., Tierney, N.J., <strong>Lydeamore, M.J.</strong>, Wu, L., Ward, K., Ellis, S., Wood, J., McVernon, J., Golding, G. <br> DOI: <a href="https://doi.org/10.1016/j.epidem.2024.100764">10.1016/j.epidem.2024.100764</a></span></p>
 </section>
 <section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1">2022</h3>
+<h3 class="anchored" data-anchor-id="section-1">2023</h3>
+<p><strong>COVID-19 vaccine coverage targets to inform reopening plans in a low incidence setting</strong> <br> <em>Proceedings of the Royal Society: Series B</em> <br> <span class="smaller">Conway, E., Walker, C.R., Baker, C., <strong>Lydeamore, M.J.</strong>, Ryan, G.E., Campbell, T., Miller, J.C., Rebuli, N., Yeung, M., Kabashima, G., Geard, N., Wood, J., McCaw, J.M., McVernon, J., Golding, N., Price, D.J., Shearer, F.M. <br> DOI: <a href="https://doi.org/10.1098/rspb.2023.1437">10.1098/rspb.2023.1437</a></span></p>
+<p><strong>The incidence of nosocmial bloodstream infection and urinary tract infection in Australian hospitals before and during the COVID-19 pandemic: an interrupted time series study</strong> <br> <em>Antimicrobial Resistance and Infection Control</em> <br> <span class="smaller">Mitchell, B.G., Stewardson, A.J., Kerr, L, Ferguson, J.K., Curtis, S., Busija, Ljoudmila, <strong>Lydeamore, M.J.</strong>, Graham, K., Russo, P.L. <br> DOI: <a href="https://doi.org/10.1186/s13756-023-01268-2">10.1101/2021.10.05.21264587</a></span></p>
+</section>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">2022</h3>
 <p><strong>Burden of five healthcare associated infections in Australia</strong> <br> <em>Antimicrobial Resistance and Infection Control</em> <br> <span class="smaller"><strong>Lydeamore, M. J.</strong>, Mitchell, B. G., Bucknall, T., Cheng, A.C., Russo, P. L., Stewardson, A. J. <br> DOI: <a href="https://doi.org/10.1186/s13756-022-01109-8">10.1101/2021.10.05.21264587</a></span></p>
 <p><strong>COVID-19 in low-tolerance border quarantine systems: impact of the Delta variant of SARS-CoV-2</strong> <br> <em>Science Advances</em> <br> <span class="smaller">Zachreson, C., Sharer, F. M., Price, D. J., <strong>Lydeamore, M. J.</strong>, McVernon, J., McCaw, J., Geard, N. G. <br> DOI: <a href="https://doi.org/10.1126/sciadv.abm3624">10.1126/sciadv.abm3624</a></span></p>
 </section>
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">2021</h3>
+<section id="section-3" class="level3">
+<h3 class="anchored" data-anchor-id="section-3">2021</h3>
 <p><strong>Population-based analysis of the epidemiological features of COVID-19 epidemics in Victoria, Australia, January 2020-March 2021, and their suppression through comprehensive control strategies</strong> <br> <em>Lancet Regional Health — Western Pacific</em> <br> <span class="smaller">Sullivan, S. G., Brotherton, M. L., Lynch, B. M., Cheung, A. <strong>Lydeamore, M.J.</strong>, Stevenson, M., Firestone, S., Canevari, J., Nguyen, H.N.J., Carville, S., Clothier, H.J., , Sutton, B., Rowe, S. L. <br> DOI: <a href="https://doi.org/10.1016/j.lanwpc.2021.100297">10.1016/j.lanwpc.2021.100297</a></span></p>
 <p><strong>Mathematical models to support Victoria’s COVID-19 response: a blunt instrument to a complex problem</strong> <br> <em>AustMS Journal</em> <br> <span class="smaller"><strong>Lydeamore, M.J.</strong></span></p>
 <p><strong>Understanding how Victoria, Australia gained control of its second COVID-19 wave</strong> <br> <em>Nature Communications</em> <br> <span class="smaller">Trauer, J.M., <strong>Lydeamore, M. J.</strong>, Dalton, G. W., Meehan, M.T., McBryde, E. S., Cheng, A. C., Sutton, B., Ragonnet, R. <br> DOI: <a href="https://doi.org/10.1038/s41467-021-26558-4">10.1038/s41467-021-26558-4</a></span></p>
 <p><strong>Risk mapping for COVID-19 outbreaks in Australia using mobility data</strong> <br> <em>Royal Society: Interface</em> <br> <span class="smaller">Zachreson, C., Mitchell, L., <strong>Lydeamore, M. J.</strong>, Rebuli, N., Tomko, M., Geard, N. <br> DOI: <a href="https://doi.org/10.1098/rsif.2020.0657">10.1098/rsif.2020.0657</a></span></p>
 </section>
-<section id="section-3" class="level3">
-<h3 class="anchored" data-anchor-id="section-3">2020</h3>
+<section id="section-4" class="level3">
+<h3 class="anchored" data-anchor-id="section-4">2020</h3>
 <p><strong>Estimation of the force of infection and infectious period of skin sores in remote Australian communities using interval-censored data</strong> <br> <em>PLoS Computational Biology</em> <br> <span class="smaller"><strong>Lydeamore, M. J.</strong>, Campbell, P.T., Price, D.J., Wu,Y., Marcato, A.J., Cuningham, W., Carapetis, J.R., Andrews, R.M., McDonald, M.I., McVernon, J., Tong, S.Y.C., McCaw, J.M. <br> DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007838">10.1371/journal.pcbi.1007838</a></span></p>
 </section>
-<section id="section-4" class="level3">
-<h3 class="anchored" data-anchor-id="section-4">2019</h3>
+<section id="section-5" class="level3">
+<h3 class="anchored" data-anchor-id="section-5">2019</h3>
 <p><strong>A biological model of scabies infection dynamics and treatment informs mass drug administration strategies to increase the likelihood of elimination</strong> <br> <em>Mathematical Biosciences</em> <br> <span class="smaller"><strong>Lydeamore, M. J.</strong>, Campbell, P. T., Regan, D.G., Tong, S., Andrews, R., Steer, A.C., Romani, L., Kaldor, J., McVernon, J., McCaw, J.M. <br> DOI: <a href="https://doi.org/10.1016/j.mbs.2018.08.007">10.1016/j.mbs.2018.08.007</a></span></p>
 <p><strong>High Burden if Infectious Disease and Antibiotic Use in Early Life in Aboriginal Communities</strong> <br> <em>Australia and New Zealand Journal of Public Health</em> <br> <span class="smaller">Cuningham, W., McVernon, J., <strong>Lydeamore, M. J.</strong>, Andrews, R. M., Carapetis, J., Kearns, T., Clucas, D., Gundjirryirr Dhurrkay, R., Tong, S. Y. C., Campbell, P. T. <br> DOI: <a href="https://doi.org/10.1111/1753-6405.12876">10.1111/1753-6405.12876</a></span></p>
 </section>
-<section id="section-5" class="level3">
-<h3 class="anchored" data-anchor-id="section-5">2018</h3>
+<section id="section-6" class="level3">
+<h3 class="anchored" data-anchor-id="section-6">2018</h3>
 <p><strong>Calculation of the age of first infection for skins sores and scabies in five remote communities in northern Australia</strong> <br> <em>Epidemiology &amp; Infection</em> <span class="smaller"><strong>Lydeamore, M. J.</strong>, Campbell, P. T., Cuningham, W., Andrews, R., Kearns, T., Clucas, D., Gundjirryirr Dhurrkay, R., Carapetis, J., Tong, S. Y. C., McCaw, J. M., McVernon, J. <br> DOI: <a href="https://doi.org/10.1017/S0950268818001061">10.1017/S0950268818001061</a></span></p>
 </section>
-<section id="section-6" class="level3">
-<h3 class="anchored" data-anchor-id="section-6">2017</h3>
+<section id="section-7" class="level3">
+<h3 class="anchored" data-anchor-id="section-7">2017</h3>
 <p><strong>Indigenous Australia household structure — implications for close contact transmission of communicable diseases</strong> <br> <em>PeerJ</em> <span class="smaller">Vino, T., Davison, B., Campbell, P. T., <strong>Lydeamore, M. J.</strong>, McVernon, J., Singh, G., Tong, S. Y. C., Robinson, A., Geard, N. <br> DOI: <a href="https://doi.org/10.7717/peerj.3958">10.7717/peerj.3958</a></span></p>
 </section>
-<section id="section-7" class="level3">
-<h3 class="anchored" data-anchor-id="section-7">2016</h3>
+<section id="section-8" class="level3">
+<h3 class="anchored" data-anchor-id="section-8">2016</h3>
 <p><strong>Choice of antiviral allocation scheme for pandemic influenza depends on strain transmissibility, delivery delay and stockpile size</strong> <br> <em>Bulletin of Mathematical Biology</em> <span class="smaller"><strong>Lydeamore, M.</strong>, Bean, N., Black, A. J., Ross, J. V. <br> DOI: <a href="http://doi.org/10.1007/s11538-016-0144-6">10.1007/s11538-016-0144-6</a></span></p>
 </section>
 </section>
@@ -279,7 +321,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="teaching"><i class="bi bi-building"></i> Teaching</h2>
 <section id="lecturer" class="level3">
 <h3 class="anchored" data-anchor-id="lecturer">Lecturer</h3>
-<p>[ETC5523] <strong>Communicating With Data</strong> (Chief Examiner) <span class="cvdate"><em>2023</em></span></p>
+<p>[ETC5513] <strong>Reproducible and Collaborative practices</strong> (Chief Examiner) <span class="cvdate"><em>2024–</em></span></p>
+<p>[ETC5523] <strong>Communicating With Data</strong> (Chief Examiner) <span class="cvdate"><em>2023–</em></span></p>
 <p>[ETC5512] <strong>Wild-Caught Data</strong> <span class="cvdate"><em>2022, 2023</em></span></p>
 <p>[ETC5521] <strong>Exploratory Data Analysis</strong> <span class="cvdate"><em>2022</em></span></p>
 </section>
@@ -407,10 +450,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -420,8 +462,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -434,6 +485,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -477,6 +647,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -502,6 +673,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -564,11 +761,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left"><b>Dr.&nbsp;Michael Lydeamore</b><br> Lecturer in Business Analytics<br> Monash University<br> © Copyright 2023 Michael Lydeamore</div>   
+    <div class="nav-footer-left">
+<p><b>Dr.&nbsp;Michael Lydeamore</b><br> Lecturer in Business Analytics<br> Monash University<br> © Copyright 2023 Michael Lydeamore</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
-    <div class="nav-footer-right"><i class="bi bi-twitter"></i> <a href="https://www.twitter.com/MikeLydeamore"><span class="citation" data-cites="MikeLydeamore">@MikeLydeamore</span></a><br> <i class="bi bi-github"></i> <a href="https://github.com/MikeLydeamore">MikeLydeamore</a><br> <i class="bi bi-envelope"></i> <a href="mailto:michael.lydeamore@monash.edu">michael.lydeamore@monash.edu</a><br> <i class="bi bi-geo-alt-fill"> </i>Clayton, VIC, Australia</div>
+    <div class="nav-footer-right">
+<p><i class="bi bi-twitter"></i> <a href="https://www.twitter.com/MikeLydeamore"><span class="citation" data-cites="MikeLydeamore">@MikeLydeamore</span></a><br> <i class="bi bi-github"></i> <a href="https://github.com/MikeLydeamore">MikeLydeamore</a><br> <i class="bi bi-envelope"></i> <a href="mailto:michael.lydeamore@monash.edu">michael.lydeamore@monash.edu</a><br> <i class="bi bi-geo-alt-fill"> </i>Clayton, VIC, Australia</p>
+</div>
   </div>
 </footer>
 <script src="../assets/aos.js"></script>
@@ -579,6 +780,7 @@ duration: 1000,
 offset: 120
 });
 </script>
+
 
 
 

@@ -236,7 +236,9 @@ Awarded value: $25,620
 
 ### Lecturer
 
-[ETC5523] **Communicating With Data** (Chief Examiner) [*2023*]{.cvdate}
+[ETC5513] **Reproducible and Collaborative practices** (Chief Examiner) [*2024--*]{.cvdate}
+
+[ETC5523] **Communicating With Data** (Chief Examiner) [*2023--*]{.cvdate}
 
 [ETC5512] **Wild-Caught Data** [*2022, 2023*]{.cvdate}
 

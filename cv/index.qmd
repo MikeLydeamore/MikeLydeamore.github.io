@@ -26,7 +26,7 @@ michael.lydeamore@monash.edu
 
 ## <i class="bi bi-briefcase-fill"></i> Appointments Held
 
-**Lecturer -- Econometrics and Business Statistics** <br> *Monash University* [*2021 ---*]{.cvdate}
+**Senior Lecturer -- Econometrics and Business Statistics** <br> *Monash University* [*2021 ---*]{.cvdate}
 
 **COVID-19 Modelling & Forecasting Lead <br>Manager, Analytics**<br> *Department of Health and Human Services, Victoria* [*2020*]{.cvdate}
 
@@ -62,7 +62,20 @@ Graduated with a double major in applied and pure mathematics
 
 ## <i class="bi bi-journals"></i> Publications
 
+### 2024
+**Estimating the impact of test-trace-isolate-quarantine systems on SARS-CoV-2 transmission in Australia** <br> *Epidemics*
+<br>
+[Shearer, F.M., McCaw, J.M., Ryan, G.E., Hao, T., Tierney, N.J., **Lydeamore, M.J.**, Wu, L., Ward, K., Ellis, S., Wood, J., McVernon, J., Golding, G.
+<br>
+DOI: [10.1016/j.epidem.2024.100764](https://doi.org/10.1016/j.epidem.2024.100764)]{.smaller}
+
 ### 2023
+
+**COVID-19 vaccine coverage targets to inform reopening plans in a low incidence setting** <br> *Proceedings of the Royal Society: Series B*
+<br>
+[Conway, E., Walker, C.R., Baker, C., **Lydeamore, M.J.**, Ryan, G.E., Campbell, T., Miller, J.C., Rebuli, N., Yeung, M., Kabashima, G., Geard, N., Wood, J., McCaw, J.M., McVernon, J., Golding, N., Price, D.J., Shearer, F.M.
+<br>
+DOI: [10.1098/rspb.2023.1437](https://doi.org/10.1098/rspb.2023.1437)]{.smaller}
 
 **The incidence of nosocmial bloodstream infection and urinary tract infection in Australian hospitals before and during the COVID-19 pandemic: an interrupted time series study** <br> *Antimicrobial Resistance and Infection Control*
 <br>

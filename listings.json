@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/condensr-academic-website-generator/index.html",
+      "/blog/reducing-teaching-duplication-with-unilur/index.html"
+    ]
+  },
+  {
     "listing": "/recipes/index.html",
     "items": [
       "/recipes/florentine-pork/index.html",
@@ -8,6 +15,7 @@
       "/recipes/burgers/index.html",
       "/recipes/devilled-wine-chops/index.html",
       "/recipes/roti-canai/index.html",
+      "/recipes/lamb-rosemary-pie/index.html",
       "/recipes/lamb-noodles/index.html",
       "/recipes/pumpkin-and-goats-cheese-tart/index.html",
       "/recipes/one-pot-pumpkin-curry/index.html",
@@ -39,13 +47,6 @@
       "/recipes/mushroom-buckwheat-risotto/index.html",
       "/recipes/moroccan-beef/index.html",
       "/recipes/meatballs/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/condensr-academic-website-generator/index.html",
-      "/blog/reducing-teaching-duplication-with-unilur/index.html"
     ]
   }
 ]

@@ -1,0 +1,47 @@
+---
+title: "Ratatouille"
+
+date: today
+categories: [vegetarian, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# `r rmarkdown::metadata$title
+
+
+## Ingredients
+
+- 1 bulb garlic
+- 2 tablespoons + &frac12; teaspoon olive oil, divided
+- 1 eggplant
+- 1 &frac12; teaspoons salt, divided
+- 1 onion, chopped
+- 1 red bell pepper, chopped
+- 3 cups zucchini sliced &frac14;-inch thick
+- 2 cups grape or cherry tomatoes, halved
+- 3 bundles thyme
+- 2 bay leaves
+- 1 teaspoon dried basil
+- 1 teaspoon dried oregano
+- &frac12; teaspoon crushed red pepper
+- &frac14; teaspoon black pepper
+- &frac14; cup Italian parsley, chopped
+- &frac14; cup fresh basil, chopped
+
+## Method
+
+Preheat the oven to 400 F. Cut &frac14; inch off the top of a whole garlic bulb to expose the cloves. Drizzle &frac12; teaspoon of the olive oil over the cut side of the garlic. Cover the garlic with foil and bake for 30 minutes.
+
+Meanwhile, peel the eggplant and cut it into 1-inch chunks. Sprinkle the eggplant with &frac12; teaspoon salt and drain it in a colander for 30 minutes as the garlic cooks.
+
+Remove the garlic from the oven and let it cool down.
+
+Heat the remaining oil over medium-high in a large pot or Dutch oven. Cook the onion and red pepper for 5 minutes, stirring frequently. Add the eggplant, zucchini, tomatoes, thyme bundles, bay leaves, dried basil, dried oregano, red pepper flakes, pepper, and remaining salt to the pan. Lower the heat to medium. Cook the vegetables for 10 to 15 minutes, stirring occasionally. Remove the thyme and bay leaves from the pot.
+
+Remove the garlic cloves from their skins and mash them. Stir the garlic into the ratatouille. Remove pot from heat.
+
+Top the ratatouille with fresh parsley and basil.

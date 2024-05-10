@@ -10,7 +10,7 @@ format:
         toc_float: true
 ---
 
-# `r rmarkdown::metadata$title`
+# `r rmarkdown::metadata$pagetitle`
 
 
 ## Ingredients

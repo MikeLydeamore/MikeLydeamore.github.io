@@ -10,7 +10,7 @@ format:
         toc_float: true
 ---
 
-# `r rmarkdown::metadata$title
+# `r rmarkdown::metadata$title`
 
 
 ## Ingredients
@@ -34,7 +34,7 @@ format:
 
 ## Method
 
-Preheat the oven to 400 F. Cut &frac14; inch off the top of a whole garlic bulb to expose the cloves. Drizzle &frac12; teaspoon of the olive oil over the cut side of the garlic. Cover the garlic with foil and bake for 30 minutes.
+Preheat the oven to 200 C. Cut &frac14; inch off the top of a whole garlic bulb to expose the cloves. Drizzle &frac12; teaspoon of the olive oil over the cut side of the garlic. Cover the garlic with foil and bake for 30 minutes.
 
 Meanwhile, peel the eggplant and cut it into 1-inch chunks. Sprinkle the eggplant with &frac12; teaspoon salt and drain it in a colander for 30 minutes as the garlic cooks.
 

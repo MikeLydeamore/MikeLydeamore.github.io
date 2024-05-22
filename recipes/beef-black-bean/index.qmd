@@ -1,0 +1,41 @@
+---
+title: "Beef and Black Bean Sauce"
+
+date: today
+categories: [beef, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# `{r} rmarkdown::metadata$pagetitle`
+
+
+## Ingredients
+
+- 500g sirloin or rump steak, cut into thin strips
+- 1 clove garlic, crushed
+- 1 small red chili, deseeded and finely chopped
+- 1 tbsp soy fauce
+- Freshly ground black pepper
+- 2 tsp cornflour
+- 1 tbsp water
+- 1 tbsp white wine vinegar
+- 2 tbsp vegetable oil
+- 1 yellow capsicum, cut into strips
+- 1 red capsicum, cut into strips
+- 1 large zucchini, cut into matchsticks
+- 150g snow peas, sliced
+- 3 tbsp black bean stir-fry sauce
+- 4 spring onions, sliced
+
+
+## Method
+
+Combine the steak strips, garlic, chili (if using), soy sauce, and seasoning in a bowl. In another bowl, mix the cornflour with the water until smooth, then stir in the vinegar.
+
+Heat the oil in a wok or large frying pan until very hot. Add the meat and its marinade and stir-fry for 4 minutes, tossing continuously, until it is seared on all sides.
+
+Add the capsicum and stir-fry for 2 minutes. Stir in the zucchini and snow peas and cook for 3 minutes. Reduce the heat and add the cornflour mixture and black bean sauce. Stir to mix thoroughly, then cook for 2 minutes or until the meat and vegetables are cooked through. Scatter with the spring onions just before serving.

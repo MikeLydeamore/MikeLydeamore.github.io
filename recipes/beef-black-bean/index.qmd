@@ -10,7 +10,7 @@ format:
         toc_float: true
 ---
 
-# `{r} rmarkdown::metadata$pagetitle`
+# Beef and Black Bean Sauce
 
 
 ## Ingredients

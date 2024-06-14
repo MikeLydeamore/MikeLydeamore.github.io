@@ -1,16 +1,10 @@
 [
   {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/condensr-academic-website-generator/index.html",
-      "/blog/reducing-teaching-duplication-with-unilur/index.html"
-    ]
-  },
-  {
     "listing": "/recipes/index.html",
     "items": [
       "/recipes/ratatouille/index.html",
       "/recipes/beef-black-bean/index.html",
+      "/recipes/garlic-naan/index.html",
       "/recipes/florentine-pork/index.html",
       "/recipes/salami-and-cheese-rounds/index.html",
       "/recipes/chicken-lemon-couscous/index.html",
@@ -49,6 +43,13 @@
       "/recipes/mushroom-buckwheat-risotto/index.html",
       "/recipes/moroccan-beef/index.html",
       "/recipes/meatballs/index.html"
+    ]
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/condensr-academic-website-generator/index.html",
+      "/blog/reducing-teaching-duplication-with-unilur/index.html"
     ]
   }
 ]

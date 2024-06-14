@@ -63,6 +63,13 @@ Graduated with a double major in applied and pure mathematics
 ## <i class="bi bi-journals"></i> Publications
 
 ### 2024
+
+**Modelling the impact of hybrid immunity on future COVID-19 epidemic waves** <br> *BMC Infectious Diseases*
+<br>
+[Le, T.P., Abell, I., Conway, E., Campbell, P.T., Hogan, A.B., **Lydeamore, M.J.**, McVernon, J., Mueller, I., Walker, C.R., Baker, C.
+<br>
+DOI: [10.1186/s12879-024-09282-4](https://doi.org/10.1186/s12879-024-09282-4)]{.smaller}
+
 **Estimating the impact of test-trace-isolate-quarantine systems on SARS-CoV-2 transmission in Australia** <br> *Epidemics*
 <br>
 [Shearer, F.M., McCaw, J.M., Ryan, G.E., Hao, T., Tierney, N.J., **Lydeamore, M.J.**, Wu, L., Ward, K., Ellis, S., Wood, J., McVernon, J., Golding, G.
@@ -167,6 +174,12 @@ DOI: [10.1007/s11538-016-0144-6](http://doi.org/10.1007/s11538-016-0144-6)]{.sma
 ## <i class="bi bi-cash-stack"></i> Funding
 
 Almost all of this funding was obtained in partnership with large, collaborative teams.
+
+**Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group** <br> *World Health Organisation* [*2024*]{.cvdate}<br>
+Awarded value: $8,157
+
+**Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants** <br> *Commonwealth Government of Australia* [*2024*]{.cvdate}<br>
+Awarded value: $80,509
 
 **Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals** <br> *World Health Organisation Phillippines* [*2023*]{.cvdate}<br>
 Awarded value: $72,078

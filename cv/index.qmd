@@ -62,6 +62,27 @@ Graduated with a double major in applied and pure mathematics
 
 ## <i class="bi bi-journals"></i> Publications
 
+### Preprints
+
+**Carbapenemase-producing Enterobacterales colonisation status does not lead to more frequent admissions: a linked patient study** <br> *medRxiv*
+<br>
+[Lydeamore, M.J., Donker, T., Wu, D., Gorrie, C., Turner, A., Easton, M., Hennessey, D., Geard, N., Howden, B.P., Cooper, B., Wilson, A., Peleg, A.Y., Stewardson A.J.
+<br>
+DOI: [10.1101/2024.01.09.24300945](https://doi.org/10.1101/2024.01.09.24300945)]{.smaller}
+
+**Border quarantine, vaccination and public health measures to mitigate the impact of COVID-19 importations: a modelling study** <br> *medRxiv*
+<br>
+[Lydeamore, M.J., Zachreson, C., Conway, E., Shearer, F.M., Baker, C.M., Ross, J.V., Miller, J.C., McCaw, J.M. Geard, N., McVernon, J., Price, D.J.
+<br>
+DOI: [10.1101/2024.04.22.24305704](https://doi.org/10.1101/2024.04.22.24305704)]{.smaller}
+
+**Optimal timing of booster doses in a highly vaccinated population with minimal natural exposure to COVID-19** <br> *medRxiv*
+<br>
+[Conway, E., Walker, C., Lydeamore, M.J., Golding, N. Ryan, G., Mavec, D., Oates, J., Kabashima, G., Price, D.J., Shearer, F., Cromer, D., Davenport, M.P., McCaw, J., Eriksson, E.M., Hodgkin, P.D., Wu, L, Le, T.P., Baker, C.M., Mueller, I., McVernon, J.
+<br>
+DOI: [10.1101/2024.05.14.24307386](https://doi.org/10.1101/2024.05.14.24307386)]{.smaller}
+
+
 ### 2024
 
 **Modelling the impact of hybrid immunity on future COVID-19 epidemic waves** <br> *BMC Infectious Diseases*
@@ -201,6 +222,10 @@ Awarded value: $25,620
 
 ## <i class="bi bi-chat-quote"></i> Conference presentations and contributed talks
 
+**Generating synthetic contact matrices using open-source data**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2024*]{.cvdate}
+
+**Data-Driven Insights into Healthcare Challenges: Two Case Studies**<br> *Universitätsklinikum Freiburg Seminar Series --- Invited Speaker* [*2023*]{.cvdate}
+
 **Data-Driven Insights into Healthcare Challenges: Two Case Studies**<br> *UNSW Australia Statistics & Data Science Seminar* [*2023*]{.cvdate}
 
 **Burden of healthcare associated infections in Australia**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2022*]{.cvdate}
@@ -213,7 +238,7 @@ Awarded value: $25,620
 
 **The burden of healthcare acquired infections in Australian public hospitals**<br> *Australasian Society for Infectious Diseases Annual Scientific Meeting* [*2021*]{.cvdate}
 
-**Decision Making and Mathematical Biology - Victoria's usage of COVID-19 modelling**<br> *Mathematical Biology Special Interest Group Workshop - Invited Speaker* [*2021*]{.cvdate}
+**Decision Making and Mathematical Biology - Victoria's usage of COVID-19 modelling**<br> *Mathematical Biology Special Interest Group Workshop --- Invited Speaker* [*2021*]{.cvdate}
 
 **Modelling between-household effective contact and the elimination of COVID-19 in Melbourne, Australia**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2021*]{.cvdate}
 

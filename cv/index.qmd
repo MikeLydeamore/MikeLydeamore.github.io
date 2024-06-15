@@ -66,19 +66,19 @@ Graduated with a double major in applied and pure mathematics
 
 **Carbapenemase-producing Enterobacterales colonisation status does not lead to more frequent admissions: a linked patient study** <br> *medRxiv*
 <br>
-[Lydeamore, M.J., Donker, T., Wu, D., Gorrie, C., Turner, A., Easton, M., Hennessey, D., Geard, N., Howden, B.P., Cooper, B., Wilson, A., Peleg, A.Y., Stewardson A.J.
+[**Lydeamore, M.J.**, Donker, T., Wu, D., Gorrie, C., Turner, A., Easton, M., Hennessey, D., Geard, N., Howden, B.P., Cooper, B., Wilson, A., Peleg, A.Y., Stewardson A.J.
 <br>
 DOI: [10.1101/2024.01.09.24300945](https://doi.org/10.1101/2024.01.09.24300945)]{.smaller}
 
 **Border quarantine, vaccination and public health measures to mitigate the impact of COVID-19 importations: a modelling study** <br> *medRxiv*
 <br>
-[Lydeamore, M.J., Zachreson, C., Conway, E., Shearer, F.M., Baker, C.M., Ross, J.V., Miller, J.C., McCaw, J.M. Geard, N., McVernon, J., Price, D.J.
+[**Lydeamore, M.J.**, Zachreson, C., Conway, E., Shearer, F.M., Baker, C.M., Ross, J.V., Miller, J.C., McCaw, J.M. Geard, N., McVernon, J., Price, D.J.
 <br>
 DOI: [10.1101/2024.04.22.24305704](https://doi.org/10.1101/2024.04.22.24305704)]{.smaller}
 
 **Optimal timing of booster doses in a highly vaccinated population with minimal natural exposure to COVID-19** <br> *medRxiv*
 <br>
-[Conway, E., Walker, C., Lydeamore, M.J., Golding, N. Ryan, G., Mavec, D., Oates, J., Kabashima, G., Price, D.J., Shearer, F., Cromer, D., Davenport, M.P., McCaw, J., Eriksson, E.M., Hodgkin, P.D., Wu, L, Le, T.P., Baker, C.M., Mueller, I., McVernon, J.
+[Conway, E., Walker, C., **Lydeamore, M.J.**, Golding, N. Ryan, G., Mavec, D., Oates, J., Kabashima, G., Price, D.J., Shearer, F., Cromer, D., Davenport, M.P., McCaw, J., Eriksson, E.M., Hodgkin, P.D., Wu, L, Le, T.P., Baker, C.M., Mueller, I., McVernon, J.
 <br>
 DOI: [10.1101/2024.05.14.24307386](https://doi.org/10.1101/2024.05.14.24307386)]{.smaller}
 

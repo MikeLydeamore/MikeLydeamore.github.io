@@ -14,351 +14,895 @@ format:
                 offset: 120
                 });
                 </script>
+    pdf:
+        include-in-header: columns.tex
+        geometry:
+            - top=20mm
+            - left=20mm
+            - right=20mm
+            - bottom=20mm
+bibliography: mypapers.bib
+csl: apa-cv.csl
+nocite: |
+    @*
 css: assets/cv.css
 format-links: [pdf]
 ---
+
+```{=html}
+<style>
+.flushright {
+   text-align: right;
+   display: inline-block;
+   width: 25% !important;
+}
+
+.col {
+    width: 100%;
+}
+
+.rightcol {
+    width: 100%;
+}
+
+.whitecol {
+    width: 1% !important;
+}
+
+.cols {display: flex;}
+</style>
+```
 
 ::: {.print-only .contact-block}
 michael.lydeamore@monash.edu
 :::
 
-::: {.aos-init .aos-animate}
+## {{<fa briefcase>}} Appointments Held
 
-## <i class="bi bi-briefcase-fill"></i> Appointments Held
-
-**Senior Lecturer -- Econometrics and Business Statistics** <br> *Monash University* [*2021 ---*]{.cvdate}
-
-**COVID-19 Modelling & Forecasting Lead <br>Manager, Analytics**<br> *Department of Health and Human Services, Victoria* [*2020*]{.cvdate}
-
-**Postdoctoral Research Fellow**<br> *Monash University* [*2019 --- 2021*]{.cvdate}
-
-**Honorary Team Member**<br> *SaferCare Victoria* [*2019 ---*]{.cvdate}
-
-**Honorary Research Fellow**<br> *The Alfred Hospital* [*2019 ---*]{.cvdate}
-
-**Research Fellow**<br> *The Kirby Institute* [*2018 --- 2019*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Senior Lecturer - Econometrics and Business Statistics**  
+Monash University
 
 :::
 
-::: {.aos-init .aos-animate aos="zoom-out-right"}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021 ---
+:::
 
-## <i class="bi bi-mortarboard-fill"></i> Education
+::::
 
-**Doctor of Philosophy -- Applied Mathematics** <br> *The University of Melbourne* [*2015 --- 2019*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**COVID-19 Modelling & Forecasting Lead**  
+**Manager, Analytics**  
+Department of Health and Human Services, Victoria
 
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2020
+:::
+
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Postdoctoral Research Fellow**  
+Monash University
+
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2019 --- 2021
+:::
+
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Honorary Team Member**  
+SaferCare Victoria
+
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2019 --
+:::
+
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Honorary Research Fellow**  
+Alfred Health
+
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2019 --
+:::
+
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Research Fellow**  
+The Kirby Institute, University of New South Wales
+
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2018 --- 2019
+:::
+
+::::
+
+## {{<fa graduation-cap>}} Education
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Doctor of Philosophy -- Applied Mathematics**  
+The University of Melbourne  
 Thesis title: Mechanistic and statistical models of skin disease transmission
 
-**Masters of Philosophy -- Applied Mathematics** <br> *The University of Adelaide* [*2013 --- 2014*]{.cvdate}
+:::
 
-Thesis title:  Approximations of stochastic household models for comparing antiviral allocation schemes.
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2015 --- 2019
+:::
+::::
 
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.8\textwidth}"}
+**Masters of Philosophy -- Applied Mathematics**  
+The University of Adelaide  
+Thesis title: Approximations of stochastic household models for comparing antiviral allocation schemes  
 Awarded the Applied Probability Trust prize for the highest mark with a project in Applied Mathematics and Statistics
 
-**Bachelor of Mathematical Sciences** <br> *The University of Adelaide* [*2010 --- 2012*]{.cvdate}
+:::
 
+::: {.col .whitecol data-latex="{0.05\textwidth}"}
+\ 
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2013 --- 2014
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Bachelor of Mathematical Sciences**  
+The University of Adelaide  
 Graduated with a double major in applied and pure mathematics
 
 :::
 
-## <i class="bi bi-journals"></i> Publications
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2015 --- 2019
+:::
+::::
 
-### Preprints
+## {{<fa book>}} Publications
 
-**Carbapenemase-producing Enterobacterales colonisation status does not lead to more frequent admissions: a linked patient study** <br> *medRxiv*
-<br>
-[**Lydeamore, M.J.**, Donker, T., Wu, D., Gorrie, C., Turner, A., Easton, M., Hennessey, D., Geard, N., Howden, B.P., Cooper, B., Wilson, A., Peleg, A.Y., Stewardson A.J.
-<br>
-DOI: [10.1101/2024.01.09.24300945](https://doi.org/10.1101/2024.01.09.24300945)]{.smaller}
+::: {#refs}
 
-**Border quarantine, vaccination and public health measures to mitigate the impact of COVID-19 importations: a modelling study** <br> *medRxiv*
-<br>
-[**Lydeamore, M.J.**, Zachreson, C., Conway, E., Shearer, F.M., Baker, C.M., Ross, J.V., Miller, J.C., McCaw, J.M. Geard, N., McVernon, J., Price, D.J.
-<br>
-DOI: [10.1101/2024.04.22.24305704](https://doi.org/10.1101/2024.04.22.24305704)]{.smaller}
+:::
 
-**Optimal timing of booster doses in a highly vaccinated population with minimal natural exposure to COVID-19** <br> *medRxiv*
-<br>
-[Conway, E., Walker, C., **Lydeamore, M.J.**, Golding, N. Ryan, G., Mavec, D., Oates, J., Kabashima, G., Price, D.J., Shearer, F., Cromer, D., Davenport, M.P., McCaw, J., Eriksson, E.M., Hodgkin, P.D., Wu, L, Le, T.P., Baker, C.M., Mueller, I., McVernon, J.
-<br>
-DOI: [10.1101/2024.05.14.24307386](https://doi.org/10.1101/2024.05.14.24307386)]{.smaller}
-
-
-### 2024
-
-**Modelling the impact of hybrid immunity on future COVID-19 epidemic waves** <br> *BMC Infectious Diseases*
-<br>
-[Le, T.P., Abell, I., Conway, E., Campbell, P.T., Hogan, A.B., **Lydeamore, M.J.**, McVernon, J., Mueller, I., Walker, C.R., Baker, C.
-<br>
-DOI: [10.1186/s12879-024-09282-4](https://doi.org/10.1186/s12879-024-09282-4)]{.smaller}
-
-**Estimating the impact of test-trace-isolate-quarantine systems on SARS-CoV-2 transmission in Australia** <br> *Epidemics*
-<br>
-[Shearer, F.M., McCaw, J.M., Ryan, G.E., Hao, T., Tierney, N.J., **Lydeamore, M.J.**, Wu, L., Ward, K., Ellis, S., Wood, J., McVernon, J., Golding, G.
-<br>
-DOI: [10.1016/j.epidem.2024.100764](https://doi.org/10.1016/j.epidem.2024.100764)]{.smaller}
-
-### 2023
-
-**COVID-19 vaccine coverage targets to inform reopening plans in a low incidence setting** <br> *Proceedings of the Royal Society: Series B*
-<br>
-[Conway, E., Walker, C.R., Baker, C., **Lydeamore, M.J.**, Ryan, G.E., Campbell, T., Miller, J.C., Rebuli, N., Yeung, M., Kabashima, G., Geard, N., Wood, J., McCaw, J.M., McVernon, J., Golding, N., Price, D.J., Shearer, F.M.
-<br>
-DOI: [10.1098/rspb.2023.1437](https://doi.org/10.1098/rspb.2023.1437)]{.smaller}
-
-**The incidence of nosocmial bloodstream infection and urinary tract infection in Australian hospitals before and during the COVID-19 pandemic: an interrupted time series study** <br> *Antimicrobial Resistance and Infection Control*
-<br>
-[Mitchell, B.G., Stewardson, A.J., Kerr, L, Ferguson, J.K., Curtis, S., Busija, Ljoudmila, **Lydeamore, M.J.**, Graham, K., Russo, P.L.
-<br>
-DOI: [10.1101/2021.10.05.21264587](https://doi.org/10.1186/s13756-023-01268-2)]{.smaller}
-
-
-### 2022
-
-**Burden of five healthcare associated infections in Australia** <br> *Antimicrobial Resistance and Infection Control*
-<br>
-[**Lydeamore, M. J.**, Mitchell, B. G., Bucknall, T., Cheng, A.C., Russo, P. L., Stewardson, A. J.
-<br>
-DOI: [10.1101/2021.10.05.21264587](https://doi.org/10.1186/s13756-022-01109-8)]{.smaller}
-
-**COVID-19 in low-tolerance border quarantine systems: impact of the Delta variant of SARS-CoV-2** <br> *Science Advances*
-<br>
-[Zachreson, C., Sharer, F. M., Price, D. J., **Lydeamore, M. J.**, McVernon, J., McCaw, J., Geard, N. G.
-<br>
-DOI: [10.1126/sciadv.abm3624](https://doi.org/10.1126/sciadv.abm3624)]{.smaller}
-
-### 2021
-**Population-based analysis of the epidemiological features of COVID-19 epidemics in Victoria, Australia, January 2020-March 2021, and their suppression through comprehensive control strategies** <br> *Lancet Regional Health --- Western Pacific*
-<br>
-[Sullivan, S. G., Brotherton, M. L., Lynch, B. M., Cheung, A. **Lydeamore, M.J.**, Stevenson, M., Firestone, S., Canevari, J., Nguyen, H.N.J., Carville, S., Clothier, H.J., \dots, Sutton, B., Rowe, S. L.
-<br>
-DOI: [10.1016/j.lanwpc.2021.100297](https://doi.org/10.1016/j.lanwpc.2021.100297)]{.smaller}
-
-**Mathematical models to support Victoria's COVID-19 response: a blunt instrument to a complex problem** <br> *AustMS Journal*
-<br>
-[**Lydeamore, M.J.**]{.smaller}
-
-**Understanding how Victoria, Australia gained control of its second COVID-19 wave** <br> *Nature Communications*
-<br>
-[Trauer, J.M., **Lydeamore, M. J.**, Dalton, G. W., Meehan, M.T., McBryde, E. S., Cheng, A. C., Sutton, B., Ragonnet, R.
-<br>
-DOI: [10.1038/s41467-021-26558-4](https://doi.org/10.1038/s41467-021-26558-4)]{.smaller}
-
-**Risk mapping for COVID-19 outbreaks in Australia using mobility data** <br> *Royal Society: Interface*
-<br>
-[Zachreson, C., Mitchell, L., **Lydeamore, M. J.**, Rebuli, N., Tomko, M., Geard, N.
-<br>
-DOI: [10.1098/rsif.2020.0657](https://doi.org/10.1098/rsif.2020.0657)]{.smaller}
-
-### 2020
-
-**Estimation of the force of infection and infectious period of skin sores in remote Australian communities using interval-censored data** <br> *PLoS Computational Biology*
-<br>
-[**Lydeamore, M. J.**, Campbell, P.T., Price, D.J., Wu,Y., Marcato, A.J., Cuningham, W., Carapetis, J.R., Andrews, R.M., McDonald, M.I., McVernon, J., Tong, S.Y.C., McCaw, J.M.
-<br>
-DOI: [10.1371/journal.pcbi.1007838](https://doi.org/10.1371/journal.pcbi.1007838)]{.smaller}
-
-### 2019
-
-**A biological model of scabies infection dynamics and treatment informs mass drug administration strategies to increase the likelihood of elimination** <br> *Mathematical Biosciences*
-<br>
-[**Lydeamore, M. J.**, Campbell, P. T., Regan, D.G., Tong, S., Andrews, R., Steer, A.C., Romani, L., Kaldor, J., McVernon, J., McCaw, J.M.
-<br>
-DOI: [10.1016/j.mbs.2018.08.007](https://doi.org/10.1016/j.mbs.2018.08.007)]{.smaller}
-
-**High Burden if Infectious Disease and Antibiotic Use in Early Life in Aboriginal Communities** <br> *Australia and New Zealand Journal of Public Health*
-<br>
-[Cuningham, W., McVernon, J., **Lydeamore, M. J.**, Andrews, R. M., Carapetis, J., Kearns, T., Clucas, D., Gundjirryirr Dhurrkay, R., Tong, S. Y. C., Campbell, P. T.
-<br>
-DOI: [10.1111/1753-6405.12876](https://doi.org/10.1111/1753-6405.12876)]{.smaller}
-
-### 2018
-
-**Calculation of the age of first infection for skins sores and scabies in five remote communities in northern Australia** <br> *Epidemiology & Infection*
-[**Lydeamore, M. J.**, Campbell, P. T., Cuningham, W., Andrews, R., Kearns, T., Clucas, D., Gundjirryirr Dhurrkay, R., Carapetis, J., Tong, S. Y. C., McCaw, J. M., McVernon, J.
-<br>
-DOI: [10.1017/S0950268818001061](https://doi.org/10.1017/S0950268818001061)]{.smaller}
-
-### 2017
-
-**Indigenous Australia household structure --- implications for close contact transmission of communicable diseases** <br> *PeerJ*
-[Vino, T., Davison, B., Campbell, P. T., **Lydeamore, M. J.**, McVernon, J., Singh, G., Tong, S. Y. C., Robinson, A., Geard, N.
-<br>
-DOI: [10.7717/peerj.3958](https://doi.org/10.7717/peerj.3958)]{.smaller}
-
-### 2016
-
-**Choice of antiviral allocation scheme for pandemic influenza depends on strain transmissibility, delivery delay and stockpile size** <br> *Bulletin of Mathematical Biology*
-[**Lydeamore, M.**, Bean, N., Black, A. J., Ross, J. V.
-<br>
-DOI: [10.1007/s11538-016-0144-6](http://doi.org/10.1007/s11538-016-0144-6)]{.smaller}
-
-## <i class="bi bi-cash-stack"></i> Funding
+## {{<fa money-bill>}} Funding
 
 Almost all of this funding was obtained in partnership with large, collaborative teams.
 
-**Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group** <br> *World Health Organisation* [*2024*]{.cvdate}<br>
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group**  
+World Health Organisation  
 Awarded value: $8,157
 
-**Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants** <br> *Commonwealth Government of Australia* [*2024*]{.cvdate}<br>
-Awarded value: $80,509
+:::
 
-**Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals** <br> *World Health Organisation Phillippines* [*2023*]{.cvdate}<br>
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants**  
+Commonwealth Government of Australia  
+Awarded value: $80,059
+
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals**  
+World Health Organisation Phillippines  
 Awarded value: $72,078
 
-**Centre of Western Public Health Unit** <br> *Contract Research* [*2023*]{.cvdate}<br>
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Centre of Western Public Health Unit**  
+Contract Research   
 Awarded value: $25,000
 
-**Extending and comparing methods for projecting social contact matrices** <br> *SPECTRUM/SPARK Seed Funding* [*2022*]{.cvdate}<br>
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Extending and comparing methods for projecting social contact matrices**  
+SPECTRUM/SPARK Seed Funding   
 Awarded value: $19,438
 
-**Quantifying longitudinal relationships between community mobility and COVID-19 case incidence in west metropolitan Melbourne** <br> *SPECTRUM/SPARK Seed Funding* [*2022*]{.cvdate}<br>
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Quantifying longitudinal relationships between community mobility and COVID-19 case incidence in west metropolitan Melbourne**  
+SPECTRUM/SPARK Seed Funding   
 Awarded value: $19,896
 
-**Modelling to support Australia's national plan for COVID-19** <br> *Commonwealth Government of Australia* [*2021*]{.cvdate}<br>
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Modelling to support Australia's national plan for COVID-19**  
+Commonwealth Government of Australia   
 Awarded value: $147,536
 
-**Modelling to support Australia's transition to 'COVID-normal'**<br> *Australian Office of Health Protection* [*2021*]{.cvdate}<br>
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Modelling to support Australia's transition to 'COVID-normal'**  
+Australian Office of Health Protection   
 Awarded value: $25,620
+
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+:::: 
 
 ## <i class="bi bi-chat-quote"></i> Conference presentations and contributed talks
 
-**Generating synthetic contact matrices using open-source data**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2024*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Generating synthetic contact matrices using open-source data**  
+Australia and New Zealand Industrial Applied Mathematics Conference
+:::
 
-**Data-Driven Insights into Healthcare Challenges: Two Case Studies**<br> *Universitätsklinikum Freiburg Seminar Series --- Invited Speaker* [*2023*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024
+:::
+::::
 
-**Data-Driven Insights into Healthcare Challenges: Two Case Studies**<br> *UNSW Australia Statistics & Data Science Seminar* [*2023*]{.cvdate}
 
-**Burden of healthcare associated infections in Australia**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2022*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Data-Driven Insights into Healthcare Challenges: Two Case Studies**  --- Invited Speaker 
+Universitätsklinikum Freiburg Seminar Series
+:::
 
-**Exponential Random Graph Models and CPE transmission**<br> *Melbourne Mathematical Biology Seminar Series --- Invited Speaker* [*2021*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+::::
 
-**Mathematical modelling for COVID-19 in Victoria, Australia**<br> *Math for Industry Forum, Vietnam --- Invited Speaker* [*2021*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Data-Driven Insights into Healthcare Challenges: Two Case Studies**  
+UNSW Australia Statistics & Data Science Seminar
+:::
 
-**The associations between transmission of CPE and ward connectivity: a network analysis**<br> *Australasian Society for Infectious Diseases Annual Scientific Meeting* [*2021*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+::::
 
-**The burden of healthcare acquired infections in Australian public hospitals**<br> *Australasian Society for Infectious Diseases Annual Scientific Meeting* [*2021*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Burden of healthcare associated infections in Australia**  
+Australia and New Zealand Industrial Applied Mathematics Conference
+:::
 
-**Decision Making and Mathematical Biology - Victoria's usage of COVID-19 modelling**<br> *Mathematical Biology Special Interest Group Workshop --- Invited Speaker* [*2021*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022
+:::
+::::
 
-**Modelling between-household effective contact and the elimination of COVID-19 in Melbourne, Australia**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2021*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Exponential Random Graph Models and CPE transmission** --- Invited Speaker  
+Melbourne Mathematical Biology Seminar Series
+:::
 
-**Mathematical modelling and Victoria's response to COVID-19**<br> *Victorian ANZIAM Branch Meeting --- Invited Speaker* [*2020*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Australia's experience and the role of modelling in its responses to COVID-19**<br> *Usher Institute COVID-19 Webinar --- Invited Speaker* [*2020*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Mathematical modelling for COVID-19 in Victoria, Australia** --- Invited Speaker  
+Math for Industry Forum, Vietnam 
+:::
 
-**Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2019*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data**<br> *NSW--ACT ANZIAM Branch Meeting* [*2018*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**The associations between transmission of CPE and ward connectivity: a network analysis**  
+Australasian Society for Infectious Diseases Annual Scientific Meeting
+:::
 
-**Coupled models of Group A Streptococcus and Scabies: How likely is eradication?**<br> *PRISM International Conference* [*2018*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Investigating the dynamics of coupled epidemiological transmission models with application to Group A Streptococcus and Scabies**<br> *Society for Mathematical Biology Annual Meeting* [*2018*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**The burden of healthcare acquired infections in Australian public hospitals**  
+Australasian Society for Infectious Diseases Annual Scientific Meeting
+:::
 
-**Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2018*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Quantifying the age of first infection with skin sores in five remote Australian Aboriginal communities**<br> *Lancefield International Symposium on Streptococci and Streptococcal Diseases* [*2017*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Decision Making and Mathematical Biology - Victoria's usage of COVID-19 modelling** --- Invited Speaker  
+Mathematical Biology Special Interest Group Workshop
+:::
 
-**Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies**<br> *PRISM Annual Knowledge Transfer and Training Conference* [*2017*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Constructing mathematical models of Group A Streptococcus and Scabies in remote Australian Indigenous communities**<br> *Zeeman Institute Seminar Series --- Invited Speaker* [*2017*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Modelling between-household effective contact and the elimination of COVID-19 in Melbourne, Australia**  
+Australia and New Zealand Industrial Applied Mathematics Conference
+:::
 
-**Developing a model for the transmission and treatment dynamics of scabies infections a high prevalence setting**<br> *Melbourne-Manchester Joint Workshop* [*2017*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Developing a model for the transmission of Group A Streptococcus**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2017*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Mathematical modelling and Victoria's response to COVID-19**  
+Victorian ANZIAM Branch Meeting --- Invited Speaker
+:::
 
-**Determining the age of first infection from incomplete data**<br> *Modelling Emerging Infections and Neglected Tropical Diseases Workhop* [*2016*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2020
+:::
+::::
 
-**Investigating Intervention Intervals for Scabies Infections**<br> *Australia and New Zealand Industrial Applied Mathematics Conference* [*2016*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Australia's experience and the role of modelling in its responses to COVID-19** --- Invited Speaker  
+Usher Institute COVID-19 Webinar
+:::
 
-## <i class="bi bi-building"></i> Teaching
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2020
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data**  
+Australia and New Zealand Industrial Applied Mathematics Conference
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2019
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data**  
+NSW--ACT ANZIAM Branch Meeting
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2018
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Coupled models of Group A Streptococcus and Scabies: How likely is eradication?**  
+PRISM International Conference
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2018
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Investigating the dynamics of coupled epidemiological transmission models with application to Group A Streptococcus and Scabies**  
+Society for Mathematical Biology Annual Meeting
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2018
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies**  
+Australia and New Zealand Industrial Applied Mathematics Conference
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2018
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Quantifying the age of first infection with skin sores in five remote Australian Aboriginal communities**  
+Lancefield International Symposium on Streptococci and Streptococcal Diseases
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies**  
+PRISM Annual Knowledge Transfer and Training Conference
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Constructing mathematical models of Group A Streptococcus and Scabies in remote Australian Indigenous communities** --- Invited Speaker  
+Zeeman Institute Seminar Series 
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Developing a model for the transmission and treatment dynamics of scabies infections a high prevalence setting**  
+Melbourne-Manchester Joint Workshop
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Developing a model for the transmission of Group A Streptococcus**  
+Australia and New Zealand Industrial Applied Mathematics Conference
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Determining the age of first infection from incomplete data**  
+Modelling Emerging Infections and Neglected Tropical Diseases Workshop
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2016
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Investigating Intervention Intervals for Scabies Infections**  
+Australia and New Zealand Industrial Applied Mathematics Conference
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2016
+:::
+::::
+
+## {{<fa school>}} Teaching
 
 ### Lecturer
 
-[ETC5513] **Reproducible and Collaborative practices** (Chief Examiner) [*2024--*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+[ETC5513] **Reproducible and Collaborative practices** (Chief Examiner)
+:::
 
-[ETC5523] **Communicating With Data** (Chief Examiner) [*2023--*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024--
+:::
+:::: 
 
-[ETC5512] **Wild-Caught Data** [*2022, 2023*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+[ETC5523] **Communicating with Data** (Chief Examiner)
+:::
 
-[ETC5521] **Exploratory Data Analysis** [*2022*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023--
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+[ETC5512] **Wild-Caught Data**
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022--2023
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+[ETC5521] **Exploratory Data Analysis**
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022
+:::
+:::: 
 
 ### Tutor
 
-[MAST10016] **Mathematics for BioMedicine** [*2016--2019*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+[MAST10016] **Mathematics for Biomedicine**
+:::
 
-[MAST30001] **Stochastic Modelling** [*2018*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2016--2019
+:::
+:::: 
 
-## <i class="bi bi-award"></i> Awards
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+[MAST30001] **Stochastic Modelling**
+:::
 
-**University of Melbourne Faculty of Engineering and Information Technology Excellence Award in Interdisciplinary Research** [*2021*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2018
+:::
+:::: 
 
-**IPAA Spirit of Service Awards** -- Finalist [*2021*]{.cvdate}
+## {{<fa award>}} Awards
 
-**Engagement Australia Excellence Awards --- Outstanding Engagement for Research Impact** --- Finalist [*2021*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**University of Melbourne Faculty of Engineering and Information Technology Excellence Award in Interdisciplinary Research**
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Top Poster Award --- European Congress of Clinical Microbiology \& Infectious Diseases** [*2021*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**IPAA Spirit of Service Awards** -- Finalist
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**IPAA Victoria Leadership in the Public Sector Awards** --- Finalist [*2021*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Engagement Australia Excellence Awards --- Outstanding Engagement for Research Impact** --- Finalist
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Best PhD Student Presentation -- PRISM$^2$ Annual Conference** [*2017*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Top Poster Award --- European Congress of Clinical Microbiology \& Infectious Diseases**
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Applied Probability Trust Prize** for best Applied Mathematics Postgraduate Thesis [*2016*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**IPAA Victoria Leadership in the Public Sector Awards** --- Finalist
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021
+:::
+::::
 
-**Australian Postgraduate Award** [*2015*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Best PhD Student Presentation -- PRISM$^2$ Annual Conference**
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017
+:::
+::::
 
-**Dean's Commendation for Thesis Excellence** [*2015*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Applied Probability Trust Prize** for best Applied Mathematics Postgraduate Thesis
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2016
+:::
+::::
 
-## <i class="bi bi-person-workspace"></i> Academic Service & Community Engagment
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Australian Postgraduate Award**
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2015
+:::
+::::
 
-**SPARK Short Course in Mathematical Diseases Modelling --- OUCRU**<br>
-Facilitator [*2023*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Dean's Commendation for Thesis Excellence**
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2015
+:::
+::::
 
-**Maths in Industry Study Group --- NSW Health**<br>
-Moderator [*2023*]{.cvdate}
 
-**Communicating with Data Workshop**<br>
-Organising Committee [*2023*]{.cvdate}
+## {{<fa comments>}} Academic Service & Community Engagment
 
-**Australian & New Zealand Industrial Applied Mathematics Executive Committee**<br>
-Treasurer [*2022 --*]{.cvdate}<br>
-Early Career Representative [*2021--2022*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**SPARK Short Course in Mathematical Diseases Modelling** --- OUCRU   
+Facilitator
+:::
 
-**SPECTRUM-SPARK Early Career Researcher Committee**<br>
-Chair [*2022 --*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+::::
 
-**SPARK Short Course in Mathematical Diseases Modelling - Mahidol University**<br>
-Facilitator [*2022*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Maths in Industry Study Group** --- NSW Health  
+Moderator
+:::
 
-**Research Tools Workshop in R**<br>
-Facilitator [*2022*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+:::: 
 
-**Mathematical Biology Special Interest Group**<br>
-Treasurer [*2019--2022*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**WOMBAT Communicating with Data Workshop**  
+Organising Committee
+:::
 
-**ANZIAM 2021 Conference**<br>
-Organising committee --- Treasurer [*2020--2021*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+:::: 
 
-**Computational Biology Research Initiative -- The University of Melbourne**<br>
-Postgraduate Representative [*2017*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Australian and New Zealand Industrial and Applied Mathematics Executive Committee**  
+Treasurer
+:::
 
-**Computational Biology Postgraduate Sports Group -- The University of Melbourne**<br>
-Secretary [*2017--2018*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022--
+:::
+::::
 
-**Mathematics in Industry Study Group**<br>
-Participant [*2017, 2018, 2019*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Australian and New Zealand Industrial and Applied Mathematics Executive Committee**  
+Early Career Representative
+:::
 
-**The ConocoPhilips Science Experience -- The University of Melbourne**<br>
-Activity Organiser [*2016--2018*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2021--2022
+:::
+:::: 
 
-**Mathematicians in Schools**<br>
-Project Supervisor/Mentor [*2016--2018*]{.cvdate}
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**SPECTRUM-SPARK Early Career Researcher Committee**  
+Chair
+:::
 
-**Reviewer**<br>
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022--
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**SPARK Short Course in Mathematical Diseases Modelling** -- Mahidol University  
+Facilitator
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Research Tools Workshop in R**  
+Facilitator
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2022
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Mathematical Biology Special Interest Group**  
+Treasurer
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2019--2022
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**ANZIAM 2021 Conference**  
+Organising Committee (Treasurer)
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2020--2021
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Computational Biology Research Initiative** -- The University of Melbourne  
+Postgraduate Representative
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Computational Biology Postgraduate Sports Group** -- The University of Melbourne  
+Secretary
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017--2018
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Maths in Industry Study Group**  
+Participant
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2017, 2018, 2019
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**The ConocoPhilips Science Experience** -- The University of Melbourne  
+Activity Organiser
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2016--2018
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Mathematicians in Schools** -- CSIRO   
+Project Supervisor/Mentor
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2016--2018
+:::
+::::
+
+**Reviewer**  
 PLoS Comptuational Biology; Scientific Reports; Journal of Applied Mathematics; Journal of Statistical Software; Epidemiology \& Infection; Mathematics; Medial Journal of Australia; International Tropical Health; Journal of Antimicrobial Resistance; The R Journal
 
-## <i class="bi bi-person-badge"></i> Professional Memberships
+## {{<fa users>}} Professional Memberships
 
-**Australia and New Zealand Industrial and Applied Mathematics** [*2015--*]{.cvdate}<br>
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Australian and New Zealand Industrial and Applied Mathematics**  
 Including the Mathematical Biology Special Interest Group
+:::
 
-**Australian Mathematics Society** [*2015--*]{.cvdate}
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2015--
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**Australian Mathematics Society**
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2015--
+:::
+:::: 

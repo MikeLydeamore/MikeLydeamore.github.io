@@ -55,7 +55,9 @@ format-links: [pdf]
 
 ::: {.print-only .contact-block}
 Dr Michael Lydeamore
+
 Department of Econometrics and Business Statistics
+
 Monash University
 
 Email: michael.lydeamore@monash.edu

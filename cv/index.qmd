@@ -54,7 +54,11 @@ format-links: [pdf]
 ```
 
 ::: {.print-only .contact-block}
-michael.lydeamore@monash.edu
+Dr Michael Lydeamore
+Department of Econometrics and Business Statistics
+Monash University
+
+Email: michael.lydeamore@monash.edu
 :::
 
 ## {{<fa briefcase>}} Appointments Held

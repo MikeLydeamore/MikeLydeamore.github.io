@@ -9,8 +9,8 @@
 <link>https://www.michaellydeamore.com/blog/</link>
 <atom:link href="https://www.michaellydeamore.com/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog posts by Dr Michael Lydeamore</description>
-<generator>quarto-1.4.549</generator>
-<lastBuildDate>Tue, 18 Jul 2023 14:00:00 GMT</lastBuildDate>
+<generator>quarto-1.5.55</generator>
+<lastBuildDate>Wed, 19 Jul 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>condensr: The academic website generator</title>
   <link>https://www.michaellydeamore.com/blog/condensr-academic-website-generator/</link>
@@ -172,7 +172,7 @@ font-style: inherit;">"joe-bloggs"</span></span>
   <category>quarto</category>
   <category>software</category>
   <guid>https://www.michaellydeamore.com/blog/condensr-academic-website-generator/</guid>
-  <pubDate>Tue, 18 Jul 2023 14:00:00 GMT</pubDate>
+  <pubDate>Wed, 19 Jul 2023 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Reducing duplication in teaching materials</title>
@@ -359,7 +359,7 @@ contributes:
   <category>quarto</category>
   <category>teaching</category>
   <guid>https://www.michaellydeamore.com/blog/reducing-teaching-duplication-with-unilur/</guid>
-  <pubDate>Tue, 18 Jul 2023 14:00:00 GMT</pubDate>
+  <pubDate>Wed, 19 Jul 2023 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

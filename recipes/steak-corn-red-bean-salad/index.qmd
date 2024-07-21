@@ -1,0 +1,34 @@
+---
+title: "Steak, Corn and Red Bean Salad"
+
+date: today
+categories: [beef, dinner, salad]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Steak, Corn and Red Bean Salad
+
+## Ingredients
+
+- 500g piece lean beef sirloin steak, trimmed of excess fat
+- 1 tbsp Worcestershire sauce
+- 2 tsp ground cumin
+- 1 tbsp olive oil
+- 1 cup frozen corn kernels
+- 800g canned red kidney beans, rinsed, drained
+- 1 lemon, juiced
+- 2 spring onions, sliced on the diagonal
+
+## Directions
+
+Place the steak in a bowl and sprinkle over the Worcestershire sauce and 1 teaspoon of the ground cumin. Toss to coat the steak in the mixture.
+
+Heat the olive oil in a frypan over medium-high heat. When the pan is hot, add the steak and cook for about 5 minutes each side for medium, or until cooked to your liking. Remove from the heat and set the steak aside in a warm place for a few minutes to rest, then slice.
+
+Meanwhile, blanch the corn kernels in a pan of boiling water. Combine the drained kidney beans and corn in a bowl. Add the lemon juice and the remaining teaspoon of ground cumin to the bean mixture and toss to combine.
+
+Add the sliced steak and the sliced spring onion to the salad and toss gently to combine.

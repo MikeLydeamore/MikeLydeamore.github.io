@@ -25,7 +25,7 @@ bibliography: mypapers.bib
 csl: apa-cv.csl
 nocite: |
     @*
-css: assets/cv.css
+css: ../assets/cv.css
 format-links: [pdf]
 ---
 

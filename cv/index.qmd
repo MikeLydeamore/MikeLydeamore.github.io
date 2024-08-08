@@ -305,6 +305,17 @@ Awarded value: $25,620
 
 :::: {.cols data-latex=""}
 ::: {.col data-latex="{0.85\textwidth}"}
+**Networks of networks in infectious diseases modelling**  --- Panelist 
+Infectious Diseases Modelling Conference
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
 **Generating synthetic contact matrices using open-source data**  
 Australia and New Zealand Industrial Applied Mathematics Conference
 :::

@@ -722,6 +722,28 @@ Australia and New Zealand Industrial Applied Mathematics Conference
 
 :::: {.cols data-latex=""}
 ::: {.col data-latex="{0.85\textwidth}"}
+**Equity, Diversity & Social Inclusion Committee** 
+Department representative
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024 --
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**SPECTRUM Annual Meeting** 
+Organising committee
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
 **SPARK Short Course in Mathematical Diseases Modelling** --- OUCRU   
 Facilitator
 :::

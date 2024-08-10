@@ -1,0 +1,42 @@
+---
+title: "Borscht"
+
+date: 2024-08-10
+categories: [soup]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Borscht
+
+Russian soup to the winter rescue
+
+## Ingredients
+
+* &frac14; small cabbage
+* 2-3 potatoes
+* 1 carrot
+* 1 small beetroot
+* 1 onion
+* 2-3 cloves garlic
+* Osso bucco
+* Bay leaves
+* 5 whole peppercorns
+* &frac12; tub tomato paste
+* 1 can beans (optional)
+
+
+## Method
+
+Boil Osso Bucco with bay leaves, peppercorns.
+
+Clean your broth by straining through cheesecloth. Take meat off of Osso bucco. Combine and return to stove. Add diced potatoes. Boil until the end of the next step.
+
+In a pan, fry together in some oil finely chopped carrots, beetroot, onion and crushed garlic. Fry until soft and tasty. Add to soup mixture.
+
+Add chopped cabbage and beans to the soup mixture. Boil for 5 minutes.
+
+Add tomato paste and any seasonings you like. Bring back to the boil. Serve with mayonaisse or sour cream.

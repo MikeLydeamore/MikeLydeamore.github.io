@@ -1,0 +1,40 @@
+---
+title: "Spaghetti Bolognaise"
+
+date: 2024-08-23
+categories: [beef, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Spaghetti Bolognaise
+
+## Ingredients
+
+- 1 large onion
+- 2 tbsp oil
+- 500g mince
+- 155g tomato paste
+- 3 cups water
+- 2 tsp chicken stock powder
+- Salt & pepper
+- &frac12; tsp oregano
+- &frac14; tsp thyme
+- 1 tsp soy sauce
+- Spaghetti
+- Grated parmesan cheese
+
+## Method
+
+Peel and finely chop the onion. Heat oil in a frying pan and cook onion until golden.
+
+Add mince and cook, stirring until browned. Break mince up to ensure it’s cooked through. Pour off any excess fat.
+
+Add all other ingredients except water, parmesan cheese, and spaghetti. Cook for 1 minute, stirring.
+
+Add water. Bring to the boil and simmer for 45 minutes. Add more water if it becomes dry.
+
+Cook spaghetti according to packet directions. Serve with sauce on top and top with parmesan cheese.

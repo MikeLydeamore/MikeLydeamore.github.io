@@ -10,10 +10,11 @@
     "listing": "/recipes/index.html",
     "items": [
       "/recipes/ratatouille/index.html",
+      "/recipes/spaghetti-bolognaise/index.html",
       "/recipes/beef-black-bean/index.html",
-      "/recipes/borscht/index.html",
       "/recipes/steak-corn-red-bean-salad/index.html",
       "/recipes/garlic-naan/index.html",
+      "/recipes/borscht/index.html",
       "/recipes/chicken-lemon-couscous/index.html",
       "/recipes/burgers/index.html",
       "/recipes/roti-canai/index.html",

@@ -287,13 +287,13 @@
     },
     "curl": {
       "Package": "curl",
-      "Version": "5.0.0",
+      "Version": "5.2.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
-      "Hash": "e4f97056611e8e6b8b852d13b7400cf1"
+      "Hash": "8f27335f2bcff4d6035edcc82d7d46de"
     },
     "data.table": {
       "Package": "data.table",
@@ -688,6 +688,27 @@
         "openssl"
       ],
       "Hash": "f6844033201269bec3ca0097bc6c97b3"
+    },
+    "httr2": {
+      "Package": "httr2",
+      "Version": "1.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "cli",
+        "curl",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "openssl",
+        "rappdirs",
+        "rlang",
+        "vctrs",
+        "withr"
+      ],
+      "Hash": "10d93e97faad6b629301bb3a2fd23378"
     },
     "ids": {
       "Package": "ids",
@@ -1260,6 +1281,16 @@
         "systemfonts"
       ],
       "Hash": "1ab6223d3670fac7143202cb6a2d43d5"
+    },
+    "textutils": {
+      "Package": "textutils",
+      "Version": "0.4-1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "9840de88fa547433c0188a2b137c6c47"
     },
     "tibble": {
       "Package": "tibble",

@@ -258,7 +258,7 @@ funding <- tribble(
 )
 
 format_funding <- function(funded) {
-    cat(
+    paste(
         ':::: {.cols data-latex=""}',
         '::: {.col data-latex="{0.85\\textwidth}"}',
         paste0('**',funded$title,'**'),

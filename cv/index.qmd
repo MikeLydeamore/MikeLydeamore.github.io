@@ -21,10 +21,6 @@ format:
             - left=20mm
             - right=20mm
             - bottom=20mm
-bibliography: mypapers.bib
-csl: apa-cv.csl
-nocite: |
-    @*
 css: ../assets/cv.css
 format-links: [pdf]
 ---

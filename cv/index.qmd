@@ -261,8 +261,8 @@ format_funding <- function(funded) {
     paste(
         ':::: {.cols data-latex=""}',
         '::: {.col data-latex="{0.85\\textwidth}"}',
-        paste0('**',funded$title,'**'),
-        funded$organisation,
+        paste0('**',funded$title,'**  '),
+        paste0(funded$organisation,'  '),
         paste0('Awarded value: $', scales::comma(funded$amount)),
         ':::',
         '::: {.rightcol .flushright data-latex="{0.15\\textwidth}" }',

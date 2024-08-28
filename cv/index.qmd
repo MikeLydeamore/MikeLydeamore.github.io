@@ -49,6 +49,18 @@ format-links: [pdf]
 </style>
 ```
 
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| label: load-libraries
+
+library(httr2)
+library(tidyverse)
+library(stringr)
+library(textutils)
+```
+
 ::: {.print-only .contact-block}
 Dr Michael Lydeamore  
 Department of Econometrics and Business Statistics  
@@ -190,10 +202,6 @@ Graduated with a double major in applied and pure mathematics
 #| results: asis
 
 
-library(stringr)
-library(httr2)
-library(textutils)
-
 req <- request("https://api.zotero.org") |>
     req_url_query(
         v = 3,
@@ -223,7 +231,7 @@ a <- resp |>
     #remove line breaks???
     str_remove_all("\\n") |>
     # Bold my name 
-    str_replace("(Lydeamore, M\\. J\\.)", '**\\1**') |>
+    str_replace("(Lydeamore, M\\.( J\\.)?)", '**\\1**') |>
     str_trim()
 
 cat(paste0("- ", a), sep="\n")
@@ -233,18 +241,39 @@ cat(paste0("- ", a), sep="\n")
 
 Almost all of this funding was obtained in partnership with large, collaborative teams.
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group**  
-World Health Organisation  
-Awarded value: $8,157
+```{r}
+#| echo: false
+#| message: false
 
-:::
+funding <- tribble(
+    ~title, ~organisation, ~amount, ~year,
+    "Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group", "World Health Organisation", 8157, 2024
+)
 
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024
-:::
-::::
+format_funding <- function(funded) {
+    cat(
+        ':::: {.cols data-latex=""}',
+        '::: {.col data-latex="{0.85\textwidth}"}',
+        paste0('**',funded$title,'**'),
+        funded$organisation,
+        paste0('Awarded value: $', scales::comma(funded$amount)),
+        ':::',
+        '::: {.rightcol .flushright data-latex="{0.15\textwidth}" }',
+        funded$year,
+        ':::',
+        '::::',
+        sep = "\n"
+    )
+}
+
+```
+
+```{r}
+#| echo: false
+#| results: asis
+
+format_funding(funding[1,])
+```
 
 :::: {.cols data-latex=""}
 ::: {.col data-latex="{0.85\textwidth}"}

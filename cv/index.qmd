@@ -247,7 +247,14 @@ Almost all of this funding was obtained in partnership with large, collaborative
 
 funding <- tribble(
     ~title, ~organisation, ~amount, ~year,
-    "Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group", "World Health Organisation", 8157, 2024
+    "Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group", "World Health Organisation", 8157, 2024,
+    "Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants", "Commonwealth Government of Australia", 80059, 2024,
+    "Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals", "World Health Organisation Phillippines", 72078, 2023,
+    "Centre of Western Public Health Unit", "Contract Research", 25000, 2023,
+    "Extending and comparing methods for projecting social contact matrices", "SPECTRUM/SPARK Seed Funding", 19438, 2022,
+    "Quantifying longitudinal relationships between community mobility and COVID-19 case incidence in west metropolitan Melbourne", "SPECTRUM/SPARK Seed Funding", 19896, 2022,
+    "Modelling to support Australia's national plan for COVID-19", "Commonwealth Government of Australia", 147536, 2021,
+    "Modelling to support Australia's transition to 'COVID-normal'", "Australian Office of Health Protection", 25620, 2021
 )
 
 format_funding <- function(funded) {
@@ -262,7 +269,7 @@ format_funding <- function(funded) {
         funded$year,
         ':::',
         '::::',
-        sep = "\n"
+        sep = "\n\n"
     )
 }
 
@@ -272,99 +279,12 @@ format_funding <- function(funded) {
 #| echo: false
 #| results: asis
 
-format_funding(funding[1,])
+formatted <- lapply(1:nrow(funding), function(i) {
+    format_funding(funding[i,])
+}) |> unlist()
+
+cat(paste0(formatted), sep = "\n\n")
 ```
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants**  
-Commonwealth Government of Australia  
-Awarded value: $80,059
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals**  
-World Health Organisation Phillippines  
-Awarded value: $72,078
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Centre of Western Public Health Unit**  
-Contract Research   
-Awarded value: $25,000
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Extending and comparing methods for projecting social contact matrices**  
-SPECTRUM/SPARK Seed Funding   
-Awarded value: $19,438
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Quantifying longitudinal relationships between community mobility and COVID-19 case incidence in west metropolitan Melbourne**  
-SPECTRUM/SPARK Seed Funding   
-Awarded value: $19,896
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Modelling to support Australia's national plan for COVID-19**  
-Commonwealth Government of Australia   
-Awarded value: $147,536
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Modelling to support Australia's transition to 'COVID-normal'**  
-Australian Office of Health Protection   
-Awarded value: $25,620
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-:::: 
 
 ## <i class="bi bi-chat-quote"></i> Conference presentations and contributed talks
 

@@ -56,7 +56,7 @@ format-links: [pdf]
 #| label: load-libraries
 
 library(httr2)
-library(tidyverse)
+library(tibble)
 library(stringr)
 library(textutils)
 ```
@@ -253,12 +253,12 @@ funding <- tribble(
 format_funding <- function(funded) {
     cat(
         ':::: {.cols data-latex=""}',
-        '::: {.col data-latex="{0.85\textwidth}"}',
+        '::: {.col data-latex="{0.85\\textwidth}"}',
         paste0('**',funded$title,'**'),
         funded$organisation,
         paste0('Awarded value: $', scales::comma(funded$amount)),
         ':::',
-        '::: {.rightcol .flushright data-latex="{0.15\textwidth}" }',
+        '::: {.rightcol .flushright data-latex="{0.15\\textwidth}" }',
         funded$year,
         ':::',
         '::::',

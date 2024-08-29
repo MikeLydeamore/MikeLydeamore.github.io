@@ -269,7 +269,7 @@ format_funding <- function(funded) {
         funded$year,
         ':::',
         '::::',
-        sep = "\n\n"
+        sep = "\n"
     )
 }
 
@@ -283,7 +283,7 @@ formatted <- lapply(1:nrow(funding), function(i) {
     format_funding(funding[i,])
 }) |> unlist()
 
-cat(paste0(formatted), sep = "\n\n")
+cat(paste0(formatted), sep = "\n")
 ```
 
 ## <i class="bi bi-chat-quote"></i> Conference presentations and contributed talks

@@ -288,281 +288,70 @@ cat(paste0(formatted), sep = "\n")
 
 ## <i class="bi bi-chat-quote"></i> Conference presentations and contributed talks
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Networks of networks in infectious diseases modelling**  --- Panelist 
-Infectious Diseases Modelling Conference
-:::
+```{r}
+#| echo: false
 
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024
-:::
-::::
+presentations <- tribble(
+    ~title, ~extra, ~event, ~year,
+    "Networks of networks in infectious diseases modelling", "Panelist", "Infectious Diseases Modelling Conference", 2024,
+    "Generating synthetic contact matrices using open-source data", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2024,
+    "Data-Driven Insights into Healthcare Challenges: Two Case Studies", "Invited Speaker", "Universitätsklinikum Freiburg Seminar Series", 2023,
+    "Data-Driven Insights into Healthcare Challenges: Two Case Studies", NA, "UNSW Australia Statistics & Data Science Seminar", 2023,
+    "Burden of healthcare associated infections in Australia", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2022,
+    "Exponential Random Graph Models and CPE transmission", "Invited Speaker", "Melbourne Mathematical Biology Seminar Series", 2021,
+    "Mathematical modelling for COVID-19 in Victoria, Australia", "Invited Speaker", "Math for Industry Forum, Vietnam", 2021,
+    "The associations between transmission of CPE and ward connectivity: a network analysis", NA, "Australasian Society for Infectious Diseases Annual Scientific Meeting", 2021,
+    "The burden of healthcare acquired infections in Australian public hospitals", NA, "Australasian Society for Infectious Diseases Annual Scientific Meeting", 2021,
+    "Decision Making and Mathematical Biology - Victoria's usage of COVID-19 modelling", "Invited Speaker", "Mathematical Biology Special Interest Group Workshop", 2021,
+    "Modelling between-household effective contact and the elimination of COVID-19 in Melbourne, Australia", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2021,
+    "Mathematical modelling and Victoria's response to COVID-19", "Invited Speaker", "Victorian ANZIAM Branch Meeting", 2020, 
+    "Australia's experience and the role of modelling in its responses to COVID-19", "Invited Speaker", "Usher Institute COVID-19 Webinar", 2020,
+    "Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2019,
+    "Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data", NA, "NSW--ACT ANZIAM Branch Meeting", 2018,
+    "Coupled models of Group A Streptococcus and Scabies: How likely is eradication?", NA, "PRISM International Conference", 2018,
+    "Investigating the dynamics of coupled epidemiological transmission models with application to Group A Streptococcus and Scabies", NA, "Society for Mathematical Biology Annual Meeting", 2018,
+    "Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2018,
+    "Quantifying the age of first infection with skin sores in five remote Australian Aboriginal communities", NA, "Lancefield International Symposium on Streptococci and Streptococcal Diseases", 2017,
+    "Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies", NA, "PRISM Annual Knowledge Transfer and Training Conference", 2017,
+    "Constructing mathematical models of Group A Streptococcus and Scabies in remote Australian Indigenous communities", "Invited Speaker", "Zeeman Institute Seminar Series ", 2017,
+    "Developing a model for the transmission and treatment dynamics of scabies infections a high prevalence setting", NA, "Melbourne-Manchester Joint Workshop", 2017,
+    "Developing a model for the transmission of Group A Streptococcus", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2017,
+    "Determining the age of first infection from incomplete data", NA, "Modelling Emerging Infections and Neglected Tropical Diseases Workshop", 2016,
+    "Investigating Intervention Intervals for Scabies Infections", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2016
+)
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Generating synthetic contact matrices using open-source data**  
-Australia and New Zealand Industrial Applied Mathematics Conference
-:::
+format_presentation <- function(presentation) {
+    manipped_title <- ifelse(
+        is.na(presentation$extra), 
+        paste0('**',presentation$title,'**'),
+        paste0('**',presentation$title,'**', " --- ", presentation$extra)
+    )
+    paste(
+        ':::: {.cols data-latex=""}',
+        '::: {.col data-latex="{0.85\\textwidth}"}',
+        paste0(manipped_title,'  '),
+        paste0(presentation$event,'  '),
+        ':::',
+        '::: {.rightcol .flushright data-latex="{0.15\\textwidth}" }',
+        presentation$year,
+        ':::',
+        '::::',
+        sep = "\n"
+    )
+}
 
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024
-:::
-::::
+```
 
+```{r}
+#| echo: false
+#| results: asis
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Data-Driven Insights into Healthcare Challenges: Two Case Studies**  --- Invited Speaker 
-Universitätsklinikum Freiburg Seminar Series
-:::
+formatted <- lapply(1:nrow(presentations), function(i) {
+    format_presentation(presentations[i,])
+}) |> unlist()
 
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Data-Driven Insights into Healthcare Challenges: Two Case Studies**  
-UNSW Australia Statistics & Data Science Seminar
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Burden of healthcare associated infections in Australia**  
-Australia and New Zealand Industrial Applied Mathematics Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Exponential Random Graph Models and CPE transmission** --- Invited Speaker  
-Melbourne Mathematical Biology Seminar Series
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Mathematical modelling for COVID-19 in Victoria, Australia** --- Invited Speaker  
-Math for Industry Forum, Vietnam 
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**The associations between transmission of CPE and ward connectivity: a network analysis**  
-Australasian Society for Infectious Diseases Annual Scientific Meeting
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**The burden of healthcare acquired infections in Australian public hospitals**  
-Australasian Society for Infectious Diseases Annual Scientific Meeting
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Decision Making and Mathematical Biology - Victoria's usage of COVID-19 modelling** --- Invited Speaker  
-Mathematical Biology Special Interest Group Workshop
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Modelling between-household effective contact and the elimination of COVID-19 in Melbourne, Australia**  
-Australia and New Zealand Industrial Applied Mathematics Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Mathematical modelling and Victoria's response to COVID-19**  
-Victorian ANZIAM Branch Meeting --- Invited Speaker
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2020
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Australia's experience and the role of modelling in its responses to COVID-19** --- Invited Speaker  
-Usher Institute COVID-19 Webinar
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2020
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data**  
-Australia and New Zealand Industrial Applied Mathematics Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2019
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data**  
-NSW--ACT ANZIAM Branch Meeting
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2018
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Coupled models of Group A Streptococcus and Scabies: How likely is eradication?**  
-PRISM International Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2018
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Investigating the dynamics of coupled epidemiological transmission models with application to Group A Streptococcus and Scabies**  
-Society for Mathematical Biology Annual Meeting
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2018
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies**  
-Australia and New Zealand Industrial Applied Mathematics Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2018
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Quantifying the age of first infection with skin sores in five remote Australian Aboriginal communities**  
-Lancefield International Symposium on Streptococci and Streptococcal Diseases
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies**  
-PRISM Annual Knowledge Transfer and Training Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Constructing mathematical models of Group A Streptococcus and Scabies in remote Australian Indigenous communities** --- Invited Speaker  
-Zeeman Institute Seminar Series 
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Developing a model for the transmission and treatment dynamics of scabies infections a high prevalence setting**  
-Melbourne-Manchester Joint Workshop
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Developing a model for the transmission of Group A Streptococcus**  
-Australia and New Zealand Industrial Applied Mathematics Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Determining the age of first infection from incomplete data**  
-Modelling Emerging Infections and Neglected Tropical Diseases Workshop
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2016
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Investigating Intervention Intervals for Scabies Infections**  
-Australia and New Zealand Industrial Applied Mathematics Conference
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2016
-:::
-::::
+cat(paste0(formatted), sep = "\n")
+```
 
 ## {{<fa school>}} Teaching
 

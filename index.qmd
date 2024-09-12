@@ -50,9 +50,24 @@ I thoroughly enjoy engagement with societies and research centres. I am currentl
 
 ## Contact
 
-<table class="table table-striped center" style="width:30%">
-<tr><td style="width:5%"><i class="bi bi-twitter"></i></td><td> [@MikeLydeamore](https://twitter.com/MikeLydeamore)</td></tr>
-<tr><td style="width:5%"><i class="bi bi-github"></i></i></td><td> [MikeLydeamore](https://github.com/MikeLydeamore)</td></tr>
-<tr><td style="width:5%"><i class="bi bi-envelope"></i></td><td> [michael.lydeamore@monash.edu](mailto:michael.lydeamore@monash.edu)</td></tr>
-<tr><td style="width:5%"><i class="bi bi-geo-alt-fill"></i></td><td> Monash University<br>29 Ancora Imparo Way<br>Building 6, Room 354<br>Clayton, VIC 3800<br>Australia</td></tr>
-</table>
+```{r}
+#| echo: false
+
+library(gt)
+
+tibble::tribble(
+  ~icon, ~text,
+  "{{<bi twitter>}}", "[@MikeLydeamore](https://twitter.com/MikeLydeamore)",
+  "{{<bi github>}}", "[MikeLydeamore](https://github.com/MikeLydeamore)",
+  "{{<bi envelope>}}", "[michael.lydeamore@monash.edu](mailto:michael.lydeamore@monash.edu)",
+  "{{<bi geo-alt-fill>}}", "Monash University<br>29 Ancora Imparo Way<br>Building 6, Room 354<br>Clayton, VIC 3800<br>Australia"
+) |>
+  gt() |>
+  fmt_markdown() |>
+  tab_options(column_labels.hidden = TRUE) |>
+  cols_width(
+    icon ~ pct(15),
+    text ~ pct(90)
+  )
+
+```

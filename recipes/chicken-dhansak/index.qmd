@@ -1,0 +1,42 @@
+---
+title: "Chicken Dhansak"
+
+date: today
+categories: [chicken, dinner]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Chicken Dhansak
+
+
+
+## Ingredients
+
+- 1 onion, peeled and roughly chopped
+- Peeled and chopped to make 2 tbsp ginger
+- 2 cloves garlic, crushed
+- 1 green chilli, sliced
+- For frying: oil
+- &frac12; tsp turmeric
+- 2 tsp ground cumin
+- 2 tsp ground coriander
+- 2 pods cardamom, lightly bashed
+- 2 skinless chicken breasts, diced
+- 50g red lentils
+- 400g tin chopped tomatoes
+- 200ml chicken stock
+- A small bunch of coriander, chopped
+
+## Method
+
+Put the onion, ginger, garlic, and chilli in a small blender and whizz to a paste, adding a splash of water if needed.
+
+Heat 1 tsp oil in a pan and fry the paste with a pinch of salt for 10 minutes until the onions are just turning golden. Add the spices and fry for another minute.
+
+Add the chicken and lentils, frying until the chicken is opaque.
+
+Add the tomatoes and stock, bring to a simmer, and cover. Cook for 20 minutes until the lentils are tender and the chicken is cooked through. Scatter with coriander to serve.

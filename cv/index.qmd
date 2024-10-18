@@ -208,8 +208,7 @@ req <- request("https://api.zotero.org") |>
         v = 3,
         include = "bib",
         sort = "date",
-        style = "journal-of-ecology",
-        itemType = "journalArticle"
+        style = "journal-of-ecology"
     ) |>
         req_headers(`Zotero-API-Key` = Sys.getenv("ZOTERO_API_KEY")) |>
     req_url_path("users", "3027577", "publications", "items") |>

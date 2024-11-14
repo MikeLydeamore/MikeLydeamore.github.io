@@ -234,8 +234,28 @@ a <- resp |>
     str_replace("(Lydeamore, M\\.( J\\.)?)", '**\\1**') |>
     str_trim()
 
-cat(paste0("- ", a), sep="\n")
+preprints <- a[str_count(a, pattern = "medRxiv|arxiv") > 0]
+refereed <- a[!str_count(a, pattern = "medRxiv|arxiv") > 0]
 ```
+
+### Preprints
+
+```{r}
+#| echo: false
+#| results: asis
+
+cat(paste0("- ", preprints), sep = "\n")
+```
+
+### Peer-reviewed articles
+
+```{r}
+#| echo: false
+#| results: asis
+
+cat(paste0("- ", refereed), sep = "\n")
+```
+
 
 ## {{<fa money-bill>}} Funding
 

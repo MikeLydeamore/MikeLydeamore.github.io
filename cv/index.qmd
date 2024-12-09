@@ -454,7 +454,7 @@ cat(paste0(formatted), sep = "\n")
 
 :::: {.cols data-latex=""}
 ::: {.col data-latex="{0.85\textwidth}"}
-[M6036] Masters of Health Data Analytics Course Management Committee
+[M6036] **Masters of Health Data Analytics** -- Course Management Committee
 :::
 
 ::: {.rightcol .flushright data-latex="{0.15\textwidth}" }

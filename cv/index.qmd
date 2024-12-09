@@ -476,6 +476,15 @@ cat(paste0(formatted), sep = "\n")
 
 :::: {.cols data-latex=""}
 ::: {.col data-latex="{0.85\textwidth}"}
+**SPECTRUM Annual Meeting** - Best Presentation
+:::
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
 **University of Melbourne Faculty of Engineering and Information Technology Excellence Award in Interdisciplinary Research**
 :::
 ::: {.rightcol .flushright data-latex="{0.15\textwidth}" }

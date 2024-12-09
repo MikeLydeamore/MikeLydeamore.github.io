@@ -400,6 +400,16 @@ cat(paste0(formatted), sep = "\n")
 
 :::: {.cols data-latex=""}
 ::: {.col data-latex="{0.85\textwidth}"}
+[ETO5513] **Reproducible and Collaborative practices** (Chief Examiner)
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024--
+:::
+:::: 
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
 [ETC5512] **Wild-Caught Data**
 :::
 
@@ -439,6 +449,19 @@ cat(paste0(formatted), sep = "\n")
 2018
 :::
 :::: 
+
+### Teaching Service
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+[M6036] Masters of Health Data Analytics Course Management Committee
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2024-- 
+:::
+:::: 
+
 
 ## {{<fa award>}} Awards
 

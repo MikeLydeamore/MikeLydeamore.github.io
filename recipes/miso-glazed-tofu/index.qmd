@@ -1,0 +1,48 @@
+---
+title: "Miso Glazed Tofu"
+
+date: today
+categories: [salad, lunch, vegetarian]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Miso Glazed Tofu
+
+Miso paste on Tofu. Ez.
+
+## Ingredients
+
+* 1 packet high protein tofu (or extra firm)
+* 3 tablespoon soy sauce or tamari (1 for the sauce and 2 for the tofu marinade)
+* 2 tablespoon miso paste (can vary, see above)
+* 3 tablespoon maple syrup
+* 1 tablespoon sesame seed oil
+* ½ tablespoon garlic, minced
+* 5 grams nutritional yeast
+* 1 teaspoon garlic powder
+* 3 tablespoon cornstarch (1 tbsp to coat tofu)
+* 120 ml water or more to taste
+
+## Method
+
+Dice tofu into 1-inch cubes. Marinade for 30 minutes in 2 tbsp soy sauce/tamari
+
+After 30 minutes, add nutritional yeast, corn starch, and garlic powder. Use a small spatula to toss it until it is evenly coated.
+
+Bake at 190C for 12 minutes, toss and continue to bake for another 8-10 minutes until desired crispiness is achieved.
+
+Next, whisk the miso paste into the &frac12; cup of water along with the cornstarch, soy sauce, and maple syrup.
+
+Set a pan on medium heat and add sesame oil. Once hot, add garlic and fry for 30-45 seconds. 
+
+Add the sauce ingredients, stir consistently, and let simmer for 3-4 minutes until it thickens.
+
+Check the consistency of the sauce and add more water if desired. The sauce should be thick and viscous but still a bit runny.
+
+At this point, tofu should be done cooking. If tofu has met your desired level of crispiness, add it to the pan and toss it into the sauce.
+
+Serve over rice and vegetables, enjoy!

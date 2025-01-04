@@ -1,0 +1,39 @@
+---
+title: "Japanese Stuffed Cabbage"
+
+date: today
+categories: [dinner, beef]
+format:
+    html:
+        highlight: default
+        toc: true
+        toc_float: true
+---
+
+# Japanese Stuffed Cabbage
+
+
+
+## Ingredients
+
+### Filling
+
+* 500g mince
+* 2 tbsp grated fresh ginger
+* 3 tbsp soy sauce
+* 600g Shittake mushrooms (hats only), finely chopped
+* 2 tbsp Sake
+
+### Cabbage Roll
+
+* Chinese Cabbage - cut off thick bit and microwave for 2 minutes
+
+### Broth
+
+* Boiling water
+* 2 tbsp soy sauce
+* Stock cubes according to the package per cup
+
+## Method
+
+Roll the cabbage, put in the pot. Cover with broth. Boil for 30 minutes (or until cooked). Serve with the broth.

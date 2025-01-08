@@ -3,7 +3,7 @@ title: "Recipes"
 description: It's some recipes
 listing:
   contents: .
-  sort: "date desc"
+  sort: "title asc"
   type: default
   categories: true
   sort-ui: false

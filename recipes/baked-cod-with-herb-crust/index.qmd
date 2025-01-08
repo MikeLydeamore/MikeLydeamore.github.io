@@ -1,5 +1,5 @@
 ---
-title: "Baked cod with herd crust"
+title: "Baked cod with herb crust"
 
 date: 2022-12-18
 categories: [fish, dinner]
@@ -10,7 +10,7 @@ format:
         toc_float: true
 ---
 
-# Baked cod with herd crust
+# Baked cod with herb crust
 
 Very nice but can dry out the fish.
 

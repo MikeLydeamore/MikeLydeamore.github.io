@@ -201,6 +201,8 @@ Graduated with a double major in applied and pure mathematics
 ```{r}
 #| echo: false
 #| results: asis
+#| warning: false
+#| message: false
 
 
 req <- request("https://api.zotero.org") |>

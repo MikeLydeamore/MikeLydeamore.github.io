@@ -268,6 +268,7 @@ Almost all of this funding was obtained in partnership with large, collaborative
 
 funding <- tribble(
     ~title, ~organisation, ~amount, ~year,
+    "SHIELD: Surveillance of Healthcare-associated Infections for Effective Local Data", "NHMRC", 2000000, 2025,
     "Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group", "World Health Organisation", 8157, 2024,
     "Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants", "Commonwealth Government of Australia", 80059, 2024,
     "Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals", "World Health Organisation Phillippines", 72078, 2023,

@@ -315,6 +315,8 @@ cat(paste0(formatted), sep = "\n")
 
 presentations <- tribble(
     ~title, ~extra, ~event, ~year,
+    "Modelling chytridiomycosis transmission in frogs", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2025,
+    "`airpurifyr`: Open Air Quality Data in R", NA, "WOMBAT Annual Meeting: Open the world with open source", 2024,
     "Networks of networks in infectious diseases modelling", "Panelist", "Infectious Diseases Modelling Conference", 2024,
     "Generating synthetic contact matrices using open-source data", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2024,
     "Data-Driven Insights into Healthcare Challenges: Two Case Studies", "Invited Speaker", "Universitätsklinikum Freiburg Seminar Series", 2023,

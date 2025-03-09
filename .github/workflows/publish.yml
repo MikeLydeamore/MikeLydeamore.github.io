@@ -26,6 +26,10 @@ jobs:
         with:
           r-version: '4.2.0'
 
+      - name: External dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update -y && sudo apt-get install -y libfontconfig1-dev
+
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:

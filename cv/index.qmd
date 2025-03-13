@@ -245,7 +245,7 @@ refereed <- a[!str_count(a, pattern = "medRxiv|arxiv") > 0]
 #| echo: false
 #| results: asis
 
-cat(paste0("- ", preprints), sep = "\n")
+cat(paste0(" 1. ", preprints), sep = "\n\n")
 ```
 
 ### Peer-reviewed articles
@@ -254,7 +254,7 @@ cat(paste0("- ", preprints), sep = "\n")
 #| echo: false
 #| results: asis
 
-cat(paste0("- ", refereed), sep = "\n")
+cat(paste0(" 1. ", refereed), sep = "\n\n")
 ```
 
 

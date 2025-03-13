@@ -201,6 +201,8 @@ Graduated with a double major in applied and pure mathematics
 ```{r}
 #| echo: false
 #| results: asis
+#| warning: false
+#| message: false
 
 
 req <- request("https://api.zotero.org") |>
@@ -268,6 +270,7 @@ Almost all of this funding was obtained in partnership with large, collaborative
 
 funding <- tribble(
     ~title, ~organisation, ~amount, ~year,
+    "SHIELD: Surveillance of Healthcare-associated Infections for Effective Local Data", "NHMRC", 2000000, 2025,
     "Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group", "World Health Organisation", 8157, 2024,
     "Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants", "Commonwealth Government of Australia", 80059, 2024,
     "Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals", "World Health Organisation Phillippines", 72078, 2023,
@@ -314,6 +317,8 @@ cat(paste0(formatted), sep = "\n")
 
 presentations <- tribble(
     ~title, ~extra, ~event, ~year,
+    "Modelling chytridiomycosis transmission in frogs", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2025,
+    "`airpurifyr`: Open Air Quality Data in R", NA, "WOMBAT Annual Meeting: Open the world with open source", 2024,
     "Networks of networks in infectious diseases modelling", "Panelist", "Infectious Diseases Modelling Conference", 2024,
     "Generating synthetic contact matrices using open-source data", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2024,
     "Data-Driven Insights into Healthcare Challenges: Two Case Studies", "Invited Speaker", "Universitätsklinikum Freiburg Seminar Series", 2023,

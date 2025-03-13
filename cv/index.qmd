@@ -585,6 +585,17 @@ Department representative
 
 :::: {.cols data-latex=""}
 ::: {.col data-latex="{0.85\textwidth}"}
+**International Conference on Prevention and Infection Control**   
+Abstract Reviewer
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2025
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
 **SPECTRUM Annual Meeting** 
 Organising committee
 :::
@@ -598,6 +609,17 @@ Organising committee
 ::: {.col data-latex="{0.85\textwidth}"}
 **SPARK Short Course in Mathematical Diseases Modelling** --- OUCRU   
 Facilitator
+:::
+
+::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
+2023
+:::
+::::
+
+:::: {.cols data-latex=""}
+::: {.col data-latex="{0.85\textwidth}"}
+**International Conference on Prevention and Infection Control**   
+Abstract Reviewer
 :::
 
 ::: {.rightcol .flushright data-latex="{0.15\textwidth}" }

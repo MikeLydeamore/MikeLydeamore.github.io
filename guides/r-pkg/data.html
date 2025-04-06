@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-23">
 
-<title>Spaghetti Bolognaise – Michael Lydeamore</title>
+<title>Working with Data – Michael Lydeamore</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,47 +171,98 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../guides/r-pkg/data.html">Working with Data</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to R Packages with {usethis}</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/why-package.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Write an R Package?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/create.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a New Package</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Writing Your First Function</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Working with Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/build.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build, Check, and Install</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Tips &amp; Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#spaghetti-bolognaise" id="toc-spaghetti-bolognaise" class="nav-link active" data-scroll-target="#spaghetti-bolognaise">Spaghetti Bolognaise</a>
-  <ul class="collapse">
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link" data-scroll-target="#ingredients">Ingredients</a></li>
-  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
-  </ul></li>
+  <li><a href="#step-1-add-raw-data-script" id="toc-step-1-add-raw-data-script" class="nav-link active" data-scroll-target="#step-1-add-raw-data-script">Step 1: Add Raw Data Script</a></li>
+  <li><a href="#step-2-read-and-save-data" id="toc-step-2-read-and-save-data" class="nav-link" data-scroll-target="#step-2-read-and-save-data">Step 2: Read and Save Data</a></li>
+  <li><a href="#step-3-load-and-use-the-data" id="toc-step-3-load-and-use-the-data" class="nav-link" data-scroll-target="#step-3-load-and-use-the-data">Step 3: Load and Use the Data</a></li>
+  <li><a href="#step-4-document-the-dataset" id="toc-step-4-document-the-dataset" class="nav-link" data-scroll-target="#step-4-document-the-dataset">Step 4: Document the Dataset</a></li>
+  <li><a href="#internal-vs-external-data" id="toc-internal-vs-external-data" class="nav-link" data-scroll-target="#internal-vs-external-data">Internal vs External Data</a></li>
+  <li><a href="#tips-for-good-data-documentation" id="toc-tips-for-good-data-documentation" class="nav-link" data-scroll-target="#tips-for-good-data-documentation">Tips for Good Data Documentation</a></li>
+  <li><a href="#coming-up-next" id="toc-coming-up-next" class="nav-link" data-scroll-target="#coming-up-next">Coming Up Next</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Spaghetti Bolognaise</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">beef</div>
-    <div class="quarto-category">dinner</div>
-  </div>
-  </div>
+<h1 class="title">Working with Data</h1>
+</div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-body">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 23, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -188,35 +272,110 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="spaghetti-bolognaise" class="level1">
-<h1>Spaghetti Bolognaise</h1>
-<section id="ingredients" class="level2">
-<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<p>R packages can include data — not just functions. This is helpful when:</p>
 <ul>
-<li>1 large onion</li>
-<li>2 tbsp oil</li>
-<li>500g mince</li>
-<li>155g tomato paste</li>
-<li>3 cups water</li>
-<li>2 tsp chicken stock powder</li>
-<li>Salt &amp; pepper</li>
-<li>½ tsp oregano</li>
-<li>¼ tsp thyme</li>
-<li>1 tsp soy sauce</li>
-<li>Spaghetti</li>
-<li>Grated parmesan cheese</li>
+<li>You want to ship example data with your package</li>
+<li>You’re documenting datasets for teaching or analysis</li>
+<li>You use specific reference data across projects</li>
 </ul>
+<p>There are two types of package data:</p>
+<ul>
+<li><strong>External data</strong>: available to users after loading the package</li>
+<li><strong>Internal data</strong>: used inside the package only</li>
+</ul>
+<hr>
+<section id="step-1-add-raw-data-script" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-add-raw-data-script">Step 1: Add Raw Data Script</h2>
+<p>Run:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_data_raw</span>(<span class="st">"my_dataset"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This creates:</p>
+<ul>
+<li>A <code>data-raw/</code> folder (if it doesn’t exist)</li>
+<li>A starter script at <code>data-raw/my_dataset.R</code></li>
+</ul>
+<p>Inside that script, read in and clean your data.</p>
+<hr>
 </section>
-<section id="method" class="level2">
-<h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>Peel and finely chop the onion. Heat oil in a frying pan and cook onion until golden.</p>
-<p>Add mince and cook, stirring until browned. Break mince up to ensure it’s cooked through. Pour off any excess fat.</p>
-<p>Add all other ingredients except water, parmesan cheese, and spaghetti. Cook for 1 minute, stirring.</p>
-<p>Add water. Bring to the boil and simmer for 45 minutes. Add more water if it becomes dry.</p>
-<p>Cook spaghetti according to packet directions. Serve with sauce on top and top with parmesan cheese.</p>
+<section id="step-2-read-and-save-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-read-and-save-data">Step 2: Read and Save Data</h2>
+<p>Replace the contents of <code>data-raw/my_dataset.R</code> with something like:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read raw CSV</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>my_dataset <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"path/to/your.csv"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean or rename variables here</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># my_dataset &lt;- dplyr::rename(my_dataset, new_col = old_col)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Save it for package use</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_data</span>(my_dataset, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After this runs, you’ll see:</p>
+<pre><code>data/
+└── my_dataset.rda</code></pre>
+<hr>
+</section>
+<section id="step-3-load-and-use-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-load-and-use-the-data">Step 3: Load and Use the Data</h2>
+<p>After loading your package:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mypackage)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>my_dataset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The dataset is ready for use — just like <code>iris</code> or <code>mtcars</code>.</p>
+<blockquote class="blockquote">
+<p>The object name (<code>my_dataset</code>) is the same as the name in your R script and <code>.rda</code> file.</p>
+</blockquote>
+<hr>
+</section>
+<section id="step-4-document-the-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-document-the-dataset">Step 4: Document the Dataset</h2>
+<p>You document datasets with <strong>roxygen2</strong>, just like functions.</p>
+<p>Create a new file, e.g.&nbsp;<code>R/data-documentation.R</code>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Example dataset: my_dataset</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' A dataset containing example data imported from a CSV.</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">#' @format A data frame with 100 rows and 5 variables:</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' \describe{</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#'   \item{col1}{Description of column 1}</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">#'   \item{col2}{Description of column 2}</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">#'   \item{col3}{Description of column 3}</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">#' }</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co">#' @source path/to/your.csv</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="st">"my_dataset"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then run:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now you can view:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>?my_dataset</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>✅ You’ll see a proper help page for the data!</p>
+<hr>
+</section>
+<section id="internal-vs-external-data" class="level2">
+<h2 class="anchored" data-anchor-id="internal-vs-external-data">Internal vs External Data</h2>
+<p>If you want to use a dataset inside your package but not expose it to users:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_data</span>(my_secret_data, <span class="at">internal =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This stores it in <code>R/sysdata.rda</code>. You can still use it inside your package code, but users won’t see it in the global namespace.</p>
+<hr>
+</section>
+<section id="tips-for-good-data-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="tips-for-good-data-documentation">Tips for Good Data Documentation</h2>
+<blockquote class="blockquote">
+<p>📋 When documenting data, always include:</p>
+</blockquote>
+<ul>
+<li>What the dataset represents</li>
+<li>The number of rows and columns</li>
+<li>Descriptions for each variable (<code>@format</code>)</li>
+<li>The source of the data</li>
+<li>Any transformation or filtering applied</li>
+</ul>
+<p>Use <code>@examples</code> too if it makes sense:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' @examples</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' summary(my_dataset)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="coming-up-next" class="level2">
+<h2 class="anchored" data-anchor-id="coming-up-next">Coming Up Next</h2>
+<p>Now that you can include data and document it properly, let’s look at how to build, install, and share your package.</p>
+<p>👉 <a href="../../guides/r-pkg/build.html">Build and Install</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

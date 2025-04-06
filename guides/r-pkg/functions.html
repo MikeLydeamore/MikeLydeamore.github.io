@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-23">
 
-<title>Spaghetti Bolognaise – Michael Lydeamore</title>
+<title>Writing Your First Function – Michael Lydeamore</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,47 +171,104 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../guides/r-pkg/functions.html">Writing Your First Function</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to R Packages with {usethis}</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/why-package.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Write an R Package?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/create.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a New Package</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/functions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Writing Your First Function</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working with Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/build.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build, Check, and Install</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Tips &amp; Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#spaghetti-bolognaise" id="toc-spaghetti-bolognaise" class="nav-link active" data-scroll-target="#spaghetti-bolognaise">Spaghetti Bolognaise</a>
+  <li><a href="#step-1-create-a-new-r-script" id="toc-step-1-create-a-new-r-script" class="nav-link active" data-scroll-target="#step-1-create-a-new-r-script">Step 1: Create a New R Script</a></li>
+  <li><a href="#step-2-write-the-function-no-docs-yet" id="toc-step-2-write-the-function-no-docs-yet" class="nav-link" data-scroll-target="#step-2-write-the-function-no-docs-yet">Step 2: Write the Function (No Docs Yet)</a></li>
+  <li><a href="#step-3-load-the-package" id="toc-step-3-load-the-package" class="nav-link" data-scroll-target="#step-3-load-the-package">Step 3: Load the Package</a></li>
+  <li><a href="#step-4-check-for-documentation" id="toc-step-4-check-for-documentation" class="nav-link" data-scroll-target="#step-4-check-for-documentation">Step 4: Check for Documentation</a></li>
+  <li><a href="#step-5-add-roxygen2-comments" id="toc-step-5-add-roxygen2-comments" class="nav-link" data-scroll-target="#step-5-add-roxygen2-comments">Step 5: Add Roxygen2 Comments</a>
   <ul class="collapse">
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link" data-scroll-target="#ingredients">Ingredients</a></li>
-  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#what-do-these-tags-mean" id="toc-what-do-these-tags-mean" class="nav-link" data-scroll-target="#what-do-these-tags-mean">What Do These Tags Mean?</a></li>
   </ul></li>
+  <li><a href="#step-6-document-the-package" id="toc-step-6-document-the-package" class="nav-link" data-scroll-target="#step-6-document-the-package">Step 6: Document the Package</a></li>
+  <li><a href="#step-7-try-help-again" id="toc-step-7-try-help-again" class="nav-link" data-scroll-target="#step-7-try-help-again">Step 7: Try Help Again</a></li>
+  <li><a href="#tips-for-writing-functions-in-packages" id="toc-tips-for-writing-functions-in-packages" class="nav-link" data-scroll-target="#tips-for-writing-functions-in-packages">Tips for Writing Functions in Packages</a></li>
+  <li><a href="#optional-internal-non-exported-functions" id="toc-optional-internal-non-exported-functions" class="nav-link" data-scroll-target="#optional-internal-non-exported-functions">Optional: Internal (Non-exported) Functions</a></li>
+  <li><a href="#coming-up-next" id="toc-coming-up-next" class="nav-link" data-scroll-target="#coming-up-next">Coming Up Next</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Spaghetti Bolognaise</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">beef</div>
-    <div class="quarto-category">dinner</div>
-  </div>
-  </div>
+<h1 class="title">Writing Your First Function</h1>
+</div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-body">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 23, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -188,35 +278,149 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="spaghetti-bolognaise" class="level1">
-<h1>Spaghetti Bolognaise</h1>
-<section id="ingredients" class="level2">
-<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<p>With your package structure in place, it’s time to write your first function! This is the core of most packages — functions that make your life (and others’) easier.</p>
+<p>We’ll build up from a plain, undocumented function to a fully documented, user-ready one.</p>
+<hr>
+<section id="step-1-create-a-new-r-script" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-create-a-new-r-script">Step 1: Create a New R Script</h2>
+<p>Each function (or set of related functions) goes in a file inside your <code>R/</code> folder.</p>
+<p>Use:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_r</span>(<span class="st">"add_numbers"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This creates a new file at <code>R/add_numbers.R</code>.</p>
+<p>You can now write your function in that file.</p>
+<hr>
+</section>
+<section id="step-2-write-the-function-no-docs-yet" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-write-the-function-no-docs-yet">Step 2: Write the Function (No Docs Yet)</h2>
+<p>Let’s start simple.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>add_numbers <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">+</span> y</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Save the file.</p>
+<p>This function adds two numbers — nothing fancy, but it’s testable and reusable.</p>
+<hr>
+</section>
+<section id="step-3-load-the-package" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-load-the-package">Step 3: Load the Package</h2>
+<p>Use <code>devtools::load_all()</code> to load your package:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">load_all</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This simulates installing the package and makes your functions available immediately in your R session.</p>
+<p>Try it out:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">add_numbers</span>(<span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="step-4-check-for-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-check-for-documentation">Step 4: Check for Documentation</h2>
+<p>Try running:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>?add_numbers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You’ll get:</p>
+<pre><code>No documentation for ‘add_numbers’ in specified packages and libraries:</code></pre>
+<blockquote class="blockquote">
+<p>❌ We haven’t written documentation yet!</p>
+</blockquote>
+<hr>
+</section>
+<section id="step-5-add-roxygen2-comments" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-add-roxygen2-comments">Step 5: Add Roxygen2 Comments</h2>
+<p>Above your function, add special <code>#'</code> comments. These are read by <strong>roxygen2</strong>, which turns them into help files and updates your <code>NAMESPACE</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Add two numbers</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' This function returns the sum of two numeric inputs.</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param x A number.</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param y Another number.</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#' @return The sum of `x` and `y`.</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">#' @examples</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="co">#' add_numbers(1, 2)</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">#' @export</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>add_numbers <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">+</span> y</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<section id="what-do-these-tags-mean" class="level3">
+<h3 class="anchored" data-anchor-id="what-do-these-tags-mean">What Do These Tags Mean?</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tag</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>#'</code></td>
+<td>Starts a doc line</td>
+</tr>
+<tr class="even">
+<td><code>@param</code></td>
+<td>Describes each argument</td>
+</tr>
+<tr class="odd">
+<td><code>@return</code></td>
+<td>What the function gives back</td>
+</tr>
+<tr class="even">
+<td><code>@examples</code></td>
+<td>Example usage for the help page</td>
+</tr>
+<tr class="odd">
+<td><code>@export</code></td>
+<td>Makes the function available to users</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="step-6-document-the-package" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-document-the-package">Step 6: Document the Package</h2>
+<p>Now that you’ve added roxygen comments, run:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">document</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will:</p>
 <ul>
-<li>1 large onion</li>
-<li>2 tbsp oil</li>
-<li>500g mince</li>
-<li>155g tomato paste</li>
-<li>3 cups water</li>
-<li>2 tsp chicken stock powder</li>
-<li>Salt &amp; pepper</li>
-<li>½ tsp oregano</li>
-<li>¼ tsp thyme</li>
-<li>1 tsp soy sauce</li>
-<li>Spaghetti</li>
-<li>Grated parmesan cheese</li>
+<li>Update the <code>NAMESPACE</code> file with your function export</li>
+<li>Create a help file in the <code>man/</code> folder</li>
 </ul>
+<hr>
 </section>
-<section id="method" class="level2">
-<h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>Peel and finely chop the onion. Heat oil in a frying pan and cook onion until golden.</p>
-<p>Add mince and cook, stirring until browned. Break mince up to ensure it’s cooked through. Pour off any excess fat.</p>
-<p>Add all other ingredients except water, parmesan cheese, and spaghetti. Cook for 1 minute, stirring.</p>
-<p>Add water. Bring to the boil and simmer for 45 minutes. Add more water if it becomes dry.</p>
-<p>Cook spaghetti according to packet directions. Serve with sauce on top and top with parmesan cheese.</p>
+<section id="step-7-try-help-again" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-try-help-again">Step 7: Try Help Again</h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>?add_numbers</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>✅ You now get a help page, just like with built-in R functions.</p>
+<p>You can also re-test the function:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">add_numbers</span>(<span class="dv">10</span>, <span class="dv">5</span>)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 15</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="tips-for-writing-functions-in-packages" class="level2">
+<h2 class="anchored" data-anchor-id="tips-for-writing-functions-in-packages">Tips for Writing Functions in Packages</h2>
+<ul>
+<li>One file per function or set of related functions</li>
+<li>Use short, descriptive function names</li>
+<li>Always include a simple example with <code>@examples</code></li>
+<li>Avoid <code>print()</code> or <code>cat()</code> unless absolutely necessary — return values cleanly</li>
+<li>Keep internal helpers undocumented and unexported</li>
+</ul>
+<hr>
+</section>
+<section id="optional-internal-non-exported-functions" class="level2">
+<h2 class="anchored" data-anchor-id="optional-internal-non-exported-functions">Optional: Internal (Non-exported) Functions</h2>
+<p>Leave off the <code>@export</code> tag to make a function private to your package:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Helper: Multiply by two</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param x A number</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>double <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  x <span class="sc">*</span> <span class="dv">2</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can still use it inside your package, but users won’t see it or be able to call it directly.</p>
+<hr>
+</section>
+<section id="coming-up-next" class="level2">
+<h2 class="anchored" data-anchor-id="coming-up-next">Coming Up Next</h2>
+<p>You now have a working, documented function in your package!</p>
+<p>Next up: 👉 <a href="../../guides/r-pkg/data.html">Working with Data</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

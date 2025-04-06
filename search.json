@@ -602,6 +602,156 @@
     "text": "Professional Memberships\n\n\nAustralian and New Zealand Industrial and Applied Mathematics\nIncluding the Mathematical Biology Special Interest Group\n\n\n2015–\n\n\n\n\nAustralian Mathematics Society\n\n\n2015–"
   },
   {
+    "objectID": "guides/r-pkg/why-package.html",
+    "href": "guides/r-pkg/why-package.html",
+    "title": "Why Write an R Package?",
+    "section": "",
+    "text": "“If you copy-paste the same function twice, it belongs in a package.”\n— Hadley Wickham (probably)\nMany R users start with scripts — one-off analyses or dashboards — and over time accumulate useful snippets, functions, and workflows. Turning these into a package gives them a reusable, shareable, and maintainable home.",
+    "crumbs": [
+      "Why Write an R Package?"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/why-package.html#avoid-copy-paste-chaos",
+    "href": "guides/r-pkg/why-package.html#avoid-copy-paste-chaos",
+    "title": "Why Write an R Package?",
+    "section": "Avoid Copy-Paste Chaos",
+    "text": "Avoid Copy-Paste Chaos\nIf you find yourself reusing the same:\n\nhelper_functions.R file\nchunk of mutate() + case_when()\ncustom plotting function\n…across multiple projects, it’s time to package it.\n\nInstead of copy-pasting code:\nsource(\"../old-project/scripts/helpers.R\")\nYou could just do:\nlibrary(mytools)\nMuch cleaner.",
+    "crumbs": [
+      "Why Write an R Package?"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/why-package.html#make-code-shareable",
+    "href": "guides/r-pkg/why-package.html#make-code-shareable",
+    "title": "Why Write an R Package?",
+    "section": "Make Code Shareable",
+    "text": "Make Code Shareable\nPackages are the standard unit of collaboration in R. Anyone can install them with:\ndevtools::install_github(\"yourname/mypackage\")\nThis makes it easy to:\n\nShare functions with teammates\nHelp others reproduce your work\nDocument your thinking for future you\n\n\nA package is documentation and code bundled together.",
+    "crumbs": [
+      "Why Write an R Package?"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/why-package.html#improve-reliability",
+    "href": "guides/r-pkg/why-package.html#improve-reliability",
+    "title": "Why Write an R Package?",
+    "section": "Improve Reliability",
+    "text": "Improve Reliability\nWhen you make an R package, you gain tools to:\n\nWrite tests for your functions\nEnsure every exported function is documented\nCatch problems early with devtools::check()\n\nThese are things many data analysts skip in scripts — but they’re built into the package workflow.",
+    "crumbs": [
+      "Why Write an R Package?"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/why-package.html#packages-are-for-everyone",
+    "href": "guides/r-pkg/why-package.html#packages-are-for-everyone",
+    "title": "Why Write an R Package?",
+    "section": "Packages Are for Everyone",
+    "text": "Packages Are for Everyone\nYou don’t need to be a software engineer or CRAN contributor to make a useful package.\nPackages are for:\n\nPersonal toolkits\nTeam utilities\nData documentation\nCourse materials\nDashboards and Shiny apps\nPublishing open source code",
+    "crumbs": [
+      "Why Write an R Package?"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/why-package.html#tldr-why-package",
+    "href": "guides/r-pkg/why-package.html#tldr-why-package",
+    "title": "Why Write an R Package?",
+    "section": "TL;DR: Why Package?",
+    "text": "TL;DR: Why Package?\n\n\n\nWithout a package\nWith a package\n\n\n\n\nCopy-paste code\nReusable functions\n\n\nNo docs or tests\nAuto-generated help files\n\n\nCode scattered in scripts\nClean, versioned structure\n\n\nHard to share\ndevtools::install_github()\n\n\n\n\n\n🛠️ Coming Up\nWe’ll walk through creating your first package from scratch using {usethis} and {devtools} — no manual setup required.\nNext: 👉 Create a New Package",
+    "crumbs": [
+      "Why Write an R Package?"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/resources.html",
+    "href": "guides/r-pkg/resources.html",
+    "title": "Final Tips & Resources",
+    "section": "",
+    "text": "🎉 You’ve created, documented, built, and installed your first R package!\nWhether you’re building internal tools, publishing reusable code, or documenting datasets for analysis, you now have a powerful foundation.\nHere are some ideas for continuing your package development journey:",
+    "crumbs": [
+      "Final Tips & Resources"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/resources.html#recommended-reading",
+    "href": "guides/r-pkg/resources.html#recommended-reading",
+    "title": "Final Tips & Resources",
+    "section": "Recommended Reading",
+    "text": "Recommended Reading\n\nR Packages, 2nd Edition\nHadley Wickham & Jenny Bryan\nhttps://r-pkgs.org\nThe definitive guide. Use it as your reference!\n\n\nPackage Development Tools\n\nusethis.r-lib.org\n\ndevtools.r-lib.org\n\nroxygen2.r-lib.org\n\n\n\nMore Learning\n\nAdvanced R — deep dive into R internals\n\nHappy Git with R — if you’re new to Git",
+    "crumbs": [
+      "Final Tips & Resources"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/resources.html#community",
+    "href": "guides/r-pkg/resources.html#community",
+    "title": "Final Tips & Resources",
+    "section": "Community",
+    "text": "Community\n\n📣 RStudio Community\n🐦 #rstats\n💬 Posit Discord (formerly RStudio)\n\nAsk questions, share your packages, and keep learning!",
+    "crumbs": [
+      "Final Tips & Resources"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/resources.html#thank-you",
+    "href": "guides/r-pkg/resources.html#thank-you",
+    "title": "Final Tips & Resources",
+    "section": "Thank You!",
+    "text": "Thank You!\nYou’re now equipped to:\n✅ Build packages\n✅ Write reusable functions\n✅ Share datasets\n✅ Document everything\n\nKeep your functions in packages. Future you will thank you.\n\nHappy building! 🧱",
+    "crumbs": [
+      "Final Tips & Resources"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/index.html",
+    "href": "guides/r-pkg/index.html",
+    "title": "Intro to R Packages with {usethis}",
+    "section": "",
+    "text": "This short guide introduces the essentials of building your own R package using usethis and devtools.\nIt’s designed for R users who:\nNo prior knowledge of package internals, CRAN, or software engineering is required.",
+    "crumbs": [
+      "Intro to R Packages with {usethis}"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/index.html#what-youll-learn",
+    "href": "guides/r-pkg/index.html#what-youll-learn",
+    "title": "Intro to R Packages with {usethis}",
+    "section": "What You’ll Learn",
+    "text": "What You’ll Learn\n\nWhy making your own package is worth it\n\nHow to create a package project with {usethis}\n\nWriting and documenting functions using roxygen2\n\nIncluding and documenting datasets\n\nBuilding, checking, and installing your package\n\nOptional steps for sharing and testing",
+    "crumbs": [
+      "Intro to R Packages with {usethis}"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/index.html#how-to-use-this-guide",
+    "href": "guides/r-pkg/index.html#how-to-use-this-guide",
+    "title": "Intro to R Packages with {usethis}",
+    "section": "How to Use This Guide",
+    "text": "How to Use This Guide\nYou can read it start to finish, or skip to the parts you need.\nEach chapter is short and focused. Example code is runnable and ready to copy.\nIf you’re following along with your own package, open a new RStudio session now.",
+    "crumbs": [
+      "Intro to R Packages with {usethis}"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/index.html#workshop-slides",
+    "href": "guides/r-pkg/index.html#workshop-slides",
+    "title": "Intro to R Packages with {usethis}",
+    "section": "📽️ Workshop Slides",
+    "text": "📽️ Workshop Slides\nIf you’re attending the live session or want a quick reference version, view the slides:\nWorkshop Slides",
+    "crumbs": [
+      "Intro to R Packages with {usethis}"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/index.html#start-here",
+    "href": "guides/r-pkg/index.html#start-here",
+    "title": "Intro to R Packages with {usethis}",
+    "section": "Start Here",
+    "text": "Start Here\nBegin with Why Write an R Package?",
+    "crumbs": [
+      "Intro to R Packages with {usethis}"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Dr Michael Lydeamore",
@@ -614,6 +764,346 @@
     "title": "Dr Michael Lydeamore",
     "section": "Contact",
     "text": "Contact\n\n\n\n\n\n\n\n\n\n\n\n\n\n@MikeLydeamore\n\n\n\nMikeLydeamore\n\n\n\nmichael.lydeamore@monash.edu\n\n\n\nMonash University29 Ancora Imparo WayBuilding 6, Room 354Clayton, VIC 3800Australia"
+  },
+  {
+    "objectID": "guides/r-pkg/data.html",
+    "href": "guides/r-pkg/data.html",
+    "title": "Working with Data",
+    "section": "",
+    "text": "R packages can include data — not just functions. This is helpful when:\nThere are two types of package data:",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/data.html#step-1-add-raw-data-script",
+    "href": "guides/r-pkg/data.html#step-1-add-raw-data-script",
+    "title": "Working with Data",
+    "section": "Step 1: Add Raw Data Script",
+    "text": "Step 1: Add Raw Data Script\nRun:\nusethis::use_data_raw(\"my_dataset\")\nThis creates:\n\nA data-raw/ folder (if it doesn’t exist)\nA starter script at data-raw/my_dataset.R\n\nInside that script, read in and clean your data.",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/data.html#step-2-read-and-save-data",
+    "href": "guides/r-pkg/data.html#step-2-read-and-save-data",
+    "title": "Working with Data",
+    "section": "Step 2: Read and Save Data",
+    "text": "Step 2: Read and Save Data\nReplace the contents of data-raw/my_dataset.R with something like:\n# Read raw CSV\nmy_dataset &lt;- read.csv(\"path/to/your.csv\")\n\n# Clean or rename variables here\n# my_dataset &lt;- dplyr::rename(my_dataset, new_col = old_col)\n\n# Save it for package use\nusethis::use_data(my_dataset, overwrite = TRUE)\nAfter this runs, you’ll see:\ndata/\n└── my_dataset.rda",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/data.html#step-3-load-and-use-the-data",
+    "href": "guides/r-pkg/data.html#step-3-load-and-use-the-data",
+    "title": "Working with Data",
+    "section": "Step 3: Load and Use the Data",
+    "text": "Step 3: Load and Use the Data\nAfter loading your package:\nlibrary(mypackage)\nmy_dataset\nThe dataset is ready for use — just like iris or mtcars.\n\nThe object name (my_dataset) is the same as the name in your R script and .rda file.",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/data.html#step-4-document-the-dataset",
+    "href": "guides/r-pkg/data.html#step-4-document-the-dataset",
+    "title": "Working with Data",
+    "section": "Step 4: Document the Dataset",
+    "text": "Step 4: Document the Dataset\nYou document datasets with roxygen2, just like functions.\nCreate a new file, e.g. R/data-documentation.R:\n#' Example dataset: my_dataset\n#'\n#' A dataset containing example data imported from a CSV.\n#'\n#' @format A data frame with 100 rows and 5 variables:\n#' \\describe{\n#'   \\item{col1}{Description of column 1}\n#'   \\item{col2}{Description of column 2}\n#'   \\item{col3}{Description of column 3}\n#' }\n#' @source path/to/your.csv\n\"my_dataset\"\nThen run:\ndevtools::document()\nNow you can view:\n?my_dataset\n✅ You’ll see a proper help page for the data!",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/data.html#internal-vs-external-data",
+    "href": "guides/r-pkg/data.html#internal-vs-external-data",
+    "title": "Working with Data",
+    "section": "Internal vs External Data",
+    "text": "Internal vs External Data\nIf you want to use a dataset inside your package but not expose it to users:\nusethis::use_data(my_secret_data, internal = TRUE)\nThis stores it in R/sysdata.rda. You can still use it inside your package code, but users won’t see it in the global namespace.",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/data.html#tips-for-good-data-documentation",
+    "href": "guides/r-pkg/data.html#tips-for-good-data-documentation",
+    "title": "Working with Data",
+    "section": "Tips for Good Data Documentation",
+    "text": "Tips for Good Data Documentation\n\n📋 When documenting data, always include:\n\n\nWhat the dataset represents\nThe number of rows and columns\nDescriptions for each variable (@format)\nThe source of the data\nAny transformation or filtering applied\n\nUse @examples too if it makes sense:\n#' @examples\n#' summary(my_dataset)",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/data.html#coming-up-next",
+    "href": "guides/r-pkg/data.html#coming-up-next",
+    "title": "Working with Data",
+    "section": "Coming Up Next",
+    "text": "Coming Up Next\nNow that you can include data and document it properly, let’s look at how to build, install, and share your package.\n👉 Build and Install",
+    "crumbs": [
+      "Working with Data"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/create.html",
+    "href": "guides/r-pkg/create.html",
+    "title": "Creating a New Package",
+    "section": "",
+    "text": "Now that we know why packages are useful, let’s walk through creating one.\nThe goal here is to use the {usethis} package to handle all the setup steps — no manual file editing, no guesswork.",
+    "crumbs": [
+      "Creating a New Package"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/create.html#step-1-create-the-package-folder",
+    "href": "guides/r-pkg/create.html#step-1-create-the-package-folder",
+    "title": "Creating a New Package",
+    "section": "Step 1: Create the Package Folder",
+    "text": "Step 1: Create the Package Folder\nUse usethis::create_package() to scaffold your project:\nusethis::create_package(\"path/to/mypackage\")\nThis will:\n\nCreate a new folder called mypackage\nAdd essential files (DESCRIPTION, NAMESPACE, etc.)\nOpen the new project in RStudio\n\n\n\n\n\n\n\nTip\n\n\n\nBest practice: Use a folder name that matches your intended package name exactly.",
+    "crumbs": [
+      "Creating a New Package"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/create.html#whats-inside-the-new-package",
+    "href": "guides/r-pkg/create.html#whats-inside-the-new-package",
+    "title": "Creating a New Package",
+    "section": "What’s Inside the New Package?",
+    "text": "What’s Inside the New Package?\nWhen you run create_package(), you’ll get this structure:\nmypackage/\n├── DESCRIPTION\n├── NAMESPACE\n├── R/\n└── mypackage.Rproj\n\n\n\nFile/folder\nPurpose\n\n\n\n\nDESCRIPTION\nMetadata about your package\n\n\nNAMESPACE\nTracks exports and imports\n\n\nR/\nPlace all your functions here\n\n\n.Rproj\nMakes it a project in RStudio",
+    "crumbs": [
+      "Creating a New Package"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/create.html#step-2-use-git-highly-recommended",
+    "href": "guides/r-pkg/create.html#step-2-use-git-highly-recommended",
+    "title": "Creating a New Package",
+    "section": "Step 2: Use Git (Highly Recommended)",
+    "text": "Step 2: Use Git (Highly Recommended)\nEven if you’re working alone, Git makes it easy to:\n\nTrack changes over time\nSync with GitHub or GitLab\nUndo mistakes\n\nSet up Git:\nusethis::use_git()\nThis:\n\nInitializes a local Git repo\nAdds a .gitignore file\nMakes a first commit\n\n\n\n\n\n\n\nTip\n\n\n\nYou can link your package to GitHub later with:\nusethis::use_github()",
+    "crumbs": [
+      "Creating a New Package"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/create.html#step-3-open-in-a-clean-session",
+    "href": "guides/r-pkg/create.html#step-3-open-in-a-clean-session",
+    "title": "Creating a New Package",
+    "section": "Step 3: Open in a Clean Session",
+    "text": "Step 3: Open in a Clean Session\nOnce your package is created:\n\nClose other open RStudio projects\nReopen the .Rproj file\nRun:\n\ndevtools::load_all()\nYou’re now developing a package!",
+    "crumbs": [
+      "Creating a New Package"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/create.html#faq",
+    "href": "guides/r-pkg/create.html#faq",
+    "title": "Creating a New Package",
+    "section": "FAQ",
+    "text": "FAQ\n\nCan I use spaces or dashes in the package name?\n🚫 No. Package names must:\n\nStart with a letter\nContain only letters, numbers, or periods (.)\nBe lowercase\nNot already exist on CRAN (if publishing)\n\n\n\n\nWhere should I save my package?\nAnywhere! But ideally:\n\nIn a version-controlled folder (e.g. within a ~/code or ~/projects)\nNot inside another R project (to avoid nesting issues)\n\n\n\n\nDo I need to understand everything inside DESCRIPTION and NAMESPACE?\nNot yet! We’ll dive into those next. For now, trust {usethis} and {roxygen2} to handle them.\n\n\n\nWhat’s Next?\nNow that the scaffolding is in place, let’s write your first function and start building your package’s logic.\n👉 Writing Your First Function",
+    "crumbs": [
+      "Creating a New Package"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html",
+    "href": "guides/r-pkg/functions.html",
+    "title": "Writing Your First Function",
+    "section": "",
+    "text": "With your package structure in place, it’s time to write your first function! This is the core of most packages — functions that make your life (and others’) easier.\nWe’ll build up from a plain, undocumented function to a fully documented, user-ready one.",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#step-1-create-a-new-r-script",
+    "href": "guides/r-pkg/functions.html#step-1-create-a-new-r-script",
+    "title": "Writing Your First Function",
+    "section": "Step 1: Create a New R Script",
+    "text": "Step 1: Create a New R Script\nEach function (or set of related functions) goes in a file inside your R/ folder.\nUse:\nusethis::use_r(\"add_numbers\")\nThis creates a new file at R/add_numbers.R.\nYou can now write your function in that file.",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#step-2-write-the-function-no-docs-yet",
+    "href": "guides/r-pkg/functions.html#step-2-write-the-function-no-docs-yet",
+    "title": "Writing Your First Function",
+    "section": "Step 2: Write the Function (No Docs Yet)",
+    "text": "Step 2: Write the Function (No Docs Yet)\nLet’s start simple.\nadd_numbers &lt;- function(x, y) {\n  x + y\n}\nSave the file.\nThis function adds two numbers — nothing fancy, but it’s testable and reusable.",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#step-3-load-the-package",
+    "href": "guides/r-pkg/functions.html#step-3-load-the-package",
+    "title": "Writing Your First Function",
+    "section": "Step 3: Load the Package",
+    "text": "Step 3: Load the Package\nUse devtools::load_all() to load your package:\ndevtools::load_all()\nThis simulates installing the package and makes your functions available immediately in your R session.\nTry it out:\nadd_numbers(2, 3)\n#&gt; [1] 5",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#step-4-check-for-documentation",
+    "href": "guides/r-pkg/functions.html#step-4-check-for-documentation",
+    "title": "Writing Your First Function",
+    "section": "Step 4: Check for Documentation",
+    "text": "Step 4: Check for Documentation\nTry running:\n?add_numbers\nYou’ll get:\nNo documentation for ‘add_numbers’ in specified packages and libraries:\n\n❌ We haven’t written documentation yet!",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#step-5-add-roxygen2-comments",
+    "href": "guides/r-pkg/functions.html#step-5-add-roxygen2-comments",
+    "title": "Writing Your First Function",
+    "section": "Step 5: Add Roxygen2 Comments",
+    "text": "Step 5: Add Roxygen2 Comments\nAbove your function, add special #' comments. These are read by roxygen2, which turns them into help files and updates your NAMESPACE.\n#' Add two numbers\n#'\n#' This function returns the sum of two numeric inputs.\n#'\n#' @param x A number.\n#' @param y Another number.\n#' @return The sum of `x` and `y`.\n#' @examples\n#' add_numbers(1, 2)\n#' @export\nadd_numbers &lt;- function(x, y) {\n  x + y\n}\n\n\nWhat Do These Tags Mean?\n\n\n\nTag\nPurpose\n\n\n\n\n#'\nStarts a doc line\n\n\n@param\nDescribes each argument\n\n\n@return\nWhat the function gives back\n\n\n@examples\nExample usage for the help page\n\n\n@export\nMakes the function available to users",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#step-6-document-the-package",
+    "href": "guides/r-pkg/functions.html#step-6-document-the-package",
+    "title": "Writing Your First Function",
+    "section": "Step 6: Document the Package",
+    "text": "Step 6: Document the Package\nNow that you’ve added roxygen comments, run:\ndevtools::document()\nThis will:\n\nUpdate the NAMESPACE file with your function export\nCreate a help file in the man/ folder",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#step-7-try-help-again",
+    "href": "guides/r-pkg/functions.html#step-7-try-help-again",
+    "title": "Writing Your First Function",
+    "section": "Step 7: Try Help Again",
+    "text": "Step 7: Try Help Again\n?add_numbers\n✅ You now get a help page, just like with built-in R functions.\nYou can also re-test the function:\nadd_numbers(10, 5)\n#&gt; [1] 15",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#tips-for-writing-functions-in-packages",
+    "href": "guides/r-pkg/functions.html#tips-for-writing-functions-in-packages",
+    "title": "Writing Your First Function",
+    "section": "Tips for Writing Functions in Packages",
+    "text": "Tips for Writing Functions in Packages\n\nOne file per function or set of related functions\nUse short, descriptive function names\nAlways include a simple example with @examples\nAvoid print() or cat() unless absolutely necessary — return values cleanly\nKeep internal helpers undocumented and unexported",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#optional-internal-non-exported-functions",
+    "href": "guides/r-pkg/functions.html#optional-internal-non-exported-functions",
+    "title": "Writing Your First Function",
+    "section": "Optional: Internal (Non-exported) Functions",
+    "text": "Optional: Internal (Non-exported) Functions\nLeave off the @export tag to make a function private to your package:\n#' Helper: Multiply by two\n#' @param x A number\ndouble &lt;- function(x) {\n  x * 2\n}\nYou can still use it inside your package, but users won’t see it or be able to call it directly.",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/functions.html#coming-up-next",
+    "href": "guides/r-pkg/functions.html#coming-up-next",
+    "title": "Writing Your First Function",
+    "section": "Coming Up Next",
+    "text": "Coming Up Next\nYou now have a working, documented function in your package!\nNext up: 👉 Working with Data",
+    "crumbs": [
+      "Writing Your First Function"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html",
+    "href": "guides/r-pkg/build.html",
+    "title": "Build, Check, and Install",
+    "section": "",
+    "text": "Now that your package has:\n… it’s time to build, check, and install it!\nThese are standard steps for developing R packages, and {devtools} makes them easy.",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#step-1-document-everything",
+    "href": "guides/r-pkg/build.html#step-1-document-everything",
+    "title": "Build, Check, and Install",
+    "section": "Step 1: Document Everything",
+    "text": "Step 1: Document Everything\nBefore building, make sure all documentation and the NAMESPACE are up to date:\ndevtools::document()\nThis will:\n\nGenerate help files (man/*.Rd)\nUpdate the NAMESPACE file\nWarn you if any roxygen is incomplete",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#step-2-run-package-checks",
+    "href": "guides/r-pkg/build.html#step-2-run-package-checks",
+    "title": "Build, Check, and Install",
+    "section": "Step 2: Run Package Checks",
+    "text": "Step 2: Run Package Checks\ndevtools::check()\nThis simulates what CRAN does before accepting a package.\nIt checks:\n\nMissing documentation\nBroken examples\nSyntax errors\nSuggested packages\nLicensing and metadata\n\n\n\n\n\n\n\nTip\n\n\n\nA package that passes check() is ready to share or install.",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#step-3-install-locally",
+    "href": "guides/r-pkg/build.html#step-3-install-locally",
+    "title": "Build, Check, and Install",
+    "section": "Step 3: Install Locally",
+    "text": "Step 3: Install Locally\nOnce check() is clean:\ndevtools::install()\nThis compiles your package and installs it into your system R library.\nThen, you can use it like any other package:\nlibrary(mypackage)",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#step-4-try-it-out",
+    "href": "guides/r-pkg/build.html#step-4-try-it-out",
+    "title": "Build, Check, and Install",
+    "section": "Step 4: Try It Out",
+    "text": "Step 4: Try It Out\nCheck that everything works from a clean session:\n\nRestart R (Session &gt; Restart R)\nLoad your package:\n\nlibrary(mypackage)\n\nTry your function and data:\n\nadd_numbers(4, 5)\nmy_dataset\n\nTry help pages:\n\n?add_numbers\n?my_dataset",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#optional-share-via-github",
+    "href": "guides/r-pkg/build.html#optional-share-via-github",
+    "title": "Build, Check, and Install",
+    "section": "Optional: Share via GitHub",
+    "text": "Optional: Share via GitHub\nIf your package is version-controlled with Git, and you have a GitHub account, you can publish it:\nusethis::use_github()\nThis will:\n\nCreate a GitHub repo\nPush your code\nSet the remote for future commits\n\nThen others can install it directly:\ndevtools::install_github(\"yourname/mypackage\")\n\n📢 No CRAN required.",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#bonus-build-a-readme",
+    "href": "guides/r-pkg/build.html#bonus-build-a-readme",
+    "title": "Build, Check, and Install",
+    "section": "Bonus: Build a README",
+    "text": "Bonus: Build a README\nUse this to generate a README.Rmd with example usage:\nusethis::use_readme_rmd()\nThen knit it. This gives users a friendly intro when they land on your GitHub repo.",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#common-gotchas",
+    "href": "guides/r-pkg/build.html#common-gotchas",
+    "title": "Build, Check, and Install",
+    "section": "Common Gotchas",
+    "text": "Common Gotchas\n\n\n\n\n\n\n\nProblem\nFix\n\n\n\n\nFunction not found after install\nDid you run @export and document()?\n\n\nHelp page missing\nRoxygen missing or malformed\n\n\ncheck() fails with notes\nRead the messages carefully — not all notes are fatal\n\n\nFunction works in dev, not after install\nTry restarting R and loading the installed version",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
+  },
+  {
+    "objectID": "guides/r-pkg/build.html#whats-next",
+    "href": "guides/r-pkg/build.html#whats-next",
+    "title": "Build, Check, and Install",
+    "section": "What’s Next?",
+    "text": "What’s Next?\nCongrats! You’ve built and installed a working R package.\nNext steps:\n\nAdd tests with usethis::use_testthat()\nSet up continuous integration (CI)\nConsider submitting to CRAN (optional!)\nKeep improving and versioning your work\n\n👉 Final Tips & Resources",
+    "crumbs": [
+      "Build, Check, and Install"
+    ]
   },
   {
     "objectID": "blog/condensr-academic-website-generator/index.html",
@@ -753,7 +1243,7 @@
     "href": "recipes/index.html",
     "title": "Recipes",
     "section": "",
-    "text": "Bacon-wrapped cauliflower\n\n\n\n\n\n\nlunch\n\n\nketo\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBaked cod with herb crust\n\n\n\n\n\n\nfish\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBeef and Black Bean Sauce\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBircher Oats\n\n\n\n\n\n\nketo\n\n\nbreakfast\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBorscht\n\n\n\n\n\n\nsoup\n\n\n\n\n\n\n\n\n\nAug 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBreaded Lamb Chops\n\n\n\n\n\n\ndinner\n\n\nlamb\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBurgers\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nCauliflower Salad\n\n\n\n\n\n\nsalad\n\n\nvegetarian\n\n\nlunch\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nChicken with Lemon and Cilantro Couscous\n\n\n\n\n\n\nchicken\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nChickpea Salad\n\n\n\n\n\n\nsalad\n\n\nlunch\n\n\nvegetarian\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nDevilled Wine Chops\n\n\n\n\n\n\nchicken\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nDressed Herring\n\n\n\n\n\n\nfish\n\n\nsalad\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nFish Soup\n\n\n\n\n\n\ndinner\n\n\nfish\n\n\nsoup\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nFlorentine Pork with Chickpeas\n\n\n\n\n\n\npork\n\n\ndinner\n\n\nchickpeas\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nFrench Onion Soup\n\n\n\n\n\n\nvegetarian\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nGarlic Naans\n\n\n\n\n\n\ndinner\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nJapanese Stuffed Cabbage\n\n\n\n\n\n\ndinner\n\n\nbeef\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nKeto Broccoli Salad\n\n\n\n\n\n\nsalad\n\n\nlunch\n\n\nvegetarian\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nLamb Noodles\n\n\n\n\n\n\nlamb\n\n\ndinner\n\n\nnoodles\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nLamb, Rosemary and Garlic Pie\n\n\n\n\n\n\nlamb\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nLemon Curd\n\n\n\n\n\n\nsweet\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nLemongrass and Ginger Fish Parcels\n\n\n\n\n\n\nfish\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMacaroons\n\n\n\n\n\n\nsweet\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMeatballs\n\n\n\n\n\n\nlunch\n\n\nbeef\n\n\npasta\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMiso Glazed Tofu\n\n\n\n\n\n\nsalad\n\n\nlunch\n\n\nvegetarian\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMoroccan Beef\n\n\n\n\n\n\nbeef\n\n\nslow cooker\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Buckwheat Risotto\n\n\n\n\n\n\nlunch\n\n\nketo\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Meatballs\n\n\n\n\n\n\nvegetarian\n\n\ndinner\n\n\npasta\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nOne-pot Pumpkin Curry\n\n\n\n\n\n\ncurry\n\n\npumpkin\n\n\n\n\n\n\n\n\n\nMay 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nPea and Ham Soup\n\n\n\n\n\n\nsoup\n\n\npork\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPickle Soup\n\n\n\n\n\n\ndinner\n\n\nsoup\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPork and Bean Burrito Bowl\n\n\n\n\n\n\nlow fat\n\n\npork\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPumpkin Macaroni Cheese\n\n\n\n\n\n\ndinner\n\n\npasta\n\n\npumpkin\n\n\n\n\n\n\n\n\n\nMay 6, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nPumpkin and Goat’s Cheese Tart\n\n\n\n\n\n\ndinner\n\n\npumpkin\n\n\npastry\n\n\n\n\n\n\n\n\n\nMay 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nPumpkin and Pancetta Macaroni Cheese\n\n\n\n\n\n\ndinner\n\n\npasta\n\n\npumpkin\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRatatouille\n\n\n\n\n\n\nvegetarian\n\n\ndinner\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRed lentil and Chorizo Soup\n\n\n\n\n\n\nsoup\n\n\nchorizo\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRoti Canai\n\n\n\n\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSalami and Cheese Rounds\n\n\n\n\n\n\nlunch\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSkewer Marinade\n\n\n\n\n\n\nbeef\n\n\nbbq\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSpaghetti Bolognaise\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSpinach puff pastry with Fetta and Ricotta\n\n\n\n\n\n\nvegetarian\n\n\nlunch\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSpring Goddess Sandwich\n\n\n\n\n\n\nlunch\n\n\nketo\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSteak, Corn and Red Bean Salad\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\nsalad\n\n\n\n\n\n\n\n\n\nMar 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nStuffed Capsicum\n\n\n\n\n\n\ndinner\n\n\nbeef\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nVinaigrette\n\n\n\n\n\n\nlunch\n\n\nrussian\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nZoodle Alfredo with Bacon\n\n\n\n\n\n\npasta\n\n\nchicken\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\nNo matching items"
+    "text": "Bacon-wrapped cauliflower\n\n\n\n\n\n\nlunch\n\n\nketo\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBaked cod with herb crust\n\n\n\n\n\n\nfish\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBeef and Black Bean Sauce\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBircher Oats\n\n\n\n\n\n\nketo\n\n\nbreakfast\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBorscht\n\n\n\n\n\n\nsoup\n\n\n\n\n\n\n\n\n\nAug 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nBreaded Lamb Chops\n\n\n\n\n\n\ndinner\n\n\nlamb\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nBurgers\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nCauliflower Salad\n\n\n\n\n\n\nsalad\n\n\nvegetarian\n\n\nlunch\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nChicken with Lemon and Cilantro Couscous\n\n\n\n\n\n\nchicken\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nChickpea Salad\n\n\n\n\n\n\nsalad\n\n\nlunch\n\n\nvegetarian\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nDevilled Wine Chops\n\n\n\n\n\n\nchicken\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nDressed Herring\n\n\n\n\n\n\nfish\n\n\nsalad\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nFish Soup\n\n\n\n\n\n\ndinner\n\n\nfish\n\n\nsoup\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nFlorentine Pork with Chickpeas\n\n\n\n\n\n\npork\n\n\ndinner\n\n\nchickpeas\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nFrench Onion Soup\n\n\n\n\n\n\nvegetarian\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nGarlic Naans\n\n\n\n\n\n\ndinner\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nJapanese Stuffed Cabbage\n\n\n\n\n\n\ndinner\n\n\nbeef\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nKeto Broccoli Salad\n\n\n\n\n\n\nsalad\n\n\nlunch\n\n\nvegetarian\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nLamb Noodles\n\n\n\n\n\n\nlamb\n\n\ndinner\n\n\nnoodles\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nLamb, Rosemary and Garlic Pie\n\n\n\n\n\n\nlamb\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nLemon Curd\n\n\n\n\n\n\nsweet\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nLemongrass and Ginger Fish Parcels\n\n\n\n\n\n\nfish\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMacaroons\n\n\n\n\n\n\nsweet\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMeatballs\n\n\n\n\n\n\nlunch\n\n\nbeef\n\n\npasta\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMiso Glazed Tofu\n\n\n\n\n\n\nsalad\n\n\nlunch\n\n\nvegetarian\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMoroccan Beef\n\n\n\n\n\n\nbeef\n\n\nslow cooker\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Buckwheat Risotto\n\n\n\n\n\n\nlunch\n\n\nketo\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nMushroom Meatballs\n\n\n\n\n\n\nvegetarian\n\n\ndinner\n\n\npasta\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nOne-pot Pumpkin Curry\n\n\n\n\n\n\ncurry\n\n\npumpkin\n\n\n\n\n\n\n\n\n\nMay 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nPea and Ham Soup\n\n\n\n\n\n\nsoup\n\n\npork\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPickle Soup\n\n\n\n\n\n\ndinner\n\n\nsoup\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nPork and Bean Burrito Bowl\n\n\n\n\n\n\nlow fat\n\n\npork\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPumpkin Macaroni Cheese\n\n\n\n\n\n\ndinner\n\n\npasta\n\n\npumpkin\n\n\n\n\n\n\n\n\n\nMay 6, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nPumpkin and Goat’s Cheese Tart\n\n\n\n\n\n\ndinner\n\n\npumpkin\n\n\npastry\n\n\n\n\n\n\n\n\n\nMay 19, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nPumpkin and Pancetta Macaroni Cheese\n\n\n\n\n\n\ndinner\n\n\npasta\n\n\npumpkin\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRatatouille\n\n\n\n\n\n\nvegetarian\n\n\ndinner\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nRed lentil and Chorizo Soup\n\n\n\n\n\n\nsoup\n\n\nchorizo\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nRoti Canai\n\n\n\n\n\n\ndinner\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSalami and Cheese Rounds\n\n\n\n\n\n\nlunch\n\n\n\n\n\n\n\n\n\nOct 28, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSkewer Marinade\n\n\n\n\n\n\nbeef\n\n\nbbq\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSpaghetti Bolognaise\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\n\n\n\n\n\n\n\nAug 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSpinach puff pastry with Fetta and Ricotta\n\n\n\n\n\n\nvegetarian\n\n\nlunch\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSpring Goddess Sandwich\n\n\n\n\n\n\nlunch\n\n\nketo\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nSteak, Corn and Red Bean Salad\n\n\n\n\n\n\nbeef\n\n\ndinner\n\n\nsalad\n\n\n\n\n\n\n\n\n\nApr 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nStuffed Capsicum\n\n\n\n\n\n\ndinner\n\n\nbeef\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nVinaigrette\n\n\n\n\n\n\nlunch\n\n\nrussian\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nZoodle Alfredo with Bacon\n\n\n\n\n\n\npasta\n\n\nchicken\n\n\ndinner\n\n\n\n\n\n\n\n\n\nDec 18, 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "recipes/keto-broccoli-salad/index.html",

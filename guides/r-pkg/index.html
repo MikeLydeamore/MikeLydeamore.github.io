@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-23">
 
-<title>Spaghetti Bolognaise – Michael Lydeamore</title>
+<title>Intro to R Packages with {usethis} – Michael Lydeamore</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,47 +137,95 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../guides/r-pkg/index.html">Intro to R Packages with {usethis}</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Intro to R Packages with {usethis}</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/why-package.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Write an R Package?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/create.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a New Package</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Writing Your First Function</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working with Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/build.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build, Check, and Install</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Tips &amp; Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#spaghetti-bolognaise" id="toc-spaghetti-bolognaise" class="nav-link active" data-scroll-target="#spaghetti-bolognaise">Spaghetti Bolognaise</a>
-  <ul class="collapse">
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link" data-scroll-target="#ingredients">Ingredients</a></li>
-  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
-  </ul></li>
+  <li><a href="#what-youll-learn" id="toc-what-youll-learn" class="nav-link active" data-scroll-target="#what-youll-learn">What You’ll Learn</a></li>
+  <li><a href="#how-to-use-this-guide" id="toc-how-to-use-this-guide" class="nav-link" data-scroll-target="#how-to-use-this-guide">How to Use This Guide</a></li>
+  <li><a href="#workshop-slides" id="toc-workshop-slides" class="nav-link" data-scroll-target="#workshop-slides">📽️ Workshop Slides</a></li>
+  <li><a href="#start-here" id="toc-start-here" class="nav-link" data-scroll-target="#start-here">Start Here</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Spaghetti Bolognaise</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">beef</div>
-    <div class="quarto-category">dinner</div>
-  </div>
-  </div>
+<h1 class="title">Intro to R Packages with {usethis}</h1>
+</div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 23, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -188,35 +235,50 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="spaghetti-bolognaise" class="level1">
-<h1>Spaghetti Bolognaise</h1>
-<section id="ingredients" class="level2">
-<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<p>This short guide introduces the essentials of building your own R package using <a href="https://usethis.r-lib.org"><code>usethis</code></a> and <a href="https://devtools.r-lib.org"><code>devtools</code></a>.</p>
+<p>It’s designed for R users who:</p>
 <ul>
-<li>1 large onion</li>
-<li>2 tbsp oil</li>
-<li>500g mince</li>
-<li>155g tomato paste</li>
-<li>3 cups water</li>
-<li>2 tsp chicken stock powder</li>
-<li>Salt &amp; pepper</li>
-<li>½ tsp oregano</li>
-<li>¼ tsp thyme</li>
-<li>1 tsp soy sauce</li>
-<li>Spaghetti</li>
-<li>Grated parmesan cheese</li>
+<li>Have experience writing scripts or functions</li>
+<li>Want to reuse and organize code more effectively</li>
+<li>Are new to writing packages</li>
 </ul>
+<p>No prior knowledge of package internals, CRAN, or software engineering is required.</p>
+<hr>
+<section id="what-youll-learn" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-learn">What You’ll Learn</h2>
+<ul>
+<li>Why making your own package is worth it<br>
+</li>
+<li>How to create a package project with <code>{usethis}</code><br>
+</li>
+<li>Writing and documenting functions using roxygen2<br>
+</li>
+<li>Including and documenting datasets<br>
+</li>
+<li>Building, checking, and installing your package<br>
+</li>
+<li>Optional steps for sharing and testing</li>
+</ul>
+<hr>
 </section>
-<section id="method" class="level2">
-<h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>Peel and finely chop the onion. Heat oil in a frying pan and cook onion until golden.</p>
-<p>Add mince and cook, stirring until browned. Break mince up to ensure it’s cooked through. Pour off any excess fat.</p>
-<p>Add all other ingredients except water, parmesan cheese, and spaghetti. Cook for 1 minute, stirring.</p>
-<p>Add water. Bring to the boil and simmer for 45 minutes. Add more water if it becomes dry.</p>
-<p>Cook spaghetti according to packet directions. Serve with sauce on top and top with parmesan cheese.</p>
+<section id="how-to-use-this-guide" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-this-guide">How to Use This Guide</h2>
+<p>You can read it start to finish, or skip to the parts you need.</p>
+<p>Each chapter is short and focused. Example code is runnable and ready to copy.</p>
+<p>If you’re following along with your own package, open a new RStudio session now.</p>
+<hr>
+</section>
+<section id="workshop-slides" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-slides">📽️ Workshop Slides</h2>
+<p>If you’re attending the live session or want a quick reference version, view the slides:</p>
+<p><a href="slides.qmd">Workshop Slides</a></p>
+<hr>
+</section>
+<section id="start-here" class="level2">
+<h2 class="anchored" data-anchor-id="start-here">Start Here</h2>
+<p>Begin with <a href="../../guides/r-pkg/why-package.html">Why Write an R Package?</a></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

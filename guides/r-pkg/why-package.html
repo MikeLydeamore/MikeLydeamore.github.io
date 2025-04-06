@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-23">
 
-<title>Spaghetti Bolognaise – Michael Lydeamore</title>
+<title>Why Write an R Package? – Michael Lydeamore</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,47 +171,99 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../guides/r-pkg/why-package.html">Why Write an R Package?</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to R Packages with {usethis}</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/why-package.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Why Write an R Package?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/create.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a New Package</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Writing Your First Function</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working with Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/build.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build, Check, and Install</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Tips &amp; Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#spaghetti-bolognaise" id="toc-spaghetti-bolognaise" class="nav-link active" data-scroll-target="#spaghetti-bolognaise">Spaghetti Bolognaise</a>
+  <li><a href="#avoid-copy-paste-chaos" id="toc-avoid-copy-paste-chaos" class="nav-link active" data-scroll-target="#avoid-copy-paste-chaos">Avoid Copy-Paste Chaos</a></li>
+  <li><a href="#make-code-shareable" id="toc-make-code-shareable" class="nav-link" data-scroll-target="#make-code-shareable">Make Code Shareable</a></li>
+  <li><a href="#improve-reliability" id="toc-improve-reliability" class="nav-link" data-scroll-target="#improve-reliability">Improve Reliability</a></li>
+  <li><a href="#packages-are-for-everyone" id="toc-packages-are-for-everyone" class="nav-link" data-scroll-target="#packages-are-for-everyone">Packages Are for Everyone</a></li>
+  <li><a href="#tldr-why-package" id="toc-tldr-why-package" class="nav-link" data-scroll-target="#tldr-why-package">TL;DR: Why Package?</a>
   <ul class="collapse">
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link" data-scroll-target="#ingredients">Ingredients</a></li>
-  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#coming-up" id="toc-coming-up" class="nav-link" data-scroll-target="#coming-up">🛠️ Coming Up</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Spaghetti Bolognaise</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">beef</div>
-    <div class="quarto-category">dinner</div>
-  </div>
-  </div>
+<h1 class="title">Why Write an R Package?</h1>
+</div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-body">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 23, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -188,32 +273,101 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="spaghetti-bolognaise" class="level1">
-<h1>Spaghetti Bolognaise</h1>
-<section id="ingredients" class="level2">
-<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<blockquote class="blockquote">
+<p><em>“If you copy-paste the same function twice, it belongs in a package.”</em><br>
+— Hadley Wickham (probably)</p>
+</blockquote>
+<hr>
+<p>Many R users start with scripts — one-off analyses or dashboards — and over time accumulate useful snippets, functions, and workflows. Turning these into a <strong>package</strong> gives them a reusable, shareable, and maintainable home.</p>
+<section id="avoid-copy-paste-chaos" class="level2">
+<h2 class="anchored" data-anchor-id="avoid-copy-paste-chaos">Avoid Copy-Paste Chaos</h2>
+<p>If you find yourself reusing the same:</p>
 <ul>
-<li>1 large onion</li>
-<li>2 tbsp oil</li>
-<li>500g mince</li>
-<li>155g tomato paste</li>
-<li>3 cups water</li>
-<li>2 tsp chicken stock powder</li>
-<li>Salt &amp; pepper</li>
-<li>½ tsp oregano</li>
-<li>¼ tsp thyme</li>
-<li>1 tsp soy sauce</li>
-<li>Spaghetti</li>
-<li>Grated parmesan cheese</li>
+<li><code>helper_functions.R</code> file</li>
+<li>chunk of <code>mutate()</code> + <code>case_when()</code></li>
+<li>custom plotting function<br>
+…across multiple projects, it’s time to package it.</li>
 </ul>
+<p>Instead of copy-pasting code:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../old-project/scripts/helpers.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You could just do:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mytools)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Much cleaner.</p>
+<hr>
 </section>
-<section id="method" class="level2">
-<h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>Peel and finely chop the onion. Heat oil in a frying pan and cook onion until golden.</p>
-<p>Add mince and cook, stirring until browned. Break mince up to ensure it’s cooked through. Pour off any excess fat.</p>
-<p>Add all other ingredients except water, parmesan cheese, and spaghetti. Cook for 1 minute, stirring.</p>
-<p>Add water. Bring to the boil and simmer for 45 minutes. Add more water if it becomes dry.</p>
-<p>Cook spaghetti according to packet directions. Serve with sauce on top and top with parmesan cheese.</p>
+<section id="make-code-shareable" class="level2">
+<h2 class="anchored" data-anchor-id="make-code-shareable">Make Code Shareable</h2>
+<p>Packages are the <strong>standard unit of collaboration</strong> in R. Anyone can install them with:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"yourname/mypackage"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This makes it easy to:</p>
+<ul>
+<li>Share functions with teammates</li>
+<li>Help others reproduce your work</li>
+<li>Document your thinking for future you</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>A package is documentation and code bundled together.</strong></p>
+</blockquote>
+<hr>
+</section>
+<section id="improve-reliability" class="level2">
+<h2 class="anchored" data-anchor-id="improve-reliability">Improve Reliability</h2>
+<p>When you make an R package, you gain tools to:</p>
+<ul>
+<li>Write tests for your functions</li>
+<li>Ensure every exported function is documented</li>
+<li>Catch problems early with <code>devtools::check()</code></li>
+</ul>
+<p>These are things many data analysts skip in scripts — but they’re built into the package workflow.</p>
+<hr>
+</section>
+<section id="packages-are-for-everyone" class="level2">
+<h2 class="anchored" data-anchor-id="packages-are-for-everyone">Packages Are for Everyone</h2>
+<p>You don’t need to be a software engineer or CRAN contributor to make a useful package.</p>
+<p>Packages are for:</p>
+<ul>
+<li>Personal toolkits</li>
+<li>Team utilities</li>
+<li>Data documentation</li>
+<li>Course materials</li>
+<li>Dashboards and Shiny apps</li>
+<li>Publishing open source code</li>
+</ul>
+<hr>
+</section>
+<section id="tldr-why-package" class="level2">
+<h2 class="anchored" data-anchor-id="tldr-why-package">TL;DR: Why Package?</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Without a package</th>
+<th>With a package</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Copy-paste code</td>
+<td>Reusable functions</td>
+</tr>
+<tr class="even">
+<td>No docs or tests</td>
+<td>Auto-generated help files</td>
+</tr>
+<tr class="odd">
+<td>Code scattered in scripts</td>
+<td>Clean, versioned structure</td>
+</tr>
+<tr class="even">
+<td>Hard to share</td>
+<td><code>devtools::install_github()</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<section id="coming-up" class="level3">
+<h3 class="anchored" data-anchor-id="coming-up">🛠️ Coming Up</h3>
+<p>We’ll walk through creating your first package from scratch using <code>{usethis}</code> and <code>{devtools}</code> — no manual setup required.</p>
+<p>Next: 👉 <a href="../../guides/r-pkg/create.html">Create a New Package</a></p>
 
 
 </section>

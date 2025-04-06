@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-23">
 
-<title>Spaghetti Bolognaise – Michael Lydeamore</title>
+<title>Creating a New Package – Michael Lydeamore</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,47 +171,102 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../guides/r-pkg/create.html">Creating a New Package</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to R Packages with {usethis}</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/why-package.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Write an R Package?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/create.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Creating a New Package</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Writing Your First Function</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working with Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/build.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build, Check, and Install</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Tips &amp; Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#spaghetti-bolognaise" id="toc-spaghetti-bolognaise" class="nav-link active" data-scroll-target="#spaghetti-bolognaise">Spaghetti Bolognaise</a>
+  <li><a href="#step-1-create-the-package-folder" id="toc-step-1-create-the-package-folder" class="nav-link active" data-scroll-target="#step-1-create-the-package-folder">Step 1: Create the Package Folder</a></li>
+  <li><a href="#whats-inside-the-new-package" id="toc-whats-inside-the-new-package" class="nav-link" data-scroll-target="#whats-inside-the-new-package">What’s Inside the New Package?</a></li>
+  <li><a href="#step-2-use-git-highly-recommended" id="toc-step-2-use-git-highly-recommended" class="nav-link" data-scroll-target="#step-2-use-git-highly-recommended">Step 2: Use Git (Highly Recommended)</a></li>
+  <li><a href="#step-3-open-in-a-clean-session" id="toc-step-3-open-in-a-clean-session" class="nav-link" data-scroll-target="#step-3-open-in-a-clean-session">Step 3: Open in a Clean Session</a></li>
+  <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a>
   <ul class="collapse">
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link" data-scroll-target="#ingredients">Ingredients</a></li>
-  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#can-i-use-spaces-or-dashes-in-the-package-name" id="toc-can-i-use-spaces-or-dashes-in-the-package-name" class="nav-link" data-scroll-target="#can-i-use-spaces-or-dashes-in-the-package-name">Can I use spaces or dashes in the package name?</a></li>
+  <li><a href="#where-should-i-save-my-package" id="toc-where-should-i-save-my-package" class="nav-link" data-scroll-target="#where-should-i-save-my-package">Where should I save my package?</a></li>
+  <li><a href="#do-i-need-to-understand-everything-inside-description-and-namespace" id="toc-do-i-need-to-understand-everything-inside-description-and-namespace" class="nav-link" data-scroll-target="#do-i-need-to-understand-everything-inside-description-and-namespace">Do I need to understand everything inside <code>DESCRIPTION</code> and <code>NAMESPACE</code>?</a></li>
+  <li><a href="#whats-next" id="toc-whats-next" class="nav-link" data-scroll-target="#whats-next">What’s Next?</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Spaghetti Bolognaise</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">beef</div>
-    <div class="quarto-category">dinner</div>
-  </div>
-  </div>
+<h1 class="title">Creating a New Package</h1>
+</div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-body">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 23, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -188,32 +276,145 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="spaghetti-bolognaise" class="level1">
-<h1>Spaghetti Bolognaise</h1>
-<section id="ingredients" class="level2">
-<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<p>Now that we know <strong>why</strong> packages are useful, let’s walk through creating one.</p>
+<p>The goal here is to use the <code>{usethis}</code> package to handle all the setup steps — no manual file editing, no guesswork.</p>
+<hr>
+<section id="step-1-create-the-package-folder" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-create-the-package-folder">Step 1: Create the Package Folder</h2>
+<p>Use <code>usethis::create_package()</code> to scaffold your project:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_package</span>(<span class="st">"path/to/mypackage"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will:</p>
 <ul>
-<li>1 large onion</li>
-<li>2 tbsp oil</li>
-<li>500g mince</li>
-<li>155g tomato paste</li>
-<li>3 cups water</li>
-<li>2 tsp chicken stock powder</li>
-<li>Salt &amp; pepper</li>
-<li>½ tsp oregano</li>
-<li>¼ tsp thyme</li>
-<li>1 tsp soy sauce</li>
-<li>Spaghetti</li>
-<li>Grated parmesan cheese</li>
+<li>Create a new folder called <code>mypackage</code></li>
+<li>Add essential files (<code>DESCRIPTION</code>, <code>NAMESPACE</code>, etc.)</li>
+<li>Open the new project in RStudio</li>
 </ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Best practice:</strong> Use a folder name that matches your intended package name exactly.</p>
+</div>
+</div>
+<hr>
 </section>
-<section id="method" class="level2">
-<h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>Peel and finely chop the onion. Heat oil in a frying pan and cook onion until golden.</p>
-<p>Add mince and cook, stirring until browned. Break mince up to ensure it’s cooked through. Pour off any excess fat.</p>
-<p>Add all other ingredients except water, parmesan cheese, and spaghetti. Cook for 1 minute, stirring.</p>
-<p>Add water. Bring to the boil and simmer for 45 minutes. Add more water if it becomes dry.</p>
-<p>Cook spaghetti according to packet directions. Serve with sauce on top and top with parmesan cheese.</p>
+<section id="whats-inside-the-new-package" class="level2">
+<h2 class="anchored" data-anchor-id="whats-inside-the-new-package">What’s Inside the New Package?</h2>
+<p>When you run <code>create_package()</code>, you’ll get this structure:</p>
+<pre><code>mypackage/
+├── DESCRIPTION
+├── NAMESPACE
+├── R/
+└── mypackage.Rproj</code></pre>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>File/folder</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>DESCRIPTION</code></td>
+<td>Metadata about your package</td>
+</tr>
+<tr class="even">
+<td><code>NAMESPACE</code></td>
+<td>Tracks exports and imports</td>
+</tr>
+<tr class="odd">
+<td><code>R/</code></td>
+<td>Place all your functions here</td>
+</tr>
+<tr class="even">
+<td><code>.Rproj</code></td>
+<td>Makes it a project in RStudio</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="step-2-use-git-highly-recommended" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-use-git-highly-recommended">Step 2: Use Git (Highly Recommended)</h2>
+<p>Even if you’re working alone, Git makes it easy to:</p>
+<ul>
+<li>Track changes over time</li>
+<li>Sync with GitHub or GitLab</li>
+<li>Undo mistakes</li>
+</ul>
+<p>Set up Git:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This:</p>
+<ul>
+<li>Initializes a local Git repo</li>
+<li>Adds a <code>.gitignore</code> file</li>
+<li>Makes a first commit</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can link your package to GitHub later with:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<hr>
+</section>
+<section id="step-3-open-in-a-clean-session" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-open-in-a-clean-session">Step 3: Open in a Clean Session</h2>
+<p>Once your package is created:</p>
+<ol type="1">
+<li>Close other open RStudio projects</li>
+<li>Reopen the <code>.Rproj</code> file</li>
+<li>Run:</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">load_all</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You’re now developing a package!</p>
+<hr>
+</section>
+<section id="faq" class="level2">
+<h2 class="anchored" data-anchor-id="faq">FAQ</h2>
+<section id="can-i-use-spaces-or-dashes-in-the-package-name" class="level3">
+<h3 class="anchored" data-anchor-id="can-i-use-spaces-or-dashes-in-the-package-name">Can I use spaces or dashes in the package name?</h3>
+<p>🚫 No.&nbsp;Package names must:</p>
+<ul>
+<li>Start with a letter</li>
+<li>Contain only letters, numbers, or periods (<code>.</code>)</li>
+<li>Be lowercase</li>
+<li>Not already exist on CRAN (if publishing)</li>
+</ul>
+<hr>
+</section>
+<section id="where-should-i-save-my-package" class="level3">
+<h3 class="anchored" data-anchor-id="where-should-i-save-my-package">Where should I save my package?</h3>
+<p>Anywhere! But ideally:</p>
+<ul>
+<li>In a version-controlled folder (e.g.&nbsp;within a <code>~/code</code> or <code>~/projects</code>)</li>
+<li>Not inside another R project (to avoid nesting issues)</li>
+</ul>
+<hr>
+</section>
+<section id="do-i-need-to-understand-everything-inside-description-and-namespace" class="level3">
+<h3 class="anchored" data-anchor-id="do-i-need-to-understand-everything-inside-description-and-namespace">Do I need to understand everything inside <code>DESCRIPTION</code> and <code>NAMESPACE</code>?</h3>
+<p>Not yet! We’ll dive into those next. For now, trust <code>{usethis}</code> and <code>{roxygen2}</code> to handle them.</p>
+<hr>
+</section>
+<section id="whats-next" class="level3">
+<h3 class="anchored" data-anchor-id="whats-next">What’s Next?</h3>
+<p>Now that the scaffolding is in place, let’s write your first function and start building your package’s logic.</p>
+<p>👉 <a href="../../guides/r-pkg/functions.html">Writing Your First Function</a></p>
 
 
 </section>

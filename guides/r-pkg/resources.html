@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-08-23">
 
-<title>Spaghetti Bolognaise – Michael Lydeamore</title>
+<title>Final Tips &amp; Resources – Michael Lydeamore</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -73,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -138,47 +171,103 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../guides/r-pkg/resources.html">Final Tips &amp; Resources</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Intro to R Packages with {usethis}</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/why-package.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Why Write an R Package?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/create.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Creating a New Package</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/functions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Writing Your First Function</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Working with Data</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/build.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build, Check, and Install</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../guides/r-pkg/resources.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Final Tips &amp; Resources</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#spaghetti-bolognaise" id="toc-spaghetti-bolognaise" class="nav-link active" data-scroll-target="#spaghetti-bolognaise">Spaghetti Bolognaise</a>
+  <li><a href="#add-tests" id="toc-add-tests" class="nav-link active" data-scroll-target="#add-tests">Add Tests</a></li>
+  <li><a href="#add-continuous-integration" id="toc-add-continuous-integration" class="nav-link" data-scroll-target="#add-continuous-integration">Add Continuous Integration</a></li>
+  <li><a href="#share-your-work" id="toc-share-your-work" class="nav-link" data-scroll-target="#share-your-work">Share Your Work</a></li>
+  <li><a href="#submit-to-cran-optional" id="toc-submit-to-cran-optional" class="nav-link" data-scroll-target="#submit-to-cran-optional">Submit to CRAN (Optional!)</a></li>
+  <li><a href="#recommended-reading" id="toc-recommended-reading" class="nav-link" data-scroll-target="#recommended-reading">Recommended Reading</a>
   <ul class="collapse">
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link" data-scroll-target="#ingredients">Ingredients</a></li>
-  <li><a href="#method" id="toc-method" class="nav-link" data-scroll-target="#method">Method</a></li>
+  <li><a href="#r-packages-2nd-edition" id="toc-r-packages-2nd-edition" class="nav-link" data-scroll-target="#r-packages-2nd-edition">R Packages, 2nd Edition</a></li>
+  <li><a href="#package-development-tools" id="toc-package-development-tools" class="nav-link" data-scroll-target="#package-development-tools">Package Development Tools</a></li>
+  <li><a href="#more-learning" id="toc-more-learning" class="nav-link" data-scroll-target="#more-learning">More Learning</a></li>
   </ul></li>
+  <li><a href="#community" id="toc-community" class="nav-link" data-scroll-target="#community">Community</a></li>
+  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">Thank You!</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Spaghetti Bolognaise</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">beef</div>
-    <div class="quarto-category">dinner</div>
-  </div>
-  </div>
+<h1 class="title">Final Tips &amp; Resources</h1>
+</div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-body">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">August 23, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -188,35 +277,103 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="spaghetti-bolognaise" class="level1">
-<h1>Spaghetti Bolognaise</h1>
-<section id="ingredients" class="level2">
-<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
+<p>🎉 You’ve created, documented, built, and installed your first R package!</p>
+<p>Whether you’re building internal tools, publishing reusable code, or documenting datasets for analysis, you now have a powerful foundation.</p>
+<p>Here are some ideas for continuing your package development journey:</p>
+<section id="add-tests" class="level3">
+<h3 class="anchored" data-anchor-id="add-tests">Add Tests</h3>
+<p>Use <code>{testthat}</code> to write tests for your functions:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_testthat</span>()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_test</span>(<span class="st">"add_numbers"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Tests help you:</p>
 <ul>
-<li>1 large onion</li>
-<li>2 tbsp oil</li>
-<li>500g mince</li>
-<li>155g tomato paste</li>
-<li>3 cups water</li>
-<li>2 tsp chicken stock powder</li>
-<li>Salt &amp; pepper</li>
-<li>½ tsp oregano</li>
-<li>¼ tsp thyme</li>
-<li>1 tsp soy sauce</li>
-<li>Spaghetti</li>
-<li>Grated parmesan cheese</li>
+<li>Catch bugs early</li>
+<li>Document edge cases</li>
+<li>Build confidence before sharing</li>
+</ul>
+<hr>
+</section>
+<section id="add-continuous-integration" class="level3">
+<h3 class="anchored" data-anchor-id="add-continuous-integration">Add Continuous Integration</h3>
+<p>Automate package checks and tests on GitHub with GitHub Actions:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_github_action_check_standard</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This gives you automatic feedback every time you push a commit.</p>
+<hr>
+</section>
+<section id="share-your-work" class="level3">
+<h3 class="anchored" data-anchor-id="share-your-work">Share Your Work</h3>
+<ul>
+<li>Create a GitHub repo with <code>usethis::use_github()</code></li>
+<li>Add a <code>README.Rmd</code></li>
+<li>Include example usage and badges</li>
+<li>Tag releases with version numbers</li>
+</ul>
+<p>If it’s useful to others, make it public!</p>
+<hr>
+</section>
+<section id="submit-to-cran-optional" class="level3">
+<h3 class="anchored" data-anchor-id="submit-to-cran-optional">Submit to CRAN (Optional!)</h3>
+<p>If you want to publish on CRAN:</p>
+<ul>
+<li>Carefully follow <a href="https://r-pkgs.org/release.html">R Packages 2e</a></li>
+<li>Tidy up your <code>DESCRIPTION</code></li>
+<li>Make sure <code>check()</code> has <strong>0 errors, 0 warnings, 0 notes</strong></li>
+<li>Submit via <a href="https://cran.r-project.org/submit.html">https://cran.r-project.org/submit.html</a></li>
+</ul>
+<p>Not required — many useful packages live on GitHub forever.</p>
+<hr>
+</section>
+<section id="recommended-reading" class="level2">
+<h2 class="anchored" data-anchor-id="recommended-reading">Recommended Reading</h2>
+<section id="r-packages-2nd-edition" class="level3">
+<h3 class="anchored" data-anchor-id="r-packages-2nd-edition">R Packages, 2nd Edition</h3>
+<p>Hadley Wickham &amp; Jenny Bryan<br>
+<a href="https://r-pkgs.org" class="uri">https://r-pkgs.org</a><br>
+The definitive guide. Use it as your reference!</p>
+</section>
+<section id="package-development-tools" class="level3">
+<h3 class="anchored" data-anchor-id="package-development-tools">Package Development Tools</h3>
+<ul>
+<li><a href="https://usethis.r-lib.org">usethis.r-lib.org</a><br>
+</li>
+<li><a href="https://devtools.r-lib.org">devtools.r-lib.org</a><br>
+</li>
+<li><a href="https://roxygen2.r-lib.org">roxygen2.r-lib.org</a></li>
 </ul>
 </section>
-<section id="method" class="level2">
-<h2 class="anchored" data-anchor-id="method">Method</h2>
-<p>Peel and finely chop the onion. Heat oil in a frying pan and cook onion until golden.</p>
-<p>Add mince and cook, stirring until browned. Break mince up to ensure it’s cooked through. Pour off any excess fat.</p>
-<p>Add all other ingredients except water, parmesan cheese, and spaghetti. Cook for 1 minute, stirring.</p>
-<p>Add water. Bring to the boil and simmer for 45 minutes. Add more water if it becomes dry.</p>
-<p>Cook spaghetti according to packet directions. Serve with sauce on top and top with parmesan cheese.</p>
-
-
+<section id="more-learning" class="level3">
+<h3 class="anchored" data-anchor-id="more-learning">More Learning</h3>
+<ul>
+<li><a href="https://adv-r.hadley.nz">Advanced R</a> — deep dive into R internals<br>
+</li>
+<li><a href="https://happygitwithr.com">Happy Git with R</a> — if you’re new to Git</li>
+</ul>
+<hr>
 </section>
+</section>
+<section id="community" class="level2">
+<h2 class="anchored" data-anchor-id="community">Community</h2>
+<ul>
+<li>📣 <a href="https://community.rstudio.com">RStudio Community</a></li>
+<li>🐦 <a href="https://twitter.com/hashtag/rstats">#rstats</a></li>
+<li>💬 <a href="https://posit.co/chat">Posit Discord</a> (formerly RStudio)</li>
+</ul>
+<p>Ask questions, share your packages, and keep learning!</p>
+<hr>
+</section>
+<section id="thank-you" class="level2">
+<h2 class="anchored" data-anchor-id="thank-you">Thank You!</h2>
+<p>You’re now equipped to:</p>
+<p>✅ Build packages<br>
+✅ Write reusable functions<br>
+✅ Share datasets<br>
+✅ Document everything</p>
+<blockquote class="blockquote">
+<p>Keep your functions in packages. Future you will thank you.</p>
+</blockquote>
+<p>Happy building! 🧱</p>
+
+
 </section>
 
 </main> <!-- /main -->

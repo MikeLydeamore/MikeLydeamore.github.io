@@ -1,0 +1,177 @@
+---
+title: "Writing Your First Function"
+format: html
+---
+
+With your package structure in place, it’s time to write your first function! This is the core of most packages — functions that make your life (and others’) easier.
+
+We'll build up from a plain, undocumented function to a fully documented, user-ready one.
+
+---
+
+## Step 1: Create a New R Script
+
+Each function (or set of related functions) goes in a file inside your `R/` folder.
+
+Use:
+
+```r
+usethis::use_r("add_numbers")
+```
+
+This creates a new file at `R/add_numbers.R`.
+
+You can now write your function in that file.
+
+---
+
+## Step 2: Write the Function (No Docs Yet)
+
+Let’s start simple.
+
+```r
+add_numbers <- function(x, y) {
+  x + y
+}
+```
+
+Save the file.
+
+This function adds two numbers — nothing fancy, but it’s testable and reusable.
+
+---
+
+## Step 3: Load the Package
+
+Use `devtools::load_all()` to load your package:
+
+```r
+devtools::load_all()
+```
+
+This simulates installing the package and makes your functions available immediately in your R session.
+
+Try it out:
+
+```r
+add_numbers(2, 3)
+#> [1] 5
+```
+
+---
+
+## Step 4: Check for Documentation
+
+Try running:
+
+```r
+?add_numbers
+```
+
+You’ll get:
+
+```
+No documentation for ‘add_numbers’ in specified packages and libraries:
+```
+
+> ❌ We haven’t written documentation yet!
+
+---
+
+## Step 5: Add Roxygen2 Comments
+
+Above your function, add special `#'` comments. These are read by **roxygen2**, which turns them into help files and updates your `NAMESPACE`.
+
+```r
+#' Add two numbers
+#'
+#' This function returns the sum of two numeric inputs.
+#'
+#' @param x A number.
+#' @param y Another number.
+#' @return The sum of `x` and `y`.
+#' @examples
+#' add_numbers(1, 2)
+#' @export
+add_numbers <- function(x, y) {
+  x + y
+}
+```
+
+---
+
+### What Do These Tags Mean?
+
+| Tag         | Purpose |
+|-------------|---------|
+| `#'`        | Starts a doc line |
+| `@param`    | Describes each argument |
+| `@return`   | What the function gives back |
+| `@examples` | Example usage for the help page |
+| `@export`   | Makes the function available to users |
+
+---
+
+## Step 6: Document the Package
+
+Now that you’ve added roxygen comments, run:
+
+```r
+devtools::document()
+```
+
+This will:
+
+- Update the `NAMESPACE` file with your function export
+- Create a help file in the `man/` folder
+
+---
+
+## Step 7: Try Help Again
+
+```r
+?add_numbers
+```
+
+✅ You now get a help page, just like with built-in R functions.
+
+You can also re-test the function:
+
+```r
+add_numbers(10, 5)
+#> [1] 15
+```
+
+---
+
+## Tips for Writing Functions in Packages
+
+- One file per function or set of related functions
+- Use short, descriptive function names
+- Always include a simple example with `@examples`
+- Avoid `print()` or `cat()` unless absolutely necessary — return values cleanly
+- Keep internal helpers undocumented and unexported
+
+---
+
+## Optional: Internal (Non-exported) Functions
+
+Leave off the `@export` tag to make a function private to your package:
+
+```r
+#' Helper: Multiply by two
+#' @param x A number
+double <- function(x) {
+  x * 2
+}
+```
+
+You can still use it inside your package, but users won’t see it or be able to call it directly.
+
+---
+
+## Coming Up Next
+
+You now have a working, documented function in your package!
+
+Next up: 👉 [Working with Data](data.qmd)

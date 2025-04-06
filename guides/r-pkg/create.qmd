@@ -1,0 +1,130 @@
+---
+title: "Creating a New Package"
+format: html
+---
+
+Now that we know **why** packages are useful, let’s walk through creating one.
+
+The goal here is to use the `{usethis}` package to handle all the setup steps — no manual file editing, no guesswork.
+
+---
+
+## Step 1: Create the Package Folder
+
+Use `usethis::create_package()` to scaffold your project:
+
+```r
+usethis::create_package("path/to/mypackage")
+```
+
+This will:
+
+- Create a new folder called `mypackage`
+- Add essential files (`DESCRIPTION`, `NAMESPACE`, etc.)
+- Open the new project in RStudio
+
+::: callout-tip
+**Best practice:** Use a folder name that matches your intended package name exactly.
+:::
+
+---
+
+## What’s Inside the New Package?
+
+When you run `create_package()`, you'll get this structure:
+
+```
+mypackage/
+├── DESCRIPTION
+├── NAMESPACE
+├── R/
+└── mypackage.Rproj
+```
+
+| File/folder | Purpose |
+|-------------|---------|
+| `DESCRIPTION` | Metadata about your package |
+| `NAMESPACE`   | Tracks exports and imports |
+| `R/`          | Place all your functions here |
+| `.Rproj`      | Makes it a project in RStudio |
+
+---
+
+## Step 2: Use Git (Highly Recommended)
+
+Even if you’re working alone, Git makes it easy to:
+
+- Track changes over time
+- Sync with GitHub or GitLab
+- Undo mistakes
+
+Set up Git:
+
+```r
+usethis::use_git()
+```
+
+This:
+
+- Initializes a local Git repo
+- Adds a `.gitignore` file
+- Makes a first commit
+
+::: callout-tip
+You can link your package to GitHub later with:
+```r
+usethis::use_github()
+```
+:::
+
+---
+
+## Step 3: Open in a Clean Session
+
+Once your package is created:
+
+1. Close other open RStudio projects
+2. Reopen the `.Rproj` file
+3. Run:
+
+```r
+devtools::load_all()
+```
+
+You’re now developing a package!
+
+---
+
+## FAQ
+
+### Can I use spaces or dashes in the package name?
+
+🚫 No. Package names must:
+
+- Start with a letter
+- Contain only letters, numbers, or periods (`.`)
+- Be lowercase
+- Not already exist on CRAN (if publishing)
+
+---
+
+### Where should I save my package?
+
+Anywhere! But ideally:
+
+- In a version-controlled folder (e.g. within a `~/code` or `~/projects`)
+- Not inside another R project (to avoid nesting issues)
+
+---
+
+### Do I need to understand everything inside `DESCRIPTION` and `NAMESPACE`?
+
+Not yet! We’ll dive into those next. For now, trust `{usethis}` and `{roxygen2}` to handle them.
+
+---
+
+### What's Next?
+
+Now that the scaffolding is in place, let’s write your first function and start building your package's logic.
+
+👉 [Writing Your First Function](functions.qmd)

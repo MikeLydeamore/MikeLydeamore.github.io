@@ -20,11 +20,26 @@ website:
         text: Software
       - href: blog/index.qmd
         text: Blog
+      - text: "Guides"
+        menu:
+          - text: "Making your first R Package"
+            href: guides/r-pkg/index.qmd
     right:
       - icon: twitter
         href: https://www.twitter.com/MikeLydeamore
       - icon: github
         href: https://github.com/MikeLydeamore
+
+  sidebar:
+    - title: "Making your first R package"
+      contents:
+        - guides/r-pkg/index.qmd
+        - guides/r-pkg/why-package.qmd
+        - guides/r-pkg/create.qmd
+        - guides/r-pkg/functions.qmd
+        - guides/r-pkg/data.qmd
+        - guides/r-pkg/build.qmd
+        - guides/r-pkg/resources.qmd
 
   page-footer:
     left: |

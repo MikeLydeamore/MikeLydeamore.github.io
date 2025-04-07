@@ -79,6 +79,32 @@ usethis::use_github()
 
 ---
 
+## ⚠️ A Note About Data and Git
+
+Before committing anything to Git — especially data — **pause and double-check**:
+
+- Is this data sensitive, internal, or private?
+- Are you legally or contractually allowed to store or share it?
+- Would it be safe in a public repo someday?
+
+> Even private GitHub repos are not fully secure. Assume anything committed could eventually be seen.
+
+### Ignore raw or sensitive data
+
+Update your `.gitignore` to prevent accidental leaks:
+
+```
+# .gitignore
+data-raw/
+*.csv
+*.xlsx
+*.rds
+```
+
+For extra protection, keep data in external storage or use `.Rbuildignore` to exclude it from the built package.
+
+---
+
 ## Step 3: Open in a Clean Session
 
 Once your package is created:

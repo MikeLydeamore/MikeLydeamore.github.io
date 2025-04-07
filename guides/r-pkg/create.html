@@ -243,6 +243,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-1-create-the-package-folder" id="toc-step-1-create-the-package-folder" class="nav-link active" data-scroll-target="#step-1-create-the-package-folder">Step 1: Create the Package Folder</a></li>
   <li><a href="#whats-inside-the-new-package" id="toc-whats-inside-the-new-package" class="nav-link" data-scroll-target="#whats-inside-the-new-package">What’s Inside the New Package?</a></li>
   <li><a href="#step-2-use-git-highly-recommended" id="toc-step-2-use-git-highly-recommended" class="nav-link" data-scroll-target="#step-2-use-git-highly-recommended">Step 2: Use Git (Highly Recommended)</a></li>
+  <li><a href="#a-note-about-data-and-git" id="toc-a-note-about-data-and-git" class="nav-link" data-scroll-target="#a-note-about-data-and-git">⚠️ A Note About Data and Git</a>
+  <ul class="collapse">
+  <li><a href="#ignore-raw-or-sensitive-data" id="toc-ignore-raw-or-sensitive-data" class="nav-link" data-scroll-target="#ignore-raw-or-sensitive-data">Ignore raw or sensitive data</a></li>
+  </ul></li>
   <li><a href="#step-3-open-in-a-clean-session" id="toc-step-3-open-in-a-clean-session" class="nav-link" data-scroll-target="#step-3-open-in-a-clean-session">Step 3: Open in a Clean Session</a></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq">FAQ</a>
   <ul class="collapse">
@@ -372,6 +376,29 @@ Tip
 </div>
 <hr>
 </section>
+<section id="a-note-about-data-and-git" class="level2">
+<h2 class="anchored" data-anchor-id="a-note-about-data-and-git">⚠️ A Note About Data and Git</h2>
+<p>Before committing anything to Git — especially data — <strong>pause and double-check</strong>:</p>
+<ul>
+<li>Is this data sensitive, internal, or private?</li>
+<li>Are you legally or contractually allowed to store or share it?</li>
+<li>Would it be safe in a public repo someday?</li>
+</ul>
+<blockquote class="blockquote">
+<p>Even private GitHub repos are not fully secure. Assume anything committed could eventually be seen.</p>
+</blockquote>
+<section id="ignore-raw-or-sensitive-data" class="level3">
+<h3 class="anchored" data-anchor-id="ignore-raw-or-sensitive-data">Ignore raw or sensitive data</h3>
+<p>Update your <code>.gitignore</code> to prevent accidental leaks:</p>
+<pre><code># .gitignore
+data-raw/
+*.csv
+*.xlsx
+*.rds</code></pre>
+<p>For extra protection, keep data in external storage or use <code>.Rbuildignore</code> to exclude it from the built package.</p>
+<hr>
+</section>
+</section>
 <section id="step-3-open-in-a-clean-session" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-open-in-a-clean-session">Step 3: Open in a Clean Session</h2>
 <p>Once your package is created:</p>
@@ -380,7 +407,7 @@ Tip
 <li>Reopen the <code>.Rproj</code> file</li>
 <li>Run:</li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">load_all</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">load_all</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You’re now developing a package!</p>
 <hr>
 </section>

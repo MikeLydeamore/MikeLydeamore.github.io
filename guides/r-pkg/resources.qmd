@@ -1,0 +1,105 @@
+---
+title: "Final Tips & Resources"
+format: html
+---
+
+🎉 You've created, documented, built, and installed your first R package!
+
+Whether you're building internal tools, publishing reusable code, or documenting datasets for analysis, you now have a powerful foundation.
+
+Here are some ideas for continuing your package development journey:
+
+### Add Tests
+
+Use `{testthat}` to write tests for your functions:
+
+```r
+usethis::use_testthat()
+usethis::use_test("add_numbers")
+```
+
+Tests help you:
+
+- Catch bugs early
+- Document edge cases
+- Build confidence before sharing
+
+---
+
+### Add Continuous Integration
+
+Automate package checks and tests on GitHub with GitHub Actions:
+
+```r
+usethis::use_github_action_check_standard()
+```
+
+This gives you automatic feedback every time you push a commit.
+
+---
+
+### Share Your Work
+
+- Create a GitHub repo with `usethis::use_github()`
+- Add a `README.Rmd`
+- Include example usage and badges
+- Tag releases with version numbers
+
+If it’s useful to others, make it public!
+
+---
+
+### Submit to CRAN (Optional!)
+
+If you want to publish on CRAN:
+
+- Carefully follow [R Packages 2e](https://r-pkgs.org/release.html)
+- Tidy up your `DESCRIPTION`
+- Make sure `check()` has **0 errors, 0 warnings, 0 notes**
+- Submit via [https://cran.r-project.org/submit.html](https://cran.r-project.org/submit.html)
+
+Not required — many useful packages live on GitHub forever.
+
+---
+
+## Recommended Reading
+
+### R Packages, 2nd Edition  
+Hadley Wickham & Jenny Bryan  
+<https://r-pkgs.org>  
+The definitive guide. Use it as your reference!
+
+### Package Development Tools  
+- [usethis.r-lib.org](https://usethis.r-lib.org)  
+- [devtools.r-lib.org](https://devtools.r-lib.org)  
+- [roxygen2.r-lib.org](https://roxygen2.r-lib.org)
+
+### More Learning  
+- [Advanced R](https://adv-r.hadley.nz) — deep dive into R internals  
+- [Happy Git with R](https://happygitwithr.com) — if you’re new to Git
+
+---
+
+## Community
+
+- 📣 [RStudio Community](https://community.rstudio.com)
+- 🐦 [#rstats](https://twitter.com/hashtag/rstats)
+- 💬 [Posit Discord](https://posit.co/chat) (formerly RStudio)
+
+Ask questions, share your packages, and keep learning!
+
+---
+
+## Thank You!
+
+You're now equipped to:
+
+✅ Build packages  
+✅ Write reusable functions  
+✅ Share datasets  
+✅ Document everything
+
+> Keep your functions in packages. Future you will thank you.
+
+Happy building! 🧱
+

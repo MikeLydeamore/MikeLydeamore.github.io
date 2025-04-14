@@ -1,0 +1,159 @@
+---
+title: "Build, Check, and Install"
+format: html
+---
+
+Now that your package has:
+
+- A function
+- Some documentation
+- (Maybe) some data
+
+… it's time to **build**, **check**, and **install** it!
+
+These are standard steps for developing R packages, and `{devtools}` makes them easy.
+
+---
+
+## Step 1: Document Everything
+
+Before building, make sure all documentation and the `NAMESPACE` are up to date:
+
+```r
+devtools::document()
+```
+
+This will:
+
+- Generate help files (`man/*.Rd`)
+- Update the `NAMESPACE` file
+- Warn you if any roxygen is incomplete
+
+---
+
+## Step 2: Run Package Checks
+
+```r
+devtools::check()
+```
+
+This simulates what CRAN does before accepting a package.
+
+It checks:
+
+- Missing documentation
+- Broken examples
+- Syntax errors
+- Suggested packages
+- Licensing and metadata
+
+::: callout-tip
+A package that passes `check()` is ready to share or install.
+:::
+
+---
+
+## Step 3: Install Locally
+
+Once `check()` is clean:
+
+```r
+devtools::install()
+```
+
+This compiles your package and installs it into your system R library.
+
+Then, you can use it like any other package:
+
+```r
+library(mypackage)
+```
+
+---
+
+## Step 4: Try It Out
+
+Check that everything works from a clean session:
+
+1. Restart R (Session > Restart R)
+2. Load your package:
+
+```r
+library(mypackage)
+```
+
+3. Try your function and data:
+
+```r
+add_numbers(4, 5)
+my_dataset
+```
+
+4. Try help pages:
+
+```r
+?add_numbers
+?my_dataset
+```
+
+---
+
+## Optional: Share via GitHub
+
+If your package is version-controlled with Git, and you have a GitHub account, you can publish it:
+
+```r
+usethis::use_github()
+```
+
+This will:
+
+- Create a GitHub repo
+- Push your code
+- Set the remote for future commits
+
+Then others can install it directly:
+
+```r
+devtools::install_github("yourname/mypackage")
+```
+
+> 📢 **No CRAN required.**
+
+---
+
+## Bonus: Build a README
+
+Use this to generate a `README.Rmd` with example usage:
+
+```r
+usethis::use_readme_rmd()
+```
+
+Then knit it. This gives users a friendly intro when they land on your GitHub repo.
+
+---
+
+## Common Gotchas
+
+| Problem                          | Fix                            |
+|----------------------------------|---------------------------------|
+| Function not found after install | Did you run `@export` and `document()`? |
+| Help page missing                | Roxygen missing or malformed   |
+| `check()` fails with notes       | Read the messages carefully — not all notes are fatal |
+| Function works in dev, not after install | Try restarting R and loading the installed version |
+
+---
+
+## What’s Next?
+
+Congrats! You’ve built and installed a working R package.
+
+Next steps:
+
+- Add tests with `usethis::use_testthat()`
+- Set up continuous integration (CI)
+- Consider submitting to CRAN (optional!)
+- Keep improving and versioning your work
+
+👉 [Final Tips & Resources](resources.qmd)

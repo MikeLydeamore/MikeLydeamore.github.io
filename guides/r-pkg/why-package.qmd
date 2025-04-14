@@ -1,0 +1,99 @@
+---
+title: "Why Write an R Package?"
+format: html
+---
+
+> _"If you copy-paste the same function twice, it belongs in a package."_  
+> — Hadley Wickham (probably)
+
+---
+
+Many R users start with scripts — one-off analyses or dashboards — and over time accumulate useful snippets, functions, and workflows. Turning these into a **package** gives them a reusable, shareable, and maintainable home.
+
+## Avoid Copy-Paste Chaos
+
+If you find yourself reusing the same:
+
+- `helper_functions.R` file
+- chunk of `mutate()` + `case_when()`
+- custom plotting function  
+...across multiple projects, it's time to package it.
+
+Instead of copy-pasting code:
+
+```r
+source("../old-project/scripts/helpers.R")
+```
+
+You could just do:
+
+```r
+library(mytools)
+```
+
+Much cleaner.
+
+---
+
+## Make Code Shareable
+
+Packages are the **standard unit of collaboration** in R. Anyone can install them with:
+
+```r
+devtools::install_github("yourname/mypackage")
+```
+
+This makes it easy to:
+
+- Share functions with teammates
+- Help others reproduce your work
+- Document your thinking for future you
+
+> **A package is documentation and code bundled together.**
+
+---
+
+## Improve Reliability
+
+When you make an R package, you gain tools to:
+
+- Write tests for your functions
+- Ensure every exported function is documented
+- Catch problems early with `devtools::check()`
+
+These are things many data analysts skip in scripts — but they're built into the package workflow.
+
+---
+
+## Packages Are for Everyone
+
+You don’t need to be a software engineer or CRAN contributor to make a useful package.
+
+Packages are for:
+
+- Personal toolkits
+- Team utilities
+- Data documentation
+- Course materials
+- Dashboards and Shiny apps
+- Publishing open source code
+
+---
+
+## TL;DR: Why Package?
+
+| Without a package        | With a package             |
+|--------------------------|----------------------------|
+| Copy-paste code          | Reusable functions         |
+| No docs or tests         | Auto-generated help files  |
+| Code scattered in scripts| Clean, versioned structure |
+| Hard to share            | `devtools::install_github()` |
+
+---
+
+### 🛠️ Coming Up
+
+We'll walk through creating your first package from scratch using `{usethis}` and `{devtools}` — no manual setup required.
+
+Next: 👉 [Create a New Package](create.qmd)
+

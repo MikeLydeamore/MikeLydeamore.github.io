@@ -1,0 +1,53 @@
+---
+title: "Intro to R Packages with {usethis}"
+format:
+    html:
+        number-sections: false
+        page-layout: article
+---
+
+This short guide introduces the essentials of building your own R package using [`usethis`](https://usethis.r-lib.org) and [`devtools`](https://devtools.r-lib.org).
+
+It’s designed for R users who:
+
+- Have experience writing scripts or functions
+- Want to reuse and organize code more effectively
+- Are new to writing packages
+
+No prior knowledge of package internals, CRAN, or software engineering is required.
+
+---
+
+## What You'll Learn
+
+- Why making your own package is worth it  
+- How to create a package project with `{usethis}`  
+- Writing and documenting functions using roxygen2  
+- Including and documenting datasets  
+- Building, checking, and installing your package  
+- Optional steps for sharing and testing
+
+---
+
+## How to Use This Guide
+
+You can read it start to finish, or skip to the parts you need.
+
+Each chapter is short and focused. Example code is runnable and ready to copy.
+
+If you’re following along with your own package, open a new RStudio session now.
+
+---
+
+## 📽️ Workshop Slides
+
+If you're attending the live session or want a quick reference version, view the slides:
+
+[Workshop Slides](slides.qmd)
+
+---
+
+## Start Here
+
+Begin with [Why Write an R Package?](why-package.qmd)
+

@@ -237,8 +237,8 @@ a <- resp |>
   str_replace_all("https?://[^\\s]+", function(url) paste0("<", url, ">")) |>
   str_trim()
 
-preprints <- a[str_count(a, pattern = "medRxiv|arxiv") > 0]
-refereed <- a[!str_count(a, pattern = "medRxiv|arxiv") > 0]
+preprints <- a[str_count(a, pattern = "medRxiv|arxiv|arXiv") > 0]
+refereed <- a[!str_count(a, pattern = "medRxiv|arxiv|arXiv") > 0]
 ```
 
 ### Preprints

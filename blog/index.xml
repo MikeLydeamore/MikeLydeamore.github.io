@@ -9,7 +9,7 @@
 <link>https://www.michaellydeamore.com/blog/</link>
 <atom:link href="https://www.michaellydeamore.com/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog posts by Dr Michael Lydeamore</description>
-<generator>quarto-1.7.31</generator>
+<generator>quarto-1.7.32</generator>
 <lastBuildDate>Wed, 19 Jul 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Reducing duplication in teaching materials</title>

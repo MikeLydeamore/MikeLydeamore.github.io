@@ -9,7 +9,7 @@
 <link>https://www.michaellydeamore.com/blog/</link>
 <atom:link href="https://www.michaellydeamore.com/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog posts by Dr Michael Lydeamore</description>
-<generator>quarto-1.7.34</generator>
+<generator>quarto-1.8.24</generator>
 <lastBuildDate>Wed, 19 Jul 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Reducing duplication in teaching materials</title>
@@ -30,7 +30,7 @@
 <section id="a-clunky-first-attempt" class="level2">
 <h2 class="anchored" data-anchor-id="a-clunky-first-attempt">A clunky first attempt</h2>
 <p>I spent a bit too much time starting at CSS and ad-hoc web development, even though the results are <a href="https://www.spectrum.edu.au/">sometimes</a> <a href="https://www.spark.edu.au">nice</a>. When all you have is a hammer, everything looks like a CSS-based nail. Enter the chunk option:</p>
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{r, echo=solutions}</span></span>
 <span id="cb1-2"><span class="fu" style="color: #4758AB;
@@ -47,9 +47,9 @@ background-color: null;
 font-style: inherit;">"https://docs.health.vic.gov.au/covid19/data/NCOV_cases_by_postcode_LGA.csv"</span>)</span>
 <span id="cb1-4"><span class="in" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">```</span></span></code></pre></div>
+font-style: inherit;">```</span></span></code></pre></div></div>
 <p>This is pretty straightforward. I set the variable <code>solutions</code> at the top of the file to be <code>TRUE</code> if I want solutions to be printed, and false otherwise. With a bit of fanangling, you could also pass this into <code>params</code> in the YAML at the top of the document, and then two calls to <code>rmarkdown::render()</code> with the relevant parameters would probably get you what you want. With a bit of styling:</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{css}</span></span>
 <span id="cb2-2"><span class="op" style="color: #5E5E5E;
@@ -146,7 +146,7 @@ background-color: null;
 font-style: inherit;">;}</span></span>
 <span id="cb2-16"><span class="in" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">```</span></span></code></pre></div>
+font-style: inherit;">```</span></span></code></pre></div></div>
 <p>you can even make it look nice. It was a good first attempt, and saw me through for that semester. But, I still felt like there had to be a cleaner way, and something I could generalise to Quarto (which loses me the luxury of the <code>rmarkdown::render()</code> call).</p>
 </section>
 <section id="inheriting-a-solution" class="level2">
@@ -171,7 +171,7 @@ output:
 <p>The <a href="https://github.com/koncina/unilur">unilur</a> package wsas designed for exactly this. I must say, it doesn’t look particularly active on GitHub, but nonetheless, it worked perfectly. With an extra argument to <code>rmarkdown::render(output_format = "all")</code>, two documents are produced, with the relevant suffixes on them. Brilliant!</p>
 <p>The styling I inherited was a little egregious (I really can’t do <span style="color:white; background-color:green;">white text on a green background</span>), but it did the job. And no more multiple copies of files for me to royally screw up when I’m in a hurry.</p>
 <p>The only problem is, it’s an Rmarkdown output format, not a Quarto one. And literally everything else in this course is Quarto. There’s even lectures dedicated to it. I stumbled upon a Quarto port, converting it to an <a href="https://github.com/ginolhac/unilur">extension</a>, which was a great start. The system the author had gone with was to add a chunk option:</p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><span class="in" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><span class="in" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">```{r}</span></span>
 <span id="cb4-2"><span class="co" style="color: #5E5E5E;
@@ -179,7 +179,7 @@ background-color: null;
 font-style: inherit;">#| unilur-solution: true</span></span>
 <span id="cb4-3"><span class="in" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">```</span></span></code></pre></div>
+font-style: inherit;">```</span></span></code></pre></div></div>
 <p>combined with a YAML boolean <code>show-solution: true</code>, which you could change to generate the two files. I ported over the first tutorial reasonably quickly, and it performed <em>almost</em> as expected. I had nice expandable dropdowns for solutions:</p>
 <p><img src="https://www.michaellydeamore.com/blog/reducing-teaching-duplication-with-unilur/unilur-solution-example.png" class="img-fluid"></p>
 <p>The only problem was combining code chunks with text, which in a course all about how to explain your story, was quite important. This is because the only way to get a solution block to generate is with the chunk option, and so text solutions have to be enclosed in a <code>block</code> type. Embedding code chunks into a <code>block</code>… uh… block <em>does</em> work, but you lose syntax highlighting, and the ability to execute them if you want the solutions to actually compile.</p>
@@ -291,7 +291,7 @@ contributes:
 <div class="cell">
 <details class="code-fold">
 <summary>This code chunk is long, so click here to see it</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">library</span>(condensr)</span>
 <span id="cb1-2"></span>
@@ -403,7 +403,7 @@ font-style: inherit;">related_staff =</span> <span class="st" style="color: #207
 background-color: null;
 font-style: inherit;">"joe-bloggs"</span></span>
 <span id="cb1-30">    )</span>
-<span id="cb1-31">)</span></code></pre></div>
+<span id="cb1-31">)</span></code></pre></div></div>
 </details>
 </div>
 <p>You could expand this list to be as long as you like.</p>

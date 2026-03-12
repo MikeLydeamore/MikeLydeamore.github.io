@@ -2,31 +2,40 @@
 title: Software
 ---
 
-## HospitalNetwork
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
 
-A functional approach to building hospital networks from data on hospitalised patients who are transferred through and between hospitals.
+library(pkgmeta)
+library(stringr)
+library(purrr)
+library(dplyr)
 
-Aims to provide a common framework to build and analyse these (static) networks.
+extract_names <- function(author_text) {
+  author_text |>
+    str_remove_all("\\s*\\[[^\\]]*\\]|\\s*\\([^)]*\\)") |>
+    str_split(",\\s*") |>
+    pluck(1) |>
+    str_trim() |>
+    paste0(collapse = ", ")
+}
 
-Coauthors: Pascal Crepey, Tjibbe Donker.
+packages <- get_meta(cran_authors = c("Lydeamore")) |>
+    mutate(authors = extract_names(authors))
+```
 
-Available on [CRAN](https://cran.r-project.org/package=HospitalNetwork) and [GitHub](https://github.com/PascalCrepey/HospitalNetwork)
+```{r}
+#| echo: false
+#| results: 'asis'
 
-## condensr
-
-An easy-to-use, fast framework for generating academic "group" websites. Fundamentally, it is a bunch of Quarto templates with some convenient wrappers.
-
-Available on [GitHub](https://github.com/MikeLydeamore/condensr).
-
-Used for:
-
-* [SPECTRUM CRE](https://www.spectrum.edu.au/)
-* [SPARK Capacity Building Center](https://www.spark.edu.au)
-
-## conmat
-
-Synthetic contact matrix generation based on contact diary surveys, and models of population-specific factors.
-
-Coauthors: Nick Tierney, Nick Golding.
-
-Available on [GitHub](https://github.com/MikeLydeamore/conmat).
+for (p in 1:nrow(packages)) {
+    cat(
+        "## ", packages$package[p], "\n\n",
+        packages$description[p], "\n\n",
+        "Coauthors: ", packages$authors[p], "\n\n",
+        "Available on [CRAN](https://CRAN.R-project.org/package=", packages$package[p], ")\n\n",
+        sep = ""
+    )
+}
+```

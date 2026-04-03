@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/reducing-teaching-duplication-with-unilur/index.html",
+      "/blog/condensr-academic-website-generator/index.html"
+    ]
+  },
+  {
     "listing": "/recipes/index.html",
     "items": [
       "/recipes/bacon-wrapped-cauliflower/index.html",
@@ -49,13 +56,6 @@
       "/recipes/stuffed-capsicum/index.html",
       "/recipes/vinaigrette/index.html",
       "/recipes/zoodle-alfredo-with-bacon/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/reducing-teaching-duplication-with-unilur/index.html",
-      "/blog/condensr-academic-website-generator/index.html"
     ]
   }
 ]

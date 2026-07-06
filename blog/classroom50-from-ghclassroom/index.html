@@ -8,7 +8,7 @@
 
 <meta name="dcterms.date" content="2026-07-06">
 
-<title>Garlic Naans – Michael Lydeamore</title>
+<title>Moving to Classroom50 from GitHub Classroom – Michael Lydeamore</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -153,14 +153,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#garlic-naans" id="toc-garlic-naans" class="nav-link active" data-scroll-target="#garlic-naans">Garlic Naans</a>
+  <li><a href="#classroom50" id="toc-classroom50" class="nav-link active" data-scroll-target="#classroom50">Classroom50</a>
   <ul class="collapse">
-  <li><a href="#ingredients" id="toc-ingredients" class="nav-link" data-scroll-target="#ingredients">Ingredients</a>
-  <ul class="collapse">
-  <li><a href="#naan-breads" id="toc-naan-breads" class="nav-link" data-scroll-target="#naan-breads">Naan Breads</a></li>
-  <li><a href="#garlic-butter-topping" id="toc-garlic-butter-topping" class="nav-link" data-scroll-target="#garlic-butter-topping">Garlic Butter Topping</a></li>
+  <li><a href="#initial-setup" id="toc-initial-setup" class="nav-link" data-scroll-target="#initial-setup">Initial setup</a></li>
+  <li><a href="#classroom-setup" id="toc-classroom-setup" class="nav-link" data-scroll-target="#classroom-setup">Classroom setup</a></li>
+  <li><a href="#assignment-setup" id="toc-assignment-setup" class="nav-link" data-scroll-target="#assignment-setup">Assignment setup</a></li>
+  <li><a href="#the-cli" id="toc-the-cli" class="nav-link" data-scroll-target="#the-cli">The CLI</a></li>
   </ul></li>
-  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -169,9 +169,9 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Garlic Naans</h1>
+<h1 class="title">Moving to Classroom50 from GitHub Classroom</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">dinner</div>
+    <div class="quarto-category">teaching</div>
   </div>
   </div>
 
@@ -195,49 +195,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="garlic-naans" class="level1">
-<h1>Garlic Naans</h1>
-<section id="ingredients" class="level2">
-<h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
-<section id="naan-breads" class="level3">
-<h3 class="anchored" data-anchor-id="naan-breads">Naan Breads</h3>
-<ul>
-<li>¼ cup warm water</li>
-<li>2 tsp granulated sugar</li>
-<li>1 ½ tsp active dry yeast or instant (rapid rise)</li>
-<li>¾ cup milk, warm</li>
-<li>¾ cup Greek yogurt or natural plain yogurt</li>
-<li>¼ cup vegetable oil plus 2 tbsp extra for cooking</li>
-<li>2 cloves garlic minced</li>
-<li>4 cups plain flour plus extra for dusting (560g)</li>
-<li>1 tsp baking powder</li>
-<li>1 tsp salt</li>
-</ul>
+<p>Recently, GitHub Classrom has been <a href="https://github.com/orgs/community/discussions/196615">deprecated</a>, with all repositories to be deleted on August 28, 2026. This was a very short timeline for migration, and has left many educators (myself included) nervous about transitioning as a new semester approaches.</p>
+<p>I have been using GitHub classroom in two units: Collaborative and Reproducible Practices, and Communicating with Data. For me, it is an excellent tool to (a) give students template code for their work, (b) track their contributions over time and (c) get them used to modern version control practices. Despite the tool being clunky in many ways, and often unreasonably slow to load a single page, I’ve yet to find something that comes close in terms of features.</p>
+<p>On the post announcing the deprecation of Classroom, GitHub announced two possible alternatives:</p>
+<ol type="1">
+<li>Codio, which is a paid-for solution which is (in my opinion) unreasonably and unattainably expensive, or</li>
+<li>Classroom50, which is a free solution running entirely inside GitHub.</li>
+</ol>
+<p>The second of these options is what I have explored, and I have some good news: it seems to work.</p>
+<section id="classroom50" class="level1">
+<h1>Classroom50</h1>
+<section id="initial-setup" class="level2">
+<h2 class="anchored" data-anchor-id="initial-setup">Initial setup</h2>
+<p>When you initially log into Classroom50, it will seem very familiar. Use your GitHub SSO, and follow the prompts.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Make your organisation <em>first</em>, as you will need to give special access inside Classroom50 to your organisation. **Make sure you enable the access to the organisation as part of your setup</p>
+<p>You can do this later, but when you’re not yet comfortable, why make your life harder?</p>
+</div>
+</div>
+<p>Classroom50 will then make a new repo, called <code>classroom50</code>, which it uses to keep track of assignments, workflows and even scores. Note that by default this is a private repo, and this will later cause you issues. Classroom50 uses Github Pages to host the student facing content, and on a free organisation this is not an option.</p>
+<p>You have two choices:</p>
+<ol type="1">
+<li>Buy Github enterprise, which is again unreasonably expensive or</li>
+<li>Make the repo public, and deal with the consequences.</li>
+</ol>
+<p>The consequences include things like students being able to see autogrades, and some of the configuration. Just keep this in mind, especially if you are going to be using a lot of autograding.</p>
 </section>
-<section id="garlic-butter-topping" class="level3">
-<h3 class="anchored" data-anchor-id="garlic-butter-topping">Garlic Butter Topping</h3>
-<ul>
-<li>3 tbsp butter, melted</li>
-<li>2 cloves garlic, minced</li>
-<li>1 tsp fresh chopped cilantro, or parsley</li>
-</ul>
-<p>Combine together the water, sugar and yeast. Let sit for 5-10 minutes or until the mixture begins to bubble on top.</p>
-<p>Add in the milk, yogurt, oil, minced garlic, flour baking powder and salt. Mix until the dough comes together with your hands.</p>
-<p>Turn dough out onto lightly floured surface. Use floured hands to knead the dough until smooth, about 3 to 5 minutes.</p>
-<p>Lightly grease the same mixing bowl with a small spray of cooking oil. Transfer dough to the bowl and cover with plastic wrap. Let rest at room temperature for about an hour until doubled in size.</p>
-<p>When ready to cook, divide the dough into 10 equal pieces. Roll into balls, then use a rolling pin to roll each piece of dough into a large oval.</p>
-<p>Heat cast-iron pan over medium-high heat. Grease pan all over with ½ teaspoon of the extra oil.</p>
-<p>Place one piece of the naan on the oiled hot skillet and cook until bubbles form on top, about 1-2 minutes. While cooking, brush the top with a little oil.</p>
-<p>Flip and cook for another 1-2 minutes, until large golden spots appear on the bottom.</p>
-<p>Remove from the pan and wrap in a clean kitchen towel. Repeat with the remaining naan (keep them wrapped in a towel while you work).</p>
-<p>For the Garlic Butter topping: Combine melted butter and minced garlic together in a bowl. Brush each naan with the garlic butter and top with the fresh herb of your choosing.</p>
+<section id="classroom-setup" class="level2">
+<h2 class="anchored" data-anchor-id="classroom-setup">Classroom setup</h2>
+<p>Next, you need to add students to your classroom. Unlike in Github Classroom, you don’t seem to just be able to send an open link for students to sign up. I guess with the new repo-based management setup this could make it too easy to spam invites to clasrooms you don’t belong to. Instead, you have to add each student, either via their github username, email or both. You can do this either one by one, or via a CSV upload.</p>
+<p>This means that you should probably collect Github usernames of your students at the start of the semester, since many may be using email addresses that are not their university associated ones. I always had to do this anyway, because students would never select their correct username. The upside of this is that you will have record of who is who early on.</p>
+<p>Then, send students the organisation invite link. You can find the link in the “Assignments” view, on the lefth and side, under “Students”. It should have the structure <a href="https://classroom50.org/organisation-name/classroom-name/onboard" class="uri">https://classroom50.org/organisation-name/classroom-name/onboard</a>. Students need to accept this before they are able to accept any assignments.</p>
+</section>
+<section id="assignment-setup" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-setup">Assignment setup</h2>
+<p>To set up a new assignment, the process is basically the same as the <em>old</em> GitHub classroom (i.e.&nbsp;before assignments were forks of repos). Click “Create new assignment”, and pick a <strong>template</strong> repo <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. Then, set the due date (which defaults to today), and set up any autograding you like. You can also change the repo slug at this point, which can be helpful if your template repo has a very long name.</p>
+<p>You’ll get an assignment link to share with students, which will be in the form <a href="https://classroom50.org/organisation-name/classroom-name/assignments/assignment-name/accept" class="uri">https://classroom50.org/organisation-name/classroom-name/assignments/assignment-name/accept</a>. Once the student clicks the button, some scripts will create a deep clone of the starter repository in your organisation, appended with their Github username.</p>
+<p>To access student repos, click the student name inside the assignment and then click “Open assignment repo”. This will take you directly to the student repo as per usual.</p>
+</section>
+<section id="the-cli" class="level2">
+<h2 class="anchored" data-anchor-id="the-cli">The CLI</h2>
+<p>Classroom50 interacts with the <code>gh</code> CLI. I’m yet to try this out but it seems to be cleaner than the old <code>gh classroom</code> extension and will hopefully make mass downloading easier. If you have any experience, I’d love to hear about it. I’ll probably try it out a bit later in the semester.</p>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<p>It looks like, so far, Classroom50 will be a good replacement for an ailing (and neglected) Github Classroom. The website is still a bit flakey, and there are some improvements (like links disappearing) that can make it a bit challenging, but I feel like this is “early adopters tax” of a new tool. Given the very short closure date of Classroom, and the very recent launch date of Classroom50, I think this tool has been very very rapidly developed, and to me that explains the roughenss around the edges.</p>
 
 
 </section>
-</section>
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>If you’re like me you always forget to make the initial repo a template. This option is in repository settings right at the top<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

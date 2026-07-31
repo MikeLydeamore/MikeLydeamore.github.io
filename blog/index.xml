@@ -9,7 +9,7 @@
 <link>https://www.michaellydeamore.com/blog/</link>
 <atom:link href="https://www.michaellydeamore.com/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog posts by Dr Michael Lydeamore</description>
-<generator>quarto-1.9.38</generator>
+<generator>quarto-1.10.18</generator>
 <lastBuildDate>Mon, 06 Jul 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Moving to Classroom50 from GitHub Classroom</title>

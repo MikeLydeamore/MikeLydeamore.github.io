@@ -18,6 +18,35 @@
     font-size: smaller;
 }
 
+.cv-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) max-content;
+    column-gap: 1rem;
+    margin-bottom: 0.7rem;
+}
+
+.cv-entry-main p,
+.cv-entry-date p {
+    margin: 0;
+}
+
+.cv-entry-date {
+    min-width: 6rem;
+    text-align: right;
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    .cv-entry {
+        grid-template-columns: 1fr;
+        row-gap: 0.1rem;
+    }
+
+    .cv-entry-date {
+        text-align: left;
+    }
+}
+
 /* adapt stylesheet for print
 from: https://github.com/quarto-dev/quarto-cli/discussions/2538#discussioncomment-4081842 */
 

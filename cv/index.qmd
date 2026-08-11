@@ -1,54 +1,33 @@
 ---
 title: "Curriculum Vitae"
 format:
-    html:
-        toc: true
-        page-layout: full
-        include-after-body: 
-            text: |
-                <script src="../assets/aos.js"></script>
-                <script>
-                AOS.init({
-                anchorPlacement: 'top-left',
-                duration: 1000,
-                offset: 120
-                });
-                </script>
-    pdf:
-        include-in-header: columns.tex
-        geometry:
-            - top=20mm
-            - left=20mm
-            - right=20mm
-            - bottom=20mm
-    docx: default
+  html:
+    toc: true
+    page-layout: full
+    include-after-body:
+      text: |
+        <script src="../assets/aos.js"></script>
+        <script>
+        AOS.init({
+          anchorPlacement: 'top-left',
+          duration: 1000,
+          offset: 120
+        });
+        </script>
+  typst:
+    papersize: a4
+    margin:
+      x: 20mm
+      y: 20mm
+    include-in-header: cv.typ
+  docx: default
 css: ../assets/cv.css
-format-links: [pdf, docx]
+format-links:
+  - format: typst
+    text: PDF
+    icon: file-pdf
+  - docx
 ---
-
-```{=html}
-<style>
-.flushright {
-   text-align: right;
-   display: inline-block;
-   width: 25% !important;
-}
-
-.col {
-    width: 100%;
-}
-
-.rightcol {
-    width: 100%;
-}
-
-.whitecol {
-    width: 1% !important;
-}
-
-.cols {display: flex;}
-</style>
-```
 
 ```{r}
 #| echo: false
@@ -57,144 +36,38 @@ format-links: [pdf, docx]
 #| label: load-libraries
 
 library(httr2)
-library(tibble)
 library(stringr)
-library(textutils)
+
+cv_dir <- dirname(normalizePath(knitr::current_input(dir = TRUE)))
+cv_data_dir <- file.path(cv_dir, "data")
+source(file.path(cv_dir, "entries.R"))
 ```
 
-::: {.print-only .contact-block}
-Dr Michael Lydeamore  
-Department of Econometrics and Business Statistics  
-Monash University
+```{r}
+#| echo: false
+#| results: asis
+#| label: contact-details
 
-Email: michael.lydeamore@monash.edu
-:::
+render_contact()
+```
 
 ## {{<fa briefcase>}} Appointments Held
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Senior Lecturer - Econometrics and Business Statistics**  
-Monash University
+```{r}
+#| echo: false
+#| results: asis
 
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021 ---
-:::
-
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**COVID-19 Modelling & Forecasting Lead**  
-**Manager, Analytics**  
-Department of Health and Human Services, Victoria
-
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2020
-:::
-
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Postdoctoral Research Fellow**  
-Monash University
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2019 --- 2021
-:::
-
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Honorary Team Member**  
-SaferCare Victoria
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2019 --
-:::
-
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Honorary Research Fellow**  
-Alfred Health
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2019 --
-:::
-
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Research Fellow**  
-The Kirby Institute, University of New South Wales
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2018 --- 2019
-:::
-
-::::
+render_cv_entries("appointments.csv")
+```
 
 ## {{<fa graduation-cap>}} Education
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Doctor of Philosophy -- Applied Mathematics**  
-The University of Melbourne  
-Thesis title: Mechanistic and statistical models of skin disease transmission
+```{r}
+#| echo: false
+#| results: asis
 
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2015 --- 2019
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.8\textwidth}"}
-**Masters of Philosophy -- Applied Mathematics**  
-The University of Adelaide  
-Thesis title: Approximations of stochastic household models for comparing antiviral allocation schemes  
-Awarded the Applied Probability Trust prize for the highest mark with a project in Applied Mathematics and Statistics
-
-:::
-
-::: {.col .whitecol data-latex="{0.05\textwidth}"}
-\ 
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2013 --- 2014
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Bachelor of Mathematical Sciences**  
-The University of Adelaide  
-Graduated with a double major in applied and pure mathematics
-
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2010 --- 2013
-:::
-::::
+render_cv_entries("education.csv")
+```
 
 ## {{<fa book>}} Publications
 
@@ -204,7 +77,6 @@ Graduated with a double major in applied and pure mathematics
 #| warning: false
 #| message: false
 
-
 req <- request("https://api.zotero.org") |>
   req_url_query(
     v = 3,
@@ -212,33 +84,43 @@ req <- request("https://api.zotero.org") |>
     sort = "date",
     style = "journal-of-ecology"
   ) |>
-  req_headers(`Zotero-API-Key` = Sys.getenv("ZOTERO_API_KEY")) |>
   req_url_path("users", "3027577", "publications", "items") |>
   req_retry()
 
-resp <- req |>
-  req_perform()
+zotero_api_key <- Sys.getenv("ZOTERO_API_KEY")
+if (nzchar(zotero_api_key)) {
+  req <- req |> req_headers(`Zotero-API-Key` = zotero_api_key)
+}
 
-a <- resp |>
+decode_bibliography <- function(bibliography) {
+  italic_open <- "QQQITALICOPENQQQ"
+  italic_close <- "QQQITALICCLOSEQQQ"
+
+  bibliography |>
+    str_replace_all("<i>", italic_open) |>
+    str_replace_all("</i>", italic_close) |>
+    vapply(
+      function(item) xml2::xml_text(xml2::read_html(paste0("<body>", item, "</body>"))),
+      character(1)
+    ) |>
+    str_replace_all(italic_open, "*") |>
+    str_replace_all(italic_close, "*")
+}
+
+resp <- req |> req_perform()
+
+publications <- resp |>
   resp_body_json() |>
   purrr::map("bib") |>
   unlist() |>
-  # convert from HTML
-  HTMLdecode() |>
-  # Convert html to markdown
-  str_remove_all("<div[^>]*>") |>
-  str_remove_all("<\\/div>") |>
-  # replace itallics
-  str_replace_all("<\\/?i>", "*") |>
-  # remove line breaks???
-  str_remove_all("\\n") |>
-  # Bold my name
+  decode_bibliography() |>
+  str_remove_all("\n") |>
   str_replace("(Lydeamore, M\\.( J\\.)?)", "**\\1**") |>
   str_replace_all("https?://[^\\s]+", function(url) paste0("<", url, ">")) |>
   str_trim()
 
-preprints <- a[str_count(a, pattern = "medRxiv|arxiv|arXiv") > 0]
-refereed <- a[!str_count(a, pattern = "medRxiv|arxiv|arXiv") > 0]
+preprints <- publications[str_count(publications, "medRxiv|arxiv|arXiv") > 0]
+refereed <- publications[str_count(publications, "medRxiv|arxiv|arXiv") == 0]
 ```
 
 ### Preprints
@@ -259,551 +141,61 @@ cat(paste0(" 1. ", preprints), sep = "\n\n")
 cat(paste0(" 1. ", refereed), sep = "\n\n")
 ```
 
-
 ## {{<fa money-bill>}} Funding
 
 Almost all of this funding was obtained in partnership with large, collaborative teams.
 
 ```{r}
 #| echo: false
-#| message: false
-
-funding <- tribble(
-    ~title, ~organisation, ~amount, ~year,
-    "SHIELD: Surveillance of Healthcare-associated Infections for Effective Local Data", "NHMRC", 2000000, 2025,
-    "Modelling Work in Low and Middle Income Counties in the Western Pacific Region for the COVID-19 SAGE Working Group", "World Health Organisation", 8157, 2024,
-    "Modelling To Support Australia’s Resilience to and Preparedness for Omicron And Future Sars-Cov-2 Variants", "Commonwealth Government of Australia", 80059, 2024,
-    "Contractual Partner to Conduct Research on Healthcare-Associated Infection Rates in Phillippine Hospitals", "World Health Organisation Phillippines", 72078, 2023,
-    "Centre of Western Public Health Unit", "Contract Research", 25000, 2023,
-    "Extending and comparing methods for projecting social contact matrices", "SPECTRUM/SPARK Seed Funding", 19438, 2022,
-    "Quantifying longitudinal relationships between community mobility and COVID-19 case incidence in west metropolitan Melbourne", "SPECTRUM/SPARK Seed Funding", 19896, 2022,
-    "Modelling to support Australia's national plan for COVID-19", "Commonwealth Government of Australia", 147536, 2021,
-    "Modelling to support Australia's transition to 'COVID-normal'", "Australian Office of Health Protection", 25620, 2021
-)
-
-format_funding <- function(funded) {
-    paste(
-        ':::: {.cols data-latex=""}',
-        '::: {.col data-latex="{0.85\\textwidth}"}',
-        paste0('**',funded$title,'**  '),
-        paste0(funded$organisation,'  '),
-        paste0('Awarded value: $', scales::comma(funded$amount)),
-        ':::',
-        '::: {.rightcol .flushright data-latex="{0.15\\textwidth}" }',
-        funded$year,
-        ':::',
-        '::::',
-        sep = "\n"
-    )
-}
-
-```
-
-```{r}
-#| echo: false
 #| results: asis
 
-formatted <- lapply(1:nrow(funding), function(i) {
-    format_funding(funding[i,])
-}) |> unlist()
-
-cat(paste0(formatted), sep = "\n")
+render_cv_entries("funding.csv")
 ```
 
 ## <i class="bi bi-chat-quote"></i> Conference presentations and contributed talks
 
 ```{r}
 #| echo: false
+#| results: asis
 
-presentations <- tribble(
-    ~title, ~extra, ~event, ~year,
-    "Modelling chytridiomycosis transmission in frogs", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2025,
-    "`airpurifyr`: Open Air Quality Data in R", NA, "WOMBAT Annual Meeting: Open the world with open source", 2024,
-    "Networks of networks in infectious diseases modelling", "Panelist", "Infectious Diseases Modelling Conference", 2024,
-    "Generating synthetic contact matrices using open-source data", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2024,
-    "Data-Driven Insights into Healthcare Challenges: Two Case Studies", "Invited Speaker", "Universitätsklinikum Freiburg Seminar Series", 2023,
-    "Data-Driven Insights into Healthcare Challenges: Two Case Studies", NA, "UNSW Australia Statistics & Data Science Seminar", 2023,
-    "Burden of healthcare associated infections in Australia", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2022,
-    "Exponential Random Graph Models and CPE transmission", "Invited Speaker", "Melbourne Mathematical Biology Seminar Series", 2021,
-    "Mathematical modelling for COVID-19 in Victoria, Australia", "Invited Speaker", "Math for Industry Forum, Vietnam", 2021,
-    "The associations between transmission of CPE and ward connectivity: a network analysis", NA, "Australasian Society for Infectious Diseases Annual Scientific Meeting", 2021,
-    "The burden of healthcare acquired infections in Australian public hospitals", NA, "Australasian Society for Infectious Diseases Annual Scientific Meeting", 2021,
-    "Decision Making and Mathematical Biology - Victoria's usage of COVID-19 modelling", "Invited Speaker", "Mathematical Biology Special Interest Group Workshop", 2021,
-    "Modelling between-household effective contact and the elimination of COVID-19 in Melbourne, Australia", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2021,
-    "Mathematical modelling and Victoria's response to COVID-19", "Invited Speaker", "Victorian ANZIAM Branch Meeting", 2020, 
-    "Australia's experience and the role of modelling in its responses to COVID-19", "Invited Speaker", "Usher Institute COVID-19 Webinar", 2020,
-    "Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2019,
-    "Estimating epidemiological quantities for skin sores in remote Australian communities using interval-censored data", NA, "NSW--ACT ANZIAM Branch Meeting", 2018,
-    "Coupled models of Group A Streptococcus and Scabies: How likely is eradication?", NA, "PRISM International Conference", 2018,
-    "Investigating the dynamics of coupled epidemiological transmission models with application to Group A Streptococcus and Scabies", NA, "Society for Mathematical Biology Annual Meeting", 2018,
-    "Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2018,
-    "Quantifying the age of first infection with skin sores in five remote Australian Aboriginal communities", NA, "Lancefield International Symposium on Streptococci and Streptococcal Diseases", 2017,
-    "Investigating the dynamics of coupled models with applications to Group A Streptococcus and Scabies", NA, "PRISM Annual Knowledge Transfer and Training Conference", 2017,
-    "Constructing mathematical models of Group A Streptococcus and Scabies in remote Australian Indigenous communities", "Invited Speaker", "Zeeman Institute Seminar Series ", 2017,
-    "Developing a model for the transmission and treatment dynamics of scabies infections a high prevalence setting", NA, "Melbourne-Manchester Joint Workshop", 2017,
-    "Developing a model for the transmission of Group A Streptococcus", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2017,
-    "Determining the age of first infection from incomplete data", NA, "Modelling Emerging Infections and Neglected Tropical Diseases Workshop", 2016,
-    "Investigating Intervention Intervals for Scabies Infections", NA, "Australia and New Zealand Industrial Applied Mathematics Conference", 2016
-)
-
-format_presentation <- function(presentation) {
-    manipped_title <- ifelse(
-        is.na(presentation$extra), 
-        paste0('**',presentation$title,'**'),
-        paste0('**',presentation$title,'**', " --- ", presentation$extra)
-    )
-    paste(
-        ':::: {.cols data-latex=""}',
-        '::: {.col data-latex="{0.85\\textwidth}"}',
-        paste0(manipped_title,'  '),
-        paste0(presentation$event,'  '),
-        ':::',
-        '::: {.rightcol .flushright data-latex="{0.15\\textwidth}" }',
-        presentation$year,
-        ':::',
-        '::::',
-        sep = "\n"
-    )
-}
-
+render_cv_entries("presentations.csv")
 ```
+
+## {{<fa school>}} Teaching
 
 ```{r}
 #| echo: false
 #| results: asis
 
-formatted <- lapply(1:nrow(presentations), function(i) {
-    format_presentation(presentations[i,])
-}) |> unlist()
-
-cat(paste0(formatted), sep = "\n")
+render_cv_entries("teaching.csv")
 ```
-
-## {{<fa school>}} Teaching
-
-### Lecturer
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[ETC5513] **Reproducible and Collaborative practices** (Chief Examiner)
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024--
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[ETC5523] **Communicating with Data** (Chief Examiner)
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023--
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[ETO5513] **Reproducible and Collaborative practices** (Chief Examiner)
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024--
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[ETC5512] **Wild-Caught Data**
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022--2023
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[ETC5521] **Exploratory Data Analysis**
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022
-:::
-:::: 
-
-### Tutor
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[MAST10016] **Mathematics for Biomedicine**
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2016--2019
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[MAST30001] **Stochastic Modelling**
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2018
-:::
-:::: 
-
-### Teaching Service
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-[M6036] **Masters of Health Data Analytics** -- Course Management Committee
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024-- 
-:::
-:::: 
-
 
 ## {{<fa award>}} Awards
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Fellow of the Higher Education Academy**
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024
-:::
-::::
+```{r}
+#| echo: false
+#| results: asis
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**SPECTRUM Annual Meeting** - Best Presentation
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024
-:::
-::::
+render_cv_entries("awards.csv")
+```
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**University of Melbourne Faculty of Engineering and Information Technology Excellence Award in Interdisciplinary Research**
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
+## {{<fa comments>}} Academic Service & Community Engagement
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**IPAA Spirit of Service Awards** -- Finalist
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
+```{r}
+#| echo: false
+#| results: asis
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Engagement Australia Excellence Awards --- Outstanding Engagement for Research Impact** --- Finalist
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Top Poster Award --- European Congress of Clinical Microbiology \& Infectious Diseases**
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**IPAA Victoria Leadership in the Public Sector Awards** --- Finalist
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Best PhD Student Presentation -- PRISM$^2$ Annual Conference**
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Applied Probability Trust Prize** for best Applied Mathematics Postgraduate Thesis
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2016
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Australian Postgraduate Award**
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2015
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Dean's Commendation for Thesis Excellence**
-:::
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2015
-:::
-::::
-
-
-## {{<fa comments>}} Academic Service & Community Engagment
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Equity, Diversity & Social Inclusion Committee** 
-Department representative
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024 --
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**International Conference on Prevention and Infection Control**   
-Abstract Reviewer
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2025
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**SPECTRUM Annual Meeting** 
-Organising committee
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2024
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**SPARK Short Course in Mathematical Diseases Modelling** --- OUCRU   
-Facilitator
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**International Conference on Prevention and Infection Control**   
-Abstract Reviewer
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Maths in Industry Study Group** --- NSW Health  
-Moderator
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**WOMBAT Communicating with Data Workshop**  
-Organising Committee
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2023
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Australian and New Zealand Industrial and Applied Mathematics Executive Committee**  
-Treasurer
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022--
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Australian and New Zealand Industrial and Applied Mathematics Executive Committee**  
-Early Career Representative
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2021--2022
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**SPECTRUM-SPARK Early Career Researcher Committee**  
-Chair
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022--
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**SPARK Short Course in Mathematical Diseases Modelling** -- Mahidol University  
-Facilitator
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Research Tools Workshop in R**  
-Facilitator
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2022
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Mathematical Biology Special Interest Group**  
-Treasurer
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2019--2022
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**ANZIAM 2021 Conference**  
-Organising Committee (Treasurer)
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2020--2021
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Computational Biology Research Initiative** -- The University of Melbourne  
-Postgraduate Representative
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017
-:::
-::::
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Computational Biology Postgraduate Sports Group** -- The University of Melbourne  
-Secretary
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017--2018
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Maths in Industry Study Group**  
-Participant
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2017, 2018, 2019
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**The ConocoPhilips Science Experience** -- The University of Melbourne  
-Activity Organiser
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2016--2018
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Mathematicians in Schools** -- CSIRO   
-Project Supervisor/Mentor
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2016--2018
-:::
-::::
+render_cv_entries("service.csv")
+```
 
 **Reviewer**  
-PLoS Comptuational Biology; Scientific Reports; Journal of Applied Mathematics; Journal of Statistical Software; Epidemiology \& Infection; Mathematics; Medial Journal of Australia; International Tropical Health; Journal of Antimicrobial Resistance; The R Journal
+PLoS Computational Biology; Scientific Reports; Journal of Applied Mathematics; Journal of Statistical Software; Epidemiology & Infection; Mathematics; Medical Journal of Australia; International Tropical Health; Journal of Antimicrobial Resistance; The R Journal
 
 ## {{<fa users>}} Professional Memberships
 
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Australian and New Zealand Industrial and Applied Mathematics**  
-Including the Mathematical Biology Special Interest Group
-:::
+```{r}
+#| echo: false
+#| results: asis
 
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2015--
-:::
-:::: 
-
-:::: {.cols data-latex=""}
-::: {.col data-latex="{0.85\textwidth}"}
-**Australian Mathematics Society**
-:::
-
-::: {.rightcol .flushright data-latex="{0.15\textwidth}" }
-2015--
-:::
-:::: 
- 
+render_cv_entries("memberships.csv")
+```

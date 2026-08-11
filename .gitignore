@@ -8,3 +8,5 @@ _site
 rename_en_masse.sh
 
 .Renviron
+
+**/*.quarto_ipynb

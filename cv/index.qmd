@@ -141,6 +141,113 @@ cat(paste0(" 1. ", preprints), sep = "\n\n")
 cat(paste0(" 1. ", refereed), sep = "\n\n")
 ```
 
+## {{<fa laptop-code>}} Software
+
+### R packages
+
+```{r}
+#| label: software
+#| echo: false
+#| warning: false
+#| message: false
+#| results: asis
+
+library(pkgmeta)
+library(stringr)
+library(purrr)
+library(dplyr)
+
+extract_names <- function(author_text) {
+  author_text |>
+    str_remove_all("\\s*\\[[^\\]]*\\]|\\s*\\([^)]*\\)") |>
+    str_split(",\\s*") |>
+    pluck(1) |>
+    str_trim() |>
+    paste0(collapse = ", ")
+}
+
+packages <- get_meta(cran_authors = c("Lydeamore")) |>
+    rowwise() |>
+    mutate(authors = extract_names(authors))
+
+
+for (p in seq_len(nrow(packages))) {
+  cran_url <- paste0(
+    "https://CRAN.R-project.org/package=",
+    packages$package[p]
+  )
+  cran_link <- if (identical(knitr::pandoc_to(), "typst")) {
+    "CRAN"
+  } else {
+    paste0("[CRAN](", cran_url, ")")
+  }
+
+  entry <- list(
+    prefix = NA_character_,
+    title = packages$package[p],
+    title_note = NA_character_,
+    role_2 = NA_character_,
+    institution = NA_character_,
+    detail = packages$description[p],
+    detail_2 = paste0("Coauthors: ", packages$authors[p]),
+    amount = NA_character_,
+    date = cran_link
+  )
+
+  cat(format_cv_entry(entry), "\n\n")
+}
+```
+
+### VS Code extensions
+
+```{r}
+#| label: vscode-extensions
+#| echo: false
+#| warning: false
+#| message: false
+#| results: asis
+
+openvsx <- request("https://open-vsx.org/api/-/query") |>
+  req_url_query(
+    namespaceName = "MichaelLydeamore",
+    size = 100
+  ) |>
+  req_retry() |>
+  req_perform() |>
+  resp_body_json()
+
+extensions <- openvsx$extensions
+extensions <- extensions[order(map_chr(extensions, "displayName"))]
+
+for (extension in extensions) {
+  extension_url <- paste0(
+    "https://open-vsx.org/extension/",
+    extension$namespace,
+    "/",
+    extension$name
+  )
+  openvsx_link <- if (identical(knitr::pandoc_to(), "typst")) {
+    "Open VSX"
+  } else {
+    paste0("[Open VSX](", extension_url, ")")
+  }
+
+  entry <- list(
+    prefix = NA_character_,
+    title = extension$displayName,
+    title_note = NA_character_,
+    role_2 = NA_character_,
+    institution = NA_character_,
+    detail = extension$description,
+    detail_2 = paste0("Version ", extension$version),
+    amount = NA_character_,
+    date = openvsx_link
+  )
+
+  cat(format_cv_entry(entry), "\n\n")
+}
+```
+
 ## {{<fa money-bill>}} Funding
 
 Almost all of this funding was obtained in partnership with large, collaborative teams.

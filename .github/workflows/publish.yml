@@ -30,6 +30,12 @@ jobs:
         if: runner.os == 'Linux'
         run: sudo apt-get update -y && sudo apt-get install -y libfontconfig1-dev libnode-dev libnode109
 
+      - name: Fix out-of-sync renv activate script
+        run: |
+          Rscript -e 'install.packages("renv"); renv::activate()'
+        shell: bash
+
+
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
         with:

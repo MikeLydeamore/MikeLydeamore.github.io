@@ -22,6 +22,7 @@ extract_names <- function(author_text) {
 }
 
 packages <- get_meta(cran_authors = c("Lydeamore")) |>
+    rowwise() |>
     mutate(authors = extract_names(authors))
 ```
 

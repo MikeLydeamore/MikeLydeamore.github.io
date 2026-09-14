@@ -159,27 +159,44 @@ library(dplyr)
 
 extract_names <- function(author_text) {
   author_text |>
-    str_remove_all("\\s*\\[[^\\]]*\\]|\\s*\\([^)]*\\)") |>
-    str_split(",\\s*") |>
+    str_remove_all("\\s*<[^>]*>|\\s*\\[[^\\]]*\\]|\\s*\\([^)]*\\)") |>
+    str_split(",\\s*|\\n+") |>
     pluck(1) |>
     str_trim() |>
     paste0(collapse = ", ")
 }
 
-packages <- get_meta(cran_authors = c("Lydeamore")) |>
-    rowwise() |>
-    mutate(authors = extract_names(authors))
+github_repos <- c(
+  "numbats/spiderorchid"
+)
+
+cran_packages <- get_meta(cran_authors = c("Lydeamore")) |>
+  mutate(
+    software_source = "CRAN",
+    software_url = paste0("https://CRAN.R-project.org/package=", package)
+  )
+
+github_packages <- get_meta(github_repos = github_repos) |>
+  mutate(
+    description = title,
+    software_source = "GitHub",
+    software_url = github_url
+  )
+
+packages <- bind_rows(cran_packages, github_packages) |>
+  arrange(str_to_lower(package)) |>
+  rowwise() |>
+  mutate(authors = extract_names(authors))
 
 
 for (p in seq_len(nrow(packages))) {
-  cran_url <- paste0(
-    "https://CRAN.R-project.org/package=",
-    packages$package[p]
-  )
-  cran_link <- if (identical(knitr::pandoc_to(), "typst")) {
-    "CRAN"
+  software_link <- if (identical(knitr::pandoc_to(), "typst")) {
+    packages$software_source[p]
   } else {
-    paste0("[CRAN](", cran_url, ")")
+    paste0(
+      "[", packages$software_source[p], "](",
+      packages$software_url[p], ")"
+    )
   }
 
   entry <- list(
@@ -191,7 +208,7 @@ for (p in seq_len(nrow(packages))) {
     detail = packages$description[p],
     detail_2 = paste0("Coauthors: ", packages$authors[p]),
     amount = NA_character_,
-    date = cran_link
+    date = software_link
   )
 
   cat(format_cv_entry(entry), "\n\n")

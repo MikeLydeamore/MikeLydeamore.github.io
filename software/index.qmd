@@ -14,28 +14,46 @@ library(dplyr)
 
 extract_names <- function(author_text) {
   author_text |>
-    str_remove_all("\\s*\\[[^\\]]*\\]|\\s*\\([^)]*\\)") |>
-    str_split(",\\s*") |>
+    str_remove_all("\\s*<[^>]*>|\\s*\\[[^\\]]*\\]|\\s*\\([^)]*\\)") |>
+    str_split(",\\s*|\\n+") |>
     pluck(1) |>
     str_trim() |>
     paste0(collapse = ", ")
 }
 
-packages <- get_meta(cran_authors = c("Lydeamore")) |>
-    rowwise() |>
-    mutate(authors = extract_names(authors))
+github_repos <- c(
+  "numbats/spiderorchid"
+)
+
+cran_packages <- get_meta(cran_authors = c("Lydeamore")) |>
+  mutate(
+    software_source = "CRAN",
+    software_url = paste0("https://CRAN.R-project.org/package=", package)
+  )
+
+github_packages <- get_meta(github_repos = github_repos) |>
+  mutate(
+    description = title,
+    software_source = "GitHub",
+    software_url = github_url
+  )
+
+packages <- bind_rows(cran_packages, github_packages) |>
+  arrange(str_to_lower(package)) |>
+  rowwise() |>
+  mutate(authors = extract_names(authors))
 ```
 
 ```{r}
 #| echo: false
 #| results: 'asis'
 
-for (p in 1:nrow(packages)) {
+for (p in seq_len(nrow(packages))) {
     cat(
         "## ", packages$package[p], "\n\n",
         packages$description[p], "\n\n",
         "Coauthors: ", packages$authors[p], "\n\n",
-        "Available on [CRAN](https://CRAN.R-project.org/package=", packages$package[p], ")\n\n",
+        "Available on [", packages$software_source[p], "](", packages$software_url[p], ")\n\n",
         sep = ""
     )
 }

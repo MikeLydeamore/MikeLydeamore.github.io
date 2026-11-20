@@ -32,8 +32,16 @@ jobs:
         run: |
           sudo apt-get update -y
           # libnode-dev selects the matching runtime for the runner's Ubuntu version.
-          # gsl is required by the tourr dependency chain.
-          sudo apt-get install -y libfontconfig1-dev libnode-dev libgsl-dev
+          # Install the libraries declared by renv.lock before restoring R binaries:
+          # V8; gsl/igraph; curl/openssl/xml2/stringi; systemfonts/textshaping/ragg;
+          # and the libuv/zlib dependencies used by fs and haven.
+          sudo apt-get install -y \
+            libnode-dev \
+            libgsl-dev libglpk-dev \
+            libcurl4-openssl-dev libssl-dev libxml2-dev libicu-dev \
+            libfontconfig1-dev libfreetype6-dev libharfbuzz-dev libfribidi-dev \
+            libpng-dev libtiff-dev libjpeg-dev libwebp-dev \
+            libuv1-dev zlib1g-dev
 
       - name: Fix out-of-sync renv activate script
         run: |

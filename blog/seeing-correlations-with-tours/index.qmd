@@ -3,7 +3,7 @@ date: 2026-11-20
 title: "Exploring model parameters with tours"
 description: "Using tours to explore parameter relationships in infectious disease models."
 slug: seeing-correlations-with-tours
-draft: true
+draft: false
 bibliography: references.bib
 link-citations: true
 resources:

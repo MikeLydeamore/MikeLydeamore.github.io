@@ -89,6 +89,11 @@ format_cv_entry <- function(entry, output = knitr::pandoc_to()) {
   )
 }
 
+sort_cv_entries <- function(entries) {
+  start_year <- suppressWarnings(as.integer(sub("^([0-9]{4}).*$", "\\1", entries$date)))
+  entries[order(-start_year, seq_len(nrow(entries)), na.last = TRUE), , drop = FALSE]
+}
+
 render_cv_entries <- function(filename) {
   entries <- read_cv_entries(filename)
   groups <- unique(entries$group)
@@ -99,6 +104,7 @@ render_cv_entries <- function(filename) {
 
   blocks <- unlist(lapply(groups, function(group) {
     selected <- if (is.na(group)) entries else entries[entries$group == group, , drop = FALSE]
+    selected <- sort_cv_entries(selected)
     heading <- if (is.na(group)) character() else paste0("### ", group)
     rendered <- lapply(seq_len(nrow(selected)), function(i) format_cv_entry(selected[i, , drop = FALSE]))
     c(heading, unlist(rendered))

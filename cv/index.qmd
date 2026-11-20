@@ -312,6 +312,9 @@ render_cv_entries("awards.csv")
 render_cv_entries("service.csv")
 ```
 
+**Editor**  
+Bulletin of Mathematical Biology (2025-); Journal of the Royal Society: Open Science (2024-)
+
 **Reviewer**  
 PLoS Computational Biology; Scientific Reports; Journal of Applied Mathematics; Journal of Statistical Software; Epidemiology & Infection; Mathematics; Medical Journal of Australia; International Tropical Health; Journal of Antimicrobial Resistance; The R Journal
 
